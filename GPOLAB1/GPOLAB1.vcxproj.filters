@@ -13,5 +13,135 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Tasks">
+      <UniqueIdentifier>{11a250c2-b395-42fe-8cbc-7febb0a880cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Common">
+      <UniqueIdentifier>{6b837569-8bb4-4454-95a1-6f36fec6e442}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Common\Output">
+      <UniqueIdentifier>{684b16f2-28ec-4650-b7f1-6e777b8a3472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Common\Output\Console">
+      <UniqueIdentifier>{78a06e2f-7bd7-48ba-8d80-e2a4674671ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Common\InputChecking">
+      <UniqueIdentifier>{e42bafda-bcd8-4e3e-bb55-6a101ba22bed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Common\InputChecking\Integer">
+      <UniqueIdentifier>{0d1148cc-5dcd-46b0-96db-9a686ecb2e1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Common\Consts">
+      <UniqueIdentifier>{760c4ddd-9a97-4f86-ad08-8579cbd26d8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Menus">
+      <UniqueIdentifier>{c03cb1ae-3c49-40bc-86aa-aa0910d6937a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lab_1\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.1.1.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.1.2.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.2.1.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.2.2.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.2.3.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.3.1.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.3.2.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.3.3.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.3.4.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.4.1.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.4.2.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.4.3.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.4.4.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.4.5.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.4.6.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.4.7.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.4.8.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.5.1.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.5.2.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.5.3.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.5.4.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.5.5.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.5.6.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.5.7.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_1\Tasks\Task_1.1.5.8.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\InputChecking\IntegerReading.cpp">
+      <Filter>Resource Files\Common\InputChecking\Integer</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\ConsoleOutput\ConsoleOutput.cpp">
+      <Filter>Resource Files\Common\Output\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="Menus\Menus.cpp">
+      <Filter>Resource Files\Menus</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\InputChecking\IntegerReading.h">
+      <Filter>Resource Files\Common\InputChecking\Integer</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ConsoleOutput\ConsoleOutput.h">
+      <Filter>Resource Files\Common\Output\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Consts\Consts.h">
+      <Filter>Resource Files\Common\Consts</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_1\Tasks\FirstLabTasks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Menus\Menus.h">
+      <Filter>Resource Files\Menus</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
