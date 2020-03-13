@@ -52,3 +52,14 @@ void PrintFirstLabMenuText()
 	cout << "| 0. Quit program                                             |\n";
 	cout << "|_____________________________________________________________|\n";
 }
+
+void PrintSecondLabMenuText()
+{
+	cout << endl;
+	cout << " ______________________________________________________________\n";
+	cout << "|                       ||||||SECOND LAB||||||                |\n";
+	cout << "| Choose Task from list below                                 |\n";
+	cout << "| 1. Task 2.2.1.1                                             |\n";
+	cout << "| 0. Quit program                                             |\n";
+	cout << "|_____________________________________________________________|\n";
+}

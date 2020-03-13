@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include "FirstLabTasks.h"
-
+#include "../Header/FirstLabTasks.h"
 using namespace std;
 
 double GetPower_1_1_3_1(double base, int exponent)

@@ -2,7 +2,8 @@
 #include "../Common/ConsoleOutput/ConsoleOutput.h"
 #include "../Common/InputChecking/IntegerReading.h"
 #include "../Common/Consts/Consts.h"
-#include "../Lab_1/Tasks/FirstLabTasks.h"
+#include "../Lab_1/Tasks/Header/FirstLabTasks.h"
+#include "../Lab_2/Header/SecondLabTasks.h"
 
 void ChooseTaskFirstLab()
 {
@@ -138,6 +139,27 @@ void ChooseTaskFirstLab()
 			case 25:
 			{
 				Task_1_1_5_8();
+				break;
+			}
+		}
+	} 
+	while (menuItem != DEFAULT_EXIT_MENU_ITEM);
+}
+
+void ChooseTaskSecondLab()
+{
+	int menuItem;
+	do
+	{
+		system("pause");
+		system("cls");
+		PrintSecondLabMenuText();
+		GetMenuItem(menuItem, 0, 25);
+		switch (menuItem)
+		{
+			case 1:
+			{
+				Task_2_2_1_1();
 				break;
 			}
 		}

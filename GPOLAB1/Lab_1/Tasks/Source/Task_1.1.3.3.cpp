@@ -1,6 +1,5 @@
 #include <iostream>
-#include "FirstLabTasks.h"
-
+#include "../Header/FirstLabTasks.h"
 using namespace std;
 
 double GetPower_1_1_3_3(double, int);

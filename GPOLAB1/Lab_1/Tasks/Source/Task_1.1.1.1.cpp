@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-#include "FirstLabTasks.h"
+#include "../Header/FirstLabTasks.h"
 
 using namespace std; 
 

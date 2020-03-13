@@ -1,7 +1,7 @@
-#include "../Common/ConsoleOutput/ConsoleOutput.h"
-#include "../Common/InputChecking/IntegerReading.h"
-#include "../Common/Consts/Consts.h"
-#include "../Menus/Menus.h"
+#include "../GPOLAB1/Common/ConsoleOutput/ConsoleOutput.h"
+#include "../GPOLAB1/Common/InputChecking/IntegerReading.h"
+#include "../GPOLAB1/Common/Consts/Consts.h"
+#include "../GPOLAB1/Menus/Menus.h"
 
 using namespace std;
 
@@ -23,6 +23,7 @@ int main()
 			}
 			case 2:
 			{
+				ChooseTaskSecondLab();
 				break;
 			}
 			case 3:
