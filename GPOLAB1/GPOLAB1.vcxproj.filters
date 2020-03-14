@@ -61,6 +61,9 @@
     <Filter Include="Header Files\Common\Output\Console">
       <UniqueIdentifier>{19151489-d29d-45aa-a923-f2de8e89c6aa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Lab_2">
+      <UniqueIdentifier>{475feb16-8d5b-42a8-91ac-107f323fd82f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Common\InputChecking\IntegerReading.cpp">
@@ -149,6 +152,12 @@
     </ClCompile>
     <ClCompile Include="Lab_1\Tasks\Task_1.1.5.8.cpp">
       <Filter>Source Files\Lab_1\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_2\Task_2.2.1.1.cpp">
+      <Filter>Source Files\Lab_2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_2\Task_2.2.1.2.cpp">
+      <Filter>Source Files\Lab_2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

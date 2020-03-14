@@ -1,12 +1,14 @@
-#include "../Header/SecondLabTasks.h"
-#include "../../Common/ConsoleOutput/ConsoleOutput.h"
+#include "SecondLabTasks.h"
+#include "../Common/ConsoleOutput/ConsoleOutput.h"
 #include <exception>
+
+using namespace std;
 
 void Sort_2_2_1_1(double* values, int count)
 {
 	if (count <= 0)
 	{
-		throw "Error. Negative count.";
+		throw exception("Error. Negative count.");
 	}
 	double swap;
 	for (int i = 0; i < count; i++)

@@ -2,8 +2,10 @@
 #include "../Common/ConsoleOutput/ConsoleOutput.h"
 #include "../Common/InputChecking/IntegerReading.h"
 #include "../Common/Consts/Consts.h"
-#include "../Lab_1/Tasks/Header/FirstLabTasks.h"
-#include "../Lab_2/Header/SecondLabTasks.h"
+#include "../Lab_1/Tasks/FirstLabTasks.h"
+#include "../Lab_2/SecondLabTasks.h"
+
+using namespace std;
 
 void ChooseTaskFirstLab()
 {
@@ -148,5 +150,8 @@ void ChooseTaskFirstLab()
 
 void ExecuteSecondLabTasks()
 {
-	
+	system("cls");
+	//Task_2_2_1_1();
+	Task_2_2_1_2();
+	system("pause");
 }
