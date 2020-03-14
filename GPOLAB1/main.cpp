@@ -23,7 +23,7 @@ int main()
 			}
 			case 2:
 			{
-				ChooseTaskSecondLab();
+				ExecuteSecondLabTasks();
 				break;
 			}
 			case 3:

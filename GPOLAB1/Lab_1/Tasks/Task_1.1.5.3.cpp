@@ -1,5 +1,6 @@
 #include <iostream>
-#include "../Header/FirstLabTasks.h"
+#include "FirstLabTasks.h"
+
 using namespace std;
 
 void Task_1_1_5_3()

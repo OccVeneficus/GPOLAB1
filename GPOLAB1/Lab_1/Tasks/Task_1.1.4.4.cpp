@@ -1,9 +1,9 @@
 #include <iostream>
-#include "../Header/FirstLabTasks.h"
+#include "FirstLabTasks.h"
 
 using namespace std;
 
-void Foo_1_1_4_5(double& a)
+void Foo_1_1_4_4(double a)
 {
 	cout << "Address of a in Foo(): " << &a << endl;
 	cout << "Value of a in Foo(): " << a << endl;
@@ -13,14 +13,14 @@ void Foo_1_1_4_5(double& a)
 	cout << "New value of a in Foo(): " << a << endl;
 }
 
-void Task_1_1_4_5()
+void Task_1_1_4_4()
 {
 	double a = 5.0;
 	cout << "Address of a in main(): " << &a << endl;
 	cout << "Value of a in main(): " << a << endl;
 	cout << endl;
 
-	Foo_1_1_4_5(a);
+	Foo_1_1_4_4(a);
 
 	cout << endl;
 	cout << "Value of a in main(): " << a << endl;

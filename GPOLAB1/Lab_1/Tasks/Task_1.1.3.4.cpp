@@ -1,6 +1,5 @@
 #include <iostream>
-#include "../Header/FirstLabTasks.h"
-
+#include "FirstLabTasks.h"
 using namespace std;
 
 void RoundToTens_1_1_3_4(int&);

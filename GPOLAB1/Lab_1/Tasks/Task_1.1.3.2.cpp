@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include "../Header/FirstLabTasks.h"
+#include "FirstLabTasks.h"
 
 using namespace std;
 

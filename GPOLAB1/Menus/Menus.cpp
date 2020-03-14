@@ -146,23 +146,7 @@ void ChooseTaskFirstLab()
 	while (menuItem != DEFAULT_EXIT_MENU_ITEM);
 }
 
-void ChooseTaskSecondLab()
+void ExecuteSecondLabTasks()
 {
-	int menuItem;
-	do
-	{
-		system("pause");
-		system("cls");
-		PrintSecondLabMenuText();
-		GetMenuItem(menuItem, 0, 25);
-		switch (menuItem)
-		{
-			case 1:
-			{
-				Task_2_2_1_1();
-				break;
-			}
-		}
-	} 
-	while (menuItem != DEFAULT_EXIT_MENU_ITEM);
+	
 }
