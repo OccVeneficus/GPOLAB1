@@ -45,6 +45,6 @@ void DemoSort_2_2_1_2()
 
 void Task_2_2_1_2()
 {
+	cout << "Task 2.2.1.2;" << endl;
 	DemoSort_2_2_1_2();
-	return;
 }

@@ -154,4 +154,8 @@ void ExecuteSecondLabTasks()
 	//Task_2_2_1_1();
 	Task_2_2_1_2();
 	system("pause");
+	Task_2_2_3_1();
+	system("pause");
+	Task_2_2_3_2();
+	system("pause");
 }

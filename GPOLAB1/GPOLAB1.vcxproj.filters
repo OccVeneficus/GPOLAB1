@@ -159,6 +159,15 @@
     <ClCompile Include="Lab_2\Task_2.2.1.2.cpp">
       <Filter>Source Files\Lab_2</Filter>
     </ClCompile>
+    <ClCompile Include="Lab_2\Task_2.2.2.1.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_2\Task_2.2.3.1.cpp">
+      <Filter>Source Files\Lab_2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_2\Task_2.2.3.2.cpp">
+      <Filter>Source Files\Lab_2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Consts\Consts.h">
@@ -178,6 +187,9 @@
     </ClInclude>
     <ClInclude Include="Common\InputChecking\IntegerReading.h">
       <Filter>Header Files\Common\InputChecking</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\Task_2.2.2.2.h">
+      <Filter>Header Files\Lab_2</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
