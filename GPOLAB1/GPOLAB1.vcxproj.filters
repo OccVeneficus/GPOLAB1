@@ -153,25 +153,13 @@
     <ClCompile Include="Lab_1\Tasks\Task_1.1.5.8.cpp">
       <Filter>Source Files\Lab_1\Tasks</Filter>
     </ClCompile>
-    <ClCompile Include="Lab_2\Task_2.2.1.1.cpp">
-      <Filter>Source Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_2\Task_2.2.1.2.cpp">
-      <Filter>Source Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_2\Task_2.2.2.1.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_2\Task_2.2.3.cpp">
+    <ClCompile Include="Lab_2\Tasks.cpp">
       <Filter>Source Files\Lab_2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Consts\Consts.h">
       <Filter>Header Files\Common\Consts</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\SecondLabTasks.h">
-      <Filter>Header Files\Lab_2</Filter>
     </ClInclude>
     <ClInclude Include="Menus\Menus.h">
       <Filter>Header Files\Menus</Filter>
@@ -185,7 +173,7 @@
     <ClInclude Include="Common\InputChecking\IntegerReading.h">
       <Filter>Header Files\Common\InputChecking</Filter>
     </ClInclude>
-    <ClInclude Include="Lab_2\Task_2.2.2.2.h">
+    <ClInclude Include="Lab_2\Tasks.h">
       <Filter>Header Files\Lab_2</Filter>
     </ClInclude>
   </ItemGroup>

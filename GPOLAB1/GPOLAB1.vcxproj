@@ -165,10 +165,7 @@
     <ClCompile Include="Lab_1\Tasks\Task_1.1.5.6.cpp" />
     <ClCompile Include="Lab_1\Tasks\Task_1.1.5.7.cpp" />
     <ClCompile Include="Lab_1\Tasks\Task_1.1.5.8.cpp" />
-    <ClCompile Include="Lab_2\Task_2.2.1.1.cpp" />
-    <ClCompile Include="Lab_2\Task_2.2.1.2.cpp" />
-    <ClCompile Include="Lab_2\Task_2.2.2.1.h" />
-    <ClCompile Include="Lab_2\Task_2.2.3.cpp" />
+    <ClCompile Include="Lab_2\Tasks.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menus\Menus.cpp" />
   </ItemGroup>
@@ -177,8 +174,7 @@
     <ClInclude Include="Common\Consts\Consts.h" />
     <ClInclude Include="Common\InputChecking\IntegerReading.h" />
     <ClInclude Include="Lab_1\Tasks\FirstLabTasks.h" />
-    <ClInclude Include="Lab_2\SecondLabTasks.h" />
-    <ClInclude Include="Lab_2\Task_2.2.2.2.h" />
+    <ClInclude Include="Lab_2\Tasks.h" />
     <ClInclude Include="Menus\Menus.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
