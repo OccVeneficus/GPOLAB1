@@ -3,7 +3,7 @@
 #include "../Common/InputChecking/IntegerReading.h"
 #include "../Common/Consts/Consts.h"
 #include "../Lab_1/Tasks/FirstLabTasks.h"
-#include "../Lab_2/Tasks.h"
+#include "../Lab_2/Execute.h"
 
 using namespace std;
 
@@ -150,6 +150,5 @@ void ChooseTaskFirstLab()
 
 void ExecuteSecondLabTasks()
 {
-	system("cls");
 	Lab_2();
 }

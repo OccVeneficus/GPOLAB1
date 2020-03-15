@@ -165,7 +165,17 @@
     <ClCompile Include="Lab_1\Tasks\Task_1.1.5.6.cpp" />
     <ClCompile Include="Lab_1\Tasks\Task_1.1.5.7.cpp" />
     <ClCompile Include="Lab_1\Tasks\Task_1.1.5.8.cpp" />
-    <ClCompile Include="Lab_2\Tasks.cpp" />
+    <ClCompile Include="Lab_2\Circle.cpp" />
+    <ClCompile Include="Lab_2\Enums.cpp" />
+    <ClCompile Include="Lab_2\Exceptions.cpp" />
+    <ClCompile Include="Lab_2\Execute.cpp" />
+    <ClCompile Include="Lab_2\Flight.cpp" />
+    <ClCompile Include="Lab_2\Movie.cpp" />
+    <ClCompile Include="Lab_2\Rectangle.cpp" />
+    <ClCompile Include="Lab_2\StructureDynamic.cpp" />
+    <ClCompile Include="Lab_2\StructureFunction.cpp" />
+    <ClCompile Include="Lab_2\StructureStatic.cpp" />
+    <ClCompile Include="Lab_2\Time.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menus\Menus.cpp" />
   </ItemGroup>
@@ -174,7 +184,18 @@
     <ClInclude Include="Common\Consts\Consts.h" />
     <ClInclude Include="Common\InputChecking\IntegerReading.h" />
     <ClInclude Include="Lab_1\Tasks\FirstLabTasks.h" />
-    <ClInclude Include="Lab_2\Tasks.h" />
+    <ClInclude Include="Lab_2\Circle.h" />
+    <ClInclude Include="Lab_2\Enums.h" />
+    <ClInclude Include="Lab_2\Exceptions.h" />
+    <ClInclude Include="Lab_2\Execute.h" />
+    <ClInclude Include="Lab_2\Flight.h" />
+    <ClInclude Include="Lab_2\Movie.h" />
+    <ClInclude Include="Lab_2\Rectangle.h" />
+    <ClInclude Include="Lab_2\StructureDynamic.h" />
+    <ClInclude Include="Lab_2\StructureFunction.h" />
+    <ClInclude Include="Lab_2\StructureStatic.h" />
+    <ClInclude Include="Lab_2\Task_2.2.2.2.h" />
+    <ClInclude Include="Lab_2\Time.h" />
     <ClInclude Include="Menus\Menus.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
