@@ -162,10 +162,7 @@
     <ClCompile Include="Lab_2\Task_2.2.2.1.h">
       <Filter>Header Files\Lab_2</Filter>
     </ClCompile>
-    <ClCompile Include="Lab_2\Task_2.2.3.1.cpp">
-      <Filter>Source Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_2\Task_2.2.3.2.cpp">
+    <ClCompile Include="Lab_2\Task_2.2.3.cpp">
       <Filter>Source Files\Lab_2</Filter>
     </ClCompile>
   </ItemGroup>
