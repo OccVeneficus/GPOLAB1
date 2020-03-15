@@ -79,5 +79,10 @@ void Exchange(Rectangle& firstRectangle, Rectangle& secondRectangle);
 void FindRectangle(Rectangle* rectangles, int count);
 void FindMaxRectangle(Rectangle* rectangles, int count);
 
+/*2.2.6*/
+void DemoDynamicFlight();
+void DemoDynamicFlights();
+void FindShortestFlight(Flight* flights, int count);
+
 /*execute all tasks*/
 void Lab_2();

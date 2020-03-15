@@ -354,6 +354,68 @@ void FindMaxRectangle(Rectangle* rectangles, int count)
 		<< endl;
 }
 
+/*2.2.6.1*/
+void DemoDynamicFlight()
+{
+	Flight* flight = new Flight;
+	flight->Departure = "Moscow";
+	flight->Arrival = "Vladivostok";
+	flight->MinutesTimeOfFlight = 450;
+	cout << "Flight " << flight->Departure << " - " << flight->Arrival <<
+		", in flight time " << flight->MinutesTimeOfFlight << endl;
+	delete flight;
+}
+
+/*2.2.6.2*/
+void DemoDynamicFlights()
+{
+	Flight* flight = new Flight[4];
+	flight[0].Departure = "London";
+	flight[0].Arrival = "Paris";
+	flight[0].MinutesTimeOfFlight = 80;
+
+	flight[1].Departure = "Paris";
+	flight[1].Arrival = "London";
+	flight[1].MinutesTimeOfFlight = 80;
+
+	flight[2].Departure = "Moscow";
+	flight[2].Arrival = "Dubai";
+	flight[2].MinutesTimeOfFlight = 130;
+
+	flight[3].Departure = "Novgorod";
+	flight[3].Arrival = "St. Petersburg";
+	flight[3].MinutesTimeOfFlight = 90;
+
+	for (int i = 0; i < 4; i++)
+	{
+		cout << "Flight " << i << ' ' << flight[i].Departure <<
+			" - " << flight[i].Arrival << " in flight time " <<
+			flight[i].MinutesTimeOfFlight << endl;
+	}
+	FindShortestFlight(flight, 4);
+}
+
+/*2.2.6.3*/
+void FindShortestFlight(Flight* flights, int count)
+{
+	Flight shortestFlight;
+	shortestFlight.Departure = flights[0].Departure;
+	shortestFlight.Arrival = flights[0].Arrival;
+	shortestFlight.MinutesTimeOfFlight = flights[0].MinutesTimeOfFlight;
+	for (int i = 0; i < count; i++)
+	{
+		if (flights[i].MinutesTimeOfFlight < shortestFlight.MinutesTimeOfFlight)
+		{ 
+			shortestFlight.Departure = flights[i].Departure;
+			shortestFlight.Arrival = flights[i].Arrival;
+			shortestFlight.MinutesTimeOfFlight = flights[i].MinutesTimeOfFlight;
+		}
+	}
+	cout << "Shortest flight is " << shortestFlight.Departure << " - " <<
+		shortestFlight.Arrival << ", in flight time " <<
+		shortestFlight.MinutesTimeOfFlight << endl;
+}
+
 /*Execute all tasks*/
 void Lab_2()
 {
@@ -367,4 +429,7 @@ void Lab_2()
 	system("pause");
 	cout << "Tasks 2.2.5.1-6:" << endl;
 	DemoReadAndWriteRectangles();
+	cout << "Tasks 2.2.6:" << endl;
+	DemoDynamicFlight();
+	DemoDynamicFlights();
 }
