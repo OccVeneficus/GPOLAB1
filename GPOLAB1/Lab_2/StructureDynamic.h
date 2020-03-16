@@ -5,7 +5,7 @@
 /*2.2.6*/
 void DemoDynamicFlight();
 void DemoDynamicFlights();
-void FindShortestFlight(Flight* flights, int count);
+Flight* FindShortestFlight(Flight* flights, int count);
 
 /*2.2.9*/
 void DemoMovieWithGenre();

@@ -43,9 +43,6 @@
     <Filter Include="Source Files\Menus">
       <UniqueIdentifier>{c03cb1ae-3c49-40bc-86aa-aa0910d6937a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Menus">
-      <UniqueIdentifier>{ec3755a7-4c6e-4f22-b2dc-3bd7be5c9efe}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Common">
       <UniqueIdentifier>{ba6db669-7eeb-4898-b830-d5294cb01494}</UniqueIdentifier>
     </Filter>
@@ -190,9 +187,6 @@
   <ItemGroup>
     <ClInclude Include="Common\Consts\Consts.h">
       <Filter>Header Files\Common\Consts</Filter>
-    </ClInclude>
-    <ClInclude Include="Menus\Menus.h">
-      <Filter>Header Files\Menus</Filter>
     </ClInclude>
     <ClInclude Include="Common\ConsoleOutput\ConsoleOutput.h">
       <Filter>Header Files\Common\Output\Console</Filter>

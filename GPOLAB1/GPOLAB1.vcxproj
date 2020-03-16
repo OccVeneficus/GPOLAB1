@@ -196,7 +196,6 @@
     <ClInclude Include="Lab_2\StructureStatic.h" />
     <ClInclude Include="Lab_2\Task_2.2.2.2.h" />
     <ClInclude Include="Lab_2\Time.h" />
-    <ClInclude Include="Menus\Menus.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,4 +1,4 @@
-#include "StructureDynamic.h"
+﻿#include "StructureDynamic.h"
 #include <iostream>
 #include "Movie.h"
 
@@ -10,9 +10,9 @@ void DemoDynamicFlight()
 	Flight* flight = new Flight;
 	flight->Departure = "Moscow";
 	flight->Arrival = "Vladivostok";
-	flight->MinutesTimeOfFlight = 450;
+	flight->MinutesFlightTime = 450;
 	cout << "Flight " << flight->Departure << " - " << flight->Arrival <<
-		", in flight time " << flight->MinutesTimeOfFlight << endl;
+		", in flight time " << flight->MinutesFlightTime << endl;
 	delete flight;
 }
 
@@ -22,49 +22,50 @@ void DemoDynamicFlights()
 	Flight* flight = new Flight[4];
 	flight[0].Departure = "London";
 	flight[0].Arrival = "Paris";
-	flight[0].MinutesTimeOfFlight = 80;
+	flight[0].MinutesFlightTime = 80;
 
 	flight[1].Departure = "Paris";
 	flight[1].Arrival = "London";
-	flight[1].MinutesTimeOfFlight = 80;
+	flight[1].MinutesFlightTime = 80;
 
 	flight[2].Departure = "Moscow";
 	flight[2].Arrival = "Dubai";
-	flight[2].MinutesTimeOfFlight = 130;
+	flight[2].MinutesFlightTime = 130;
 
 	flight[3].Departure = "Novgorod";
 	flight[3].Arrival = "St. Petersburg";
-	flight[3].MinutesTimeOfFlight = 90;
+	flight[3].MinutesFlightTime = 90;
 
 	for (int i = 0; i < 4; i++)
 	{
 		cout << "Flight " << i << ' ' << flight[i].Departure <<
 			" - " << flight[i].Arrival << " in flight time " <<
-			flight[i].MinutesTimeOfFlight << endl;
+			flight[i].MinutesFlightTime << endl;
 	}
-	FindShortestFlight(flight, 4);
+	Flight* shortestFlight = FindShortestFlight(flight, 4);
+	cout << "Shortest flight is " << shortestFlight->Departure << " - " <<
+		shortestFlight->Arrival << ", in flight time " <<
+		shortestFlight->MinutesFlightTime << endl;
 	delete[] flight;
+	delete shortestFlight;
 }
 
 /*2.2.6.3*/
-void FindShortestFlight(Flight* flights, int count)
+Flight* FindShortestFlight(Flight* flights, int count)
 {
-	Flight shortestFlight;
-	shortestFlight.Departure = flights[0].Departure;
-	shortestFlight.Arrival = flights[0].Arrival;
-	shortestFlight.MinutesTimeOfFlight = flights[0].MinutesTimeOfFlight;
+	//TODO: может вместо копирования по полям использовать указатель?
+	//TODO: сделай возврат указателя из функции, а вывод на экран перенеси в DemoDynamicFligths() - следует разделять бизнес-логику и пользовательский интерфейс
+	Flight *shortestFlight = &flights[0];
 	for (int i = 0; i < count; i++)
 	{
-		if (flights[i].MinutesTimeOfFlight < shortestFlight.MinutesTimeOfFlight)
+		if (flights[i].MinutesFlightTime < shortestFlight->MinutesFlightTime)
 		{
-			shortestFlight.Departure = flights[i].Departure;
-			shortestFlight.Arrival = flights[i].Arrival;
-			shortestFlight.MinutesTimeOfFlight = flights[i].MinutesTimeOfFlight;
+			shortestFlight->Departure = flights[i].Departure;
+			shortestFlight->Arrival = flights[i].Arrival;
+			shortestFlight->MinutesFlightTime = flights[i].MinutesFlightTime;
 		}
 	}
-	cout << "Shortest flight is " << shortestFlight.Departure << " - " <<
-		shortestFlight.Arrival << ", in flight time " <<
-		shortestFlight.MinutesTimeOfFlight << endl;
+	return shortestFlight;
 }
 
 void DemoMovieWithGenre()
@@ -74,7 +75,7 @@ void DemoMovieWithGenre()
 	movie1->Rating = 2.3;
 	movie1->Name = "Sign";
 	movie1->Year = 2004;
-	movie1->MinutesDuration = 115;
+	movie1->DurationMinutes = 115;
 	Movie* movie = MakeMovie("Rage", 128, 2017, Action, 7.1);
 	Movie* movies = new Movie[10];
 	movies[0] = *MakeMovie("A", 213, 2013, Action, 4.4);
@@ -91,7 +92,7 @@ void DemoMovieWithGenre()
 	Movie* bestGenreMovie = FindBestGenreMovie(movies, 10, Comedy);
 	cout << "Best comedy movie: " << bestGenreMovie->Name << ",  ";
 	WriteGenre(bestGenreMovie->Genre);
-	cout << ", " << bestGenreMovie->Year << ", duration " << bestGenreMovie->MinutesDuration <<
+	cout << ", " << bestGenreMovie->Year << ", duration " << bestGenreMovie->DurationMinutes <<
 		", rating " << bestGenreMovie->Rating << endl;
 	delete movie1;
 	delete movie;

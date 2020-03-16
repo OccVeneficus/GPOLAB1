@@ -1,4 +1,4 @@
-#include "StructureFunction.h"
+﻿#include "StructureFunction.h"
 #include <iostream>
 #include <limits>
 
@@ -37,9 +37,13 @@ void DemoReadAndWriteRectangles()
 		cout << i + 1 << ": ";
 		WriteRectangle(arrayRectangle[i]);
 	}
-	FindRectangle(arrayRectangle, 5);
+	Rectangle *maxLengthRectangle = FindRectangle(arrayRectangle, 5);
+	cout << "Rectangle with max length color " << maxLengthRectangle->Color <<
+		", size " << maxLengthRectangle->Length << 'x' << maxLengthRectangle->Width
+		<< endl;
 	FindMaxRectangle(arrayRectangle, 5);
 	delete[] arrayRectangle;
+	delete maxLengthRectangle;
 }
 
 /*2.2.5.4*/
@@ -60,29 +64,26 @@ void Exchange(Rectangle& firstRectangle, Rectangle& secondRectangle)
 }
 
 /*2.2.5.5*/
-void FindRectangle(Rectangle* rectangles, int count)
+Rectangle* FindRectangle(Rectangle* rectangles, int count)
 {
-	Rectangle maxLengthRectangle;
-	maxLengthRectangle.Color = rectangles[0].Color;
-	maxLengthRectangle.Length = rectangles[0].Length;
-	maxLengthRectangle.Width = rectangles[0].Width;
+	//TODO: поменять на указатель, вернуть указатель из функции, cout перенести в DemoReadAndWriteRectangles()
+	Rectangle* maxLengthRectangle = &rectangles[0];
 	for (int i = 0; i < count; i++)
 	{
-		if (rectangles[i].Length > maxLengthRectangle.Length)
+		if (rectangles[i].Length > maxLengthRectangle->Length)
 		{
-			maxLengthRectangle.Color = rectangles[i].Color;
-			maxLengthRectangle.Length = rectangles[i].Length;
-			maxLengthRectangle.Width = rectangles[i].Width;
+			maxLengthRectangle->Color = rectangles[i].Color;
+			maxLengthRectangle->Length = rectangles[i].Length;
+			maxLengthRectangle->Width = rectangles[i].Width;
 		}
 	}
-	cout << "Rectangle with max length color " << maxLengthRectangle.Color <<
-		", size " << maxLengthRectangle.Length << 'x' << maxLengthRectangle.Width
-		<< endl;
+	return maxLengthRectangle;
 }
 
 /*2.2.5.6*/
 void FindMaxRectangle(Rectangle* rectangles, int count)
 {
+	//TODO: аналогично замечанию выше
 	Rectangle maxSquareRectangle;
 	maxSquareRectangle.Color = rectangles[0].Color;
 	maxSquareRectangle.Length = rectangles[0].Length;

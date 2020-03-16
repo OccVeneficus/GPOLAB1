@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include <string>
 #include "Enums.h"
 
@@ -7,13 +7,13 @@ using namespace std;
 struct Movie
 {
 	string Name;
-	int MinutesDuration;
+	int DurationMinutes; //TODO: единицы измерения лучше в конце - пользоваться автодополнением удобнее
 	int Year;
 	Genre Genre;
 	double Rating;
 
 };
 
-Movie* MakeMovie(string name, int MinutesDuration, int year,
+Movie* MakeMovie(string name, int DurationMinutes, int year, //TODO: не забыть переименовать здесь
 	Genre genre, double rating);
 Movie* CopyMovie(Movie* movie);

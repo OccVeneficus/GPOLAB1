@@ -1,4 +1,5 @@
-#pragma once
+﻿#pragma once //TODO: пустая строка от директив - ЛЮБЫЕ логические блоки отделяются одной пустой строкой
+
 struct Time
 {
 	int Hours;

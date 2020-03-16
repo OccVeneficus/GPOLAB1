@@ -1,8 +1,8 @@
-#pragma once
+﻿#pragma once
 #include <string>
 
 using namespace std;
-
+//TODO: Каждую структуру принято помещать в отдельный файл
 struct Contact
 {
 	string Name;
@@ -14,7 +14,7 @@ struct Song
 {
 	string Album;
 	string Name;
-	int SecondsDuration;
+	int DurationSeconds; //TODO: Единицы измерения лучше писать в конце - так реально удобнее пользоваться автодополнением
 };
 
 struct Subject
@@ -22,5 +22,5 @@ struct Subject
 	string Name;
 	int StudyHours;
 	string LecturerName;
-	short int Score;
+	short int Mark; //TODO: Переименовать в Mark. Score - это очки в игре
 };

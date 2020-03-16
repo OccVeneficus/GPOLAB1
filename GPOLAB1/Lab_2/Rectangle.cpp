@@ -1,4 +1,4 @@
-#include "Rectangle.h"
+﻿#include "Rectangle.h"
 
 Rectangle* MakeRectangle(double length, double width, string color)
 {
@@ -11,9 +11,7 @@ Rectangle* MakeRectangle(double length, double width, string color)
 
 Rectangle* CopyRectangle(Rectangle* rectangle)
 {
+	//TODO: заменить на вызов функции конструктора
 	Rectangle* copiedRectangle = new Rectangle;
-	copiedRectangle->Length = rectangle->Length;
-	copiedRectangle->Width = rectangle->Width;
-	copiedRectangle->Color = rectangle->Color;
-	return copiedRectangle;
+	return copiedRectangle = MakeRectangle(rectangle->Length, rectangle->Width, rectangle->Color);
 }
