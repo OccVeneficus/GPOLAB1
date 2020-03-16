@@ -233,5 +233,23 @@
     <ClInclude Include="Lab_2\Time.h">
       <Filter>Header Files\Lab_2</Filter>
     </ClInclude>
+    <ClInclude Include="Lab_2\Color.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\WeekDay.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\Genre.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\StudyType.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\PhoneCompany.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\Season.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
