@@ -43,7 +43,6 @@ void DemoReadAndWriteRectangles()
 		<< endl;
 	FindMaxRectangle(arrayRectangle, 5);
 	delete[] arrayRectangle;
-	delete maxLengthRectangle;
 }
 
 /*2.2.5.4*/

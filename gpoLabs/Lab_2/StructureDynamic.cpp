@@ -47,7 +47,6 @@ void DemoDynamicFlights()
 		shortestFlight->Arrival << ", in flight time " <<
 		shortestFlight->MinutesFlightTime << endl;
 	delete[] flight;
-	delete shortestFlight;
 }
 
 /*2.2.6.3*/
