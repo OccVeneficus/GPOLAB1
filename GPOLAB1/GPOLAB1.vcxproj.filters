@@ -40,9 +40,6 @@
     <Filter Include="Source Files\Common\InputChecking\Integer">
       <UniqueIdentifier>{0d1148cc-5dcd-46b0-96db-9a686ecb2e1b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Menus">
-      <UniqueIdentifier>{c03cb1ae-3c49-40bc-86aa-aa0910d6937a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Common">
       <UniqueIdentifier>{ba6db669-7eeb-4898-b830-d5294cb01494}</UniqueIdentifier>
     </Filter>
@@ -68,9 +65,6 @@
     </ClCompile>
     <ClCompile Include="Common\ConsoleOutput\ConsoleOutput.cpp">
       <Filter>Source Files\Common\Output\Console</Filter>
-    </ClCompile>
-    <ClCompile Include="Menus\Menus.cpp">
-      <Filter>Source Files\Menus</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>

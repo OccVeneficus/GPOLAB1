@@ -1,6 +1,8 @@
-#include "../GPOLAB1/Common/ConsoleOutput/ConsoleOutput.h"
-#include "../GPOLAB1/Common/InputChecking/IntegerReading.h"
-#include "../GPOLAB1/Common/Consts/Consts.h"
+//TODO: Зачем подниматься на папку выше и снова заходить в GPOLAB1?
+//TODO: Проект называется GPOLAB1, но внутри неё есть Lab2 - неправильное именование проекта
+#include "Common/ConsoleOutput/ConsoleOutput.h"
+#include "Common/InputChecking/IntegerReading.h"
+#include "Common/Consts/Consts.h"
 
 using namespace std;
 

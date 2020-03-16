@@ -177,7 +177,6 @@
     <ClCompile Include="Lab_2\StructureStatic.cpp" />
     <ClCompile Include="Lab_2\Time.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Menus\Menus.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\ConsoleOutput\ConsoleOutput.h" />
