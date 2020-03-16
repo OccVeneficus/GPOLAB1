@@ -1,4 +1,4 @@
-#include "StructureStatic.h"
+п»ї#include "StructureStatic.h"
 #include <iostream>
 #include "Flight.h"
 #include "Movie.h"
@@ -24,8 +24,9 @@ void DemoRectangle()
 	cin >> rectangleKeyInput.Length;
 	cout << "Enter width: ";
 	cin >> rectangleKeyInput.Width;
-	/*символ новой строки не очищается из потока и когда доходит до getline,
-	то оно берет этот символ из потока и идет дальше, поэтому cin.ignore(...)*/
+	//TODO: РєРѕРјРјРµРЅС‚Р°СЂРёР№ Р·Р°С€Р°РєР°Р»РёР»СЃСЏ. РўРѕС‡РЅРѕ СѓСЃС‚Р°РЅРѕРІРёР» СЃРѕС…СЂР°РЅРµРЅРёРµ РІ unicode РІ СЃС‚СѓРґРёРё? РџРµСЂРµСЃРѕС…СЂР°РЅРёР» С„Р°Р№Р»С‹ СЃ РЅРѕРІРѕР№ РєРѕРґРёСЂРѕРІРєРѕР№?
+	/*Г±ГЁГ¬ГўГ®Г« Г­Г®ГўГ®Г© Г±ГІГ°Г®ГЄГЁ Г­ГҐ Г®Г·ГЁГ№Г ГҐГІГ±Гї ГЁГ§ ГЇГ®ГІГ®ГЄГ  ГЁ ГЄГ®ГЈГ¤Г  Г¤Г®ГµГ®Г¤ГЁГІ Г¤Г® getline,
+	ГІГ® Г®Г­Г® ГЎГҐГ°ГҐГІ ГЅГІГ®ГІ Г±ГЁГ¬ГўГ®Г« ГЁГ§ ГЇГ®ГІГ®ГЄГ  ГЁ ГЁГ¤ГҐГІ Г¤Г Г«ГјГёГҐ, ГЇГ®ГЅГІГ®Г¬Гі cin.ignore(...)*/
 	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	cout << "Rectangle color " << rectangleKeyInput.Color <<
 		", size: " << rectangleKeyInput.Length << 'x' <<

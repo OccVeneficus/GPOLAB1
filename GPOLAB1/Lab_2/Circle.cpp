@@ -1,4 +1,4 @@
-#include "Circle.h"
+﻿#include "Circle.h"
 
 /*2.2.7.1*/
 Circle* MakeCircle(double x, double y, double radius, string color)
@@ -14,6 +14,7 @@ Circle* MakeCircle(double x, double y, double radius, string color)
 Circle* CopyCircle(Circle* circle)
 {
 	Circle* copiedCircle = new Circle;
+	//TODO: заменить на вызов функции-конструктора.
 	copiedCircle->Color = circle->Color;
 	copiedCircle->X = circle->X;
 	copiedCircle->Y = circle->Y;

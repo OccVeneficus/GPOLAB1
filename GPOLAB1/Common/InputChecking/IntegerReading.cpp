@@ -1,4 +1,4 @@
-#include "IntegerReading.h"
+﻿#include "IntegerReading.h"
 
 using namespace std;
 
@@ -49,6 +49,7 @@ void GetMenuItem(int& menuItem, int bottomIndex, int topIndex)
 {
 	if (bottomIndex >= topIndex)
 	{
+		//TODO: кидать строки (или инты) не хорошо. Лучше кидать эксепшены, так как тогда можно писать несколько блоков catch с учетом иерархии наследования эксепшенов друг от друга. Если надо, в четверг могу объяснить
 		throw("Error. topindex is less/equal than/to bottomIndex in GetMenuItem function.");
 	}
 	do

@@ -1,4 +1,4 @@
-#include "Movie.h"
+﻿#include "Movie.h"
 #include "Enums.h"
 
 Movie* MakeMovie(string name, int minutesDuration, int year,
@@ -15,6 +15,7 @@ Movie* MakeMovie(string name, int minutesDuration, int year,
 
 Movie* CopyMovie(Movie* movie)
 {
+	//TODO: заменить на вызов функции-конструктора
 	Movie* copiedMovie = new Movie;
 	copiedMovie->Name = movie->Name;
 	copiedMovie->Genre = movie->Genre;

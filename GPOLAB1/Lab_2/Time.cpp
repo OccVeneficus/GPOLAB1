@@ -1,4 +1,4 @@
-#include "Time.h"
+﻿#include "Time.h"
 
 Time* MakeTime(int hours, int minutes, int seconds)
 {
@@ -11,6 +11,7 @@ Time* MakeTime(int hours, int minutes, int seconds)
 
 Time* CopyTime(Time* time)
 {
+	//TODO: заменить на вызов функции-конструктора
 	Time* copiedTime = new Time;
 	copiedTime->Hours = time->Hours;
 	copiedTime->Minutes = time->Minutes;

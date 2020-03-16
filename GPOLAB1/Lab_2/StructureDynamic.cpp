@@ -1,4 +1,4 @@
-#include "StructureDynamic.h"
+﻿#include "StructureDynamic.h"
 #include <iostream>
 #include "Movie.h"
 
@@ -49,6 +49,8 @@ void DemoDynamicFlights()
 /*2.2.6.3*/
 void FindShortestFlight(Flight* flights, int count)
 {
+	//TODO: может вместо копирования по полям использовать указатель?
+	//TODO: сделай возврат указателя из функции, а вывод на экран перенеси в DemoDynamicFligths() - следует разделять бизнес-логику и пользовательский интерфейс
 	Flight shortestFlight;
 	shortestFlight.Departure = flights[0].Departure;
 	shortestFlight.Arrival = flights[0].Arrival;

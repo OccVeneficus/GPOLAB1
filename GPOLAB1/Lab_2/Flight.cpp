@@ -1,4 +1,4 @@
-#include "Flight.h"
+﻿#include "Flight.h"
 
 Flight* MakeFlight(string departure, string arrival, int minutesTimeOfFlight)
 {
@@ -11,6 +11,7 @@ Flight* MakeFlight(string departure, string arrival, int minutesTimeOfFlight)
 
 Flight* CopyFlight(Flight* flight)
 {
+	//TODO: заменить на вызов функции-конструктора
 	Flight* copiedFlight = new Flight;
 	copiedFlight->Departure = flight->Departure;
 	copiedFlight->Arrival = flight->Arrival;

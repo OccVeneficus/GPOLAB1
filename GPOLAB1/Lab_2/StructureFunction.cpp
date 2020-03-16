@@ -1,4 +1,4 @@
-#include "StructureFunction.h"
+﻿#include "StructureFunction.h"
 #include <iostream>
 #include <limits>
 
@@ -62,6 +62,7 @@ void Exchange(Rectangle& firstRectangle, Rectangle& secondRectangle)
 /*2.2.5.5*/
 void FindRectangle(Rectangle* rectangles, int count)
 {
+	//TODO: поменять на указатель, вернуть указатель из функции, cout перенести в DemoReadAndWriteRectangles()
 	Rectangle maxLengthRectangle;
 	maxLengthRectangle.Color = rectangles[0].Color;
 	maxLengthRectangle.Length = rectangles[0].Length;
@@ -83,6 +84,7 @@ void FindRectangle(Rectangle* rectangles, int count)
 /*2.2.5.6*/
 void FindMaxRectangle(Rectangle* rectangles, int count)
 {
+	//TODO: аналогично замечанию выше
 	Rectangle maxSquareRectangle;
 	maxSquareRectangle.Color = rectangles[0].Color;
 	maxSquareRectangle.Length = rectangles[0].Length;

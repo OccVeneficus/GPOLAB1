@@ -1,5 +1,7 @@
-#pragma once
+﻿#pragma once
 /*2.2.8.1*/
+//TODO: каждое перечисление в отдельном файле
+//TODO: неправильное оформление перечислений: фигурные скобки на новых строках, каждое значение на своей строке, все значения сдвинуты на одну табуляцию от объявления перечисления
 enum Color { Red, Orange, Yellow, Green, Blue, LightBlue, Purple };
 enum WeekDay { Sunday, Monday, Tuesdeay, Wednesday, Thursday, Friday, Saturday };
 enum Genre { Comedy, Drama, Thriller, Action, Horror, BlockBuster };
