@@ -84,7 +84,6 @@ Rectangle* FindRectangle(Rectangle* rectangles, int count)
 /*2.2.5.6*/
 Rectangle* FindMaxRectangle(Rectangle* rectangles, int count)
 {
-	//TODO: аналогично замечанию выше
 	Rectangle *maxSquareRectangle = &rectangles[0];
 	for (int i = 0; i < count; i++)
 	{

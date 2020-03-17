@@ -34,7 +34,6 @@ void Lab_2()
 	DemoMovieWithGenre();
 	system("pause");
 	cout << endl << "Done. " << endl;
-	//TODO: каждая переменная должна удаляться в своей строке, аналогично объявлению
 	delete testMovie;
 	delete testFlight;
 	delete 	testTime;
