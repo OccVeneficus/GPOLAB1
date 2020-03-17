@@ -15,7 +15,7 @@ void DemoRectangle()
 	rectangle.Length = 6.3;
 	rectangle.Width = 3.1;
 
-	//Проверяю кодировку
+	//РїСЂРѕРІРµСЂРєР° РєРѕРјРјРµРЅС‚РѕРІ
 
 	/*2.2.3.2*/
 	Rectangle rectangleKeyInput;
