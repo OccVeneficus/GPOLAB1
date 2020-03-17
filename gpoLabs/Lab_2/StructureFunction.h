@@ -7,4 +7,4 @@ void ReadRectangle(Rectangle& rectangle);
 void DemoReadAndWriteRectangles();
 void Exchange(Rectangle& firstRectangle, Rectangle& secondRectangle);
 Rectangle* FindRectangle(Rectangle* rectangles, int count);
-void FindMaxRectangle(Rectangle* rectangles, int count);
+Rectangle* FindMaxRectangle(Rectangle* rectangles, int count);

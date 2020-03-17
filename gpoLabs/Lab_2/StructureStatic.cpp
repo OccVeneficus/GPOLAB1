@@ -1,4 +1,4 @@
-п»ї#include "StructureStatic.h"
+#include "StructureStatic.h"
 #include <iostream>
 #include "Flight.h"
 #include "Movie.h"
@@ -14,6 +14,8 @@ void DemoRectangle()
 	rectangle.Color = "Red";
 	rectangle.Length = 6.3;
 	rectangle.Width = 3.1;
+
+	//Проверяю кодировку
 
 	/*2.2.3.2*/
 	Rectangle rectangleKeyInput;

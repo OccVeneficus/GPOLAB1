@@ -41,7 +41,10 @@ void DemoReadAndWriteRectangles()
 	cout << "Rectangle with max length color " << maxLengthRectangle->Color <<
 		", size " << maxLengthRectangle->Length << 'x' << maxLengthRectangle->Width
 		<< endl;
-	FindMaxRectangle(arrayRectangle, 5);
+	Rectangle* maxSquareRectangle = FindMaxRectangle(arrayRectangle, 5);
+	cout << "Rectangle with max square color " << maxSquareRectangle->Color <<
+		", size " << maxSquareRectangle->Length << 'x' << maxSquareRectangle->Width
+		<< endl;
 	delete[] arrayRectangle;
 }
 
@@ -79,25 +82,18 @@ Rectangle* FindRectangle(Rectangle* rectangles, int count)
 }
 
 /*2.2.5.6*/
-void FindMaxRectangle(Rectangle* rectangles, int count)
+Rectangle* FindMaxRectangle(Rectangle* rectangles, int count)
 {
 	//TODO: аналогично замечанию выше
-	Rectangle maxSquareRectangle;
-	maxSquareRectangle.Color = rectangles[0].Color;
-	maxSquareRectangle.Length = rectangles[0].Length;
-	maxSquareRectangle.Width = rectangles[0].Width;
+	Rectangle *maxSquareRectangle = &rectangles[0];
 	for (int i = 0; i < count; i++)
 	{
-		if ((rectangles[i].Length * rectangles[i].Width) > (maxSquareRectangle.Length
-			* maxSquareRectangle.Width))
+		if ((rectangles[i].Length * rectangles[i].Width) > (maxSquareRectangle->Length
+			* maxSquareRectangle->Width))
 		{
-			maxSquareRectangle.Color = rectangles[i].Color;
-			maxSquareRectangle.Length = rectangles[i].Length;
-			maxSquareRectangle.Width = rectangles[i].Width;
+			maxSquareRectangle = &rectangles[i];
 		}
 	}
-	cout << "Rectangle with max square color " << maxSquareRectangle.Color <<
-		", size " << maxSquareRectangle.Length << 'x' << maxSquareRectangle.Width
-		<< endl;
+	return maxSquareRectangle;
 }
 

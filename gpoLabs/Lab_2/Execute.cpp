@@ -35,5 +35,10 @@ void Lab_2()
 	system("pause");
 	cout << endl << "Done. " << endl;
 	//TODO: каждая переменная должна удаляться в своей строке, аналогично объявлению
-	delete testMovie, testFlight, testTime, copiedMovie, copiedFlight, copiedTime;
+	delete testMovie;
+	delete testFlight;
+	delete 	testTime;
+	delete copiedMovie;
+	delete copiedFlight;
+	delete copiedTime;
 }

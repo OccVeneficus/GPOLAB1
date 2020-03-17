@@ -186,6 +186,7 @@
     <ClInclude Include="Lab_1\Tasks\FirstLabTasks.h" />
     <ClInclude Include="Lab_2\Circle.h" />
     <ClInclude Include="Lab_2\Color.h" />
+    <ClInclude Include="Lab_2\Contact.h" />
     <ClInclude Include="Lab_2\Enums.h" />
     <ClInclude Include="Lab_2\Exceptions.h" />
     <ClInclude Include="Lab_2\Execute.h" />
@@ -195,11 +196,12 @@
     <ClInclude Include="Lab_2\PhoneCompany.h" />
     <ClInclude Include="Lab_2\Rectangle.h" />
     <ClInclude Include="Lab_2\Season.h" />
+    <ClInclude Include="Lab_2\Song.h" />
     <ClInclude Include="Lab_2\StructureDynamic.h" />
     <ClInclude Include="Lab_2\StructureFunction.h" />
     <ClInclude Include="Lab_2\StructureStatic.h" />
     <ClInclude Include="Lab_2\StudyType.h" />
-    <ClInclude Include="Lab_2\Task_2.2.2.2.h" />
+    <ClInclude Include="Lab_2\Subject.h" />
     <ClInclude Include="Lab_2\Time.h" />
     <ClInclude Include="Lab_2\WeekDay.h" />
   </ItemGroup>
