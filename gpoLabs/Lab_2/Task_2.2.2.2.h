@@ -14,7 +14,7 @@ struct Song
 {
 	string Album;
 	string Name;
-	int DurationSeconds; //TODO: Единицы измерения лучше писать в конце - так реально удобнее пользоваться автодополнением
+	int DurationSeconds;
 };
 
 struct Subject
@@ -22,5 +22,5 @@ struct Subject
 	string Name;
 	int StudyHours;
 	string LecturerName;
-	short int Mark; //TODO: Переименовать в Mark. Score - это очки в игре
+	short int Mark;
 };

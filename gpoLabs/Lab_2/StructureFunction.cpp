@@ -65,7 +65,6 @@ void Exchange(Rectangle& firstRectangle, Rectangle& secondRectangle)
 /*2.2.5.5*/
 Rectangle* FindRectangle(Rectangle* rectangles, int count)
 {
-	//TODO: поменять на указатель, вернуть указатель из функции, cout перенести в DemoReadAndWriteRectangles()
 	Rectangle* maxLengthRectangle = &rectangles[0];
 	for (int i = 0; i < count; i++)
 	{

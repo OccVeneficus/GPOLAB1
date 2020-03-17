@@ -11,7 +11,6 @@ Flight* MakeFlight(string departure, string arrival, int MinutesFlightTime)
 
 Flight* CopyFlight(Flight* flight)
 {
-	//TODO: заменить на вызов функции-конструктора 
 	Flight* copiedFlight = new Flight;
 	return copiedFlight = MakeFlight(flight->Departure, flight->Arrival, flight->MinutesFlightTime);
 }

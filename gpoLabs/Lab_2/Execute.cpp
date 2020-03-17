@@ -20,7 +20,6 @@ void Lab_2()
 	system("pause");
 	cout << endl << "Tasks 2.2.7.1-3." << endl;
 	DemoCircle();
-	//TODO: все объекты ниже создаются динамически. Значит, здесь в конце функции надо освобождать память
 	Movie* testMovie = MakeMovie("Test", 233, 2011, Horror, 4.5);
 	Flight* testFlight = MakeFlight("Moscow", "Tegeran", 235);
 	Time* testTime = MakeTime(12, 43, 33);
@@ -35,5 +34,6 @@ void Lab_2()
 	DemoMovieWithGenre();
 	system("pause");
 	cout << endl << "Done. " << endl;
+	//TODO: каждая переменная должна удаляться в своей строке, аналогично объявлению
 	delete testMovie, testFlight, testTime, copiedMovie, copiedFlight, copiedTime;
 }

@@ -15,7 +15,6 @@ Movie* MakeMovie(string name, int durationMinutes, int year,
 
 Movie* CopyMovie(Movie* movie)
 {
-	//TODO: заменить на вызов функции-конструктора
 	Movie* copiedMovie = new Movie;
 	return copiedMovie = MakeMovie(movie->Name, movie->DurationMinutes,
 		movie->Year, movie->Genre, movie->Rating);

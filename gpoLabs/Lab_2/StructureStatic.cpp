@@ -24,7 +24,6 @@ void DemoRectangle()
 	cin >> rectangleKeyInput.Length;
 	cout << "Enter width: ";
 	cin >> rectangleKeyInput.Width;
-	//TODO: комментарий зашакалился. Точно установил сохранение в unicode в студии? Пересохранил файлы с новой кодировкой?
 	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	cout << "Rectangle color " << rectangleKeyInput.Color <<
 		", size: " << rectangleKeyInput.Length << 'x' <<

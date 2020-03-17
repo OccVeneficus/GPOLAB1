@@ -52,8 +52,6 @@ void DemoDynamicFlights()
 /*2.2.6.3*/
 Flight* FindShortestFlight(Flight* flights, int count)
 {
-	//TODO: может вместо копирования по полям использовать указатель?
-	//TODO: сделай возврат указателя из функции, а вывод на экран перенеси в DemoDynamicFligths() - следует разделять бизнес-логику и пользовательский интерфейс
 	Flight *shortestFlight = &flights[0];
 	for (int i = 0; i < count; i++)
 	{

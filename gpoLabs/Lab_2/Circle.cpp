@@ -14,7 +14,6 @@ Circle* MakeCircle(double x, double y, double radius, string color)
 Circle* CopyCircle(Circle* circle)
 {
 	Circle* copiedCircle = new Circle;
-	//TODO: заменить на вызов функции-конструктора.
 	return copiedCircle = MakeCircle(circle->X, circle->Y, circle->Radius, circle->Color);
 }
 

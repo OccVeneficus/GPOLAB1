@@ -7,13 +7,13 @@ using namespace std;
 struct Movie
 {
 	string Name;
-	int DurationMinutes; //TODO: единицы измерения лучше в конце - пользоваться автодополнением удобнее
+	int DurationMinutes;
 	int Year;
 	Genre Genre;
 	double Rating;
 
 };
 
-Movie* MakeMovie(string name, int DurationMinutes, int year, //TODO: не забыть переименовать здесь
+Movie* MakeMovie(string name, int DurationMinutes, int year,
 	Genre genre, double rating);
 Movie* CopyMovie(Movie* movie);

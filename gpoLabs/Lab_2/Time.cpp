@@ -11,7 +11,6 @@ Time* MakeTime(int hours, int minutes, int seconds)
 
 Time* CopyTime(Time* time)
 {
-	//TODO: заменить на вызов функции-конструктора
 	Time* copiedTime = new Time;
 	return copiedTime = MakeTime(time->Hours, time->Minutes, time->Seconds);
 }
