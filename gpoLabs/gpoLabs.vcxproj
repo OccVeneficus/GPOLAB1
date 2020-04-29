@@ -177,6 +177,9 @@
     <ClCompile Include="Lab_2\StructureFunction.cpp" />
     <ClCompile Include="Lab_2\StructureStatic.cpp" />
     <ClCompile Include="Lab_2\Time.cpp" />
+    <ClCompile Include="Lab_3\Book.cpp" />
+    <ClCompile Include="Lab_3\cRectangle.cpp" />
+    <ClCompile Include="Lab_3\Lab3_execute.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -204,6 +207,9 @@
     <ClInclude Include="Lab_2\Subject.h" />
     <ClInclude Include="Lab_2\Time.h" />
     <ClInclude Include="Lab_2\WeekDay.h" />
+    <ClInclude Include="Lab_3\Book.h" />
+    <ClInclude Include="Lab_3\cRectangle.h" />
+    <ClInclude Include="Lab_3\Lab3_execute.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

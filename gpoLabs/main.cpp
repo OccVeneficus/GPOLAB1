@@ -1,7 +1,7 @@
 #include "Common/ConsoleOutput/ConsoleOutput.h"
 #include "Common/InputChecking/IntegerReading.h"
 #include "Common/Consts/Consts.h"
-
+#include "Lab_3/Lab3_execute.h"
 using namespace std;
 
 int main()
@@ -27,6 +27,7 @@ int main()
 			}
 			case 3:
 			{
+				Lab3();
 				break;
 			}
 			case 4:

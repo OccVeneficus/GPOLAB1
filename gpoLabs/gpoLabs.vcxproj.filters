@@ -37,9 +37,6 @@
     <Filter Include="Source Files\Common\InputChecking">
       <UniqueIdentifier>{e42bafda-bcd8-4e3e-bb55-6a101ba22bed}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Common\InputChecking\Integer">
-      <UniqueIdentifier>{0d1148cc-5dcd-46b0-96db-9a686ecb2e1b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Common">
       <UniqueIdentifier>{ba6db669-7eeb-4898-b830-d5294cb01494}</UniqueIdentifier>
     </Filter>
@@ -58,11 +55,14 @@
     <Filter Include="Source Files\Lab_2">
       <UniqueIdentifier>{475feb16-8d5b-42a8-91ac-107f323fd82f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Lab_3">
+      <UniqueIdentifier>{425e4916-b45f-4cd5-8b47-28ece21812cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lab_3">
+      <UniqueIdentifier>{0d6cd3e9-2017-4c03-bca8-64ba0e326443}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Common\InputChecking\IntegerReading.cpp">
-      <Filter>Source Files\Common\InputChecking\Integer</Filter>
-    </ClCompile>
     <ClCompile Include="Common\ConsoleOutput\ConsoleOutput.cpp">
       <Filter>Source Files\Common\Output\Console</Filter>
     </ClCompile>
@@ -177,6 +177,18 @@
     <ClCompile Include="Lab_2\Time.cpp">
       <Filter>Source Files\Lab_2</Filter>
     </ClCompile>
+    <ClCompile Include="Lab_3\cRectangle.cpp">
+      <Filter>Source Files\Lab_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_3\Book.cpp">
+      <Filter>Source Files\Lab_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_3\Lab3_execute.cpp">
+      <Filter>Source Files\Lab_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\InputChecking\IntegerReading.cpp">
+      <Filter>Source Files\Common\InputChecking</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Consts\Consts.h">
@@ -250,6 +262,15 @@
     </ClInclude>
     <ClInclude Include="Lab_2\Subject.h">
       <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_3\cRectangle.h">
+      <Filter>Header Files\Lab_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_3\Book.h">
+      <Filter>Header Files\Lab_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_3\Lab3_execute.h">
+      <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

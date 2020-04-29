@@ -2,7 +2,7 @@
 
 using namespace std;
 
-bool CheckForInteger(string value)
+bool CheckForNumber(string value)
 {
 	int size = value.length();
 	if (isdigit((unsigned char)value[0]) || (unsigned char)value[0] == '-')
@@ -21,42 +21,19 @@ bool CheckForInteger(string value)
 	}
 }
 
-int ReadValue()
-{
-	string inputValue;
-	int outputValue;
-	while (true)
-	{
-		getline(cin, inputValue);
-		bool intCheckFlag = CheckForInteger(inputValue);
-		istringstream inputStringStream(inputValue);
-		int number;
-		inputStringStream >> number;
-		if (intCheckFlag == false || inputStringStream.fail())
-		{
-			cout << endl << "Wrong input, try again.You can use only integer:";
-			inputValue.clear();
-		}
-		else
-		{
-			outputValue = stoi(inputValue);
-			return outputValue;
-		}
-	}
-}
+
 
 void GetMenuItem(int& menuItem, int bottomIndex, int topIndex)
 {
 	if (bottomIndex >= topIndex)
 	{
-		//TODO: кидать строки (или инты) не хорошо. Лучше кидать эксепшены, так как тогда можно писать несколько блоков catch с учетом иерархии наследования эксепшенов друг от друга. Если надо, в четверг могу объяснить
 		throw exception("Error. topindex is less/equal than/to bottomIndex in GetMenuItem function.");
 	}
 	do
 	{
 		cout << "Enter value:";
-		menuItem = ReadValue();
+		menuItem = ReadValue<int>();
 		cout << endl;
 	} 
-	while (menuItem > topIndex || menuItem < bottomIndex);
+	while (!CheckRange(menuItem, bottomIndex, topIndex));
 }
