@@ -1,21 +1,12 @@
 #include "Book.h"
 
-Book::Book()
-{
-}
-
 Book::Book(string name, short year, short pages, short
 	authorsCount, string* authors)
 {
-	this->_name = name;
-	this->_pages = pages;
-	this->_year = year;
-	this->_authorsCount = authorsCount;
-	this->_authors = new string[authorsCount];
-	for (int i = 0; i < authorsCount; i++)
-	{
-		this->_authors[i] = authors[i];
-	}
+	this->SetName(name);
+	this->SetPages(pages);
+	this->SetYear(year);
+	this->SetAuthors(authors, authorsCount);
 }
 
 Book::~Book()

@@ -15,7 +15,6 @@ private:
 	 string* _authors;
 
 public:
-	Book();
 	Book(string name, short year, short pages, short
 	authorsCount, string* authors);
 	~Book();

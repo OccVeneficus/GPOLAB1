@@ -6,4 +6,5 @@
 void Lab3();
 void DemoBook();
 void WriteBookInConsole(Book& book);
-void ReadBookFromConsole(Book& book);
+void ReadBookFromConsole(string& name, short& year, short& pages, short&
+	authorsCount, string*& authors);

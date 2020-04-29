@@ -7,8 +7,14 @@ void Lab3()
 
 void DemoBook()
 {
-	Book book;
-	ReadBookFromConsole(book);
+	string name;
+	short year;
+	short authorsCount;
+	short pages;
+	string* authors;
+	ReadBookFromConsole(name, year, pages, authorsCount, authors);
+	Book book(name, year, pages, authorsCount, authors);
+	WriteBookInConsole(book);
 	system("pause");
 }
 
@@ -24,28 +30,24 @@ void WriteBookInConsole(Book& book)
 	cout << "- " << book.GetPages() << "p." << endl;
 }
 
-void ReadBookFromConsole(Book& book)
+void ReadBookFromConsole(string& name, short& year, short& pages, short&
+	authorsCount, string*& authors)
 {
 	cout << "Enter book name:";
-	string name;
 	cin.clear();
 	getline(cin, name);
-	book.SetName(name);
 	cout << endl << "Input book year(from 1 to 2020):";
-	short year = ReadValueInRange(1, 2020);
-	book.SetYear(year);
+	year = ReadValueInRange(1, 2020);
 	cout << endl << "Input number of pages:";
-	short pages = ReadValueInRange(1, SHRT_MAX);
-	book.SetPages(pages);
+	pages = ReadValueInRange(1, SHRT_MAX);
 	cout << endl << "Input amount of book authors:";
-	short amountOfAuthors = ReadValueInRange(1, 10);
-	string* authors = new string[amountOfAuthors];
-	for (int i = 0; i < amountOfAuthors; i++)
+	authorsCount = ReadValueInRange(1, 10);
+	authors = new string[authorsCount];
+	for (int i = 0; i < authorsCount; i++)
 	{
 		cin.clear();
 		cout << "Enter author #" << i + 1 << ":";
 		getline(cin, authors[i]);
 		cout << endl;
 	}
-	book.SetAuthors(authors, amountOfAuthors);
 }
