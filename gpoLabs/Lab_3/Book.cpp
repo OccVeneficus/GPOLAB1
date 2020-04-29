@@ -1,5 +1,28 @@
 #include "Book.h"
 
+Book::Book()
+{
+	this->_authors = nullptr;
+}
+
+Book& Book::operator=(const Book& other)
+{
+	this->_authorsCount = other._authorsCount;
+	if (this->_authors != nullptr)
+	{
+		delete[] this->_authors;
+	}
+	this->_authors = new string[other._authorsCount];
+	for (int i = 0; i < other._authorsCount; i++)
+	{
+		this->_authors[i] = other._authors[i];
+	}
+	this->_year = other._year;
+	this->_pages = other._pages;
+	this->_name = other._name;
+	return *this;
+}
+
 Book::Book(string name, short year, short pages, short
 	authorsCount, string* authors)
 {
@@ -64,8 +87,6 @@ string* Book::GetAuthors()
 {
 	return this->_authors;
 }
-
-
 
 Book* Book::FindBookByAuthor(string author)
 {

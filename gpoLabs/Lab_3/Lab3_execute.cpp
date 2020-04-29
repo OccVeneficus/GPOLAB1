@@ -12,9 +12,17 @@ void DemoBook()
 	short authorsCount;
 	short pages;
 	string* authors;
-	ReadBookFromConsole(name, year, pages, authorsCount, authors);
-	Book book(name, year, pages, authorsCount, authors);
-	WriteBookInConsole(book);
+	Book* books = new Book[3];
+	for (int i = 0; i < 3; i++)
+	{
+		ReadBookFromConsole(name, year, pages, authorsCount, authors);
+		Book newBook(name, year, pages, authorsCount, authors);
+		books[i] = newBook;
+	}
+	for (int i = 0; i < 3; i++)
+	{
+		WriteBookInConsole(books[i]);
+	}
 	system("pause");
 }
 
