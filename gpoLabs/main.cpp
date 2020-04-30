@@ -9,7 +9,6 @@ int main()
 	int menuItem;
 	do
 	{
-		system("pause");
 		system("cls");
 		PrintMainMenuText();
 		GetMenuItem(menuItem, 0, 6);

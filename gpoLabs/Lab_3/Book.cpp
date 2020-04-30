@@ -88,7 +88,7 @@ string* Book::GetAuthors()
 	return this->_authors;
 }
 
-Book* Book::FindBookByAuthor(string author)
+Book* Book::FindAuthor(string author)
 {
 	for (int i = 0; i < this->_authorsCount; i++)
 	{

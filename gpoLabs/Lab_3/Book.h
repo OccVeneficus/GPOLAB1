@@ -33,6 +33,6 @@ public:
 	string& GetName();
 	string* GetAuthors();
 
-	Book* FindBookByAuthor(string author);
+	Book* FindAuthor(string author);
 };
 

@@ -33,10 +33,13 @@ T ReadValue()
 void GetMenuItem(int& menuItem, int bottomIndex, int topIndex);
 
 template <typename T>
-bool CheckRange(T value, T bottomValue, T topValue);
+bool CheckRange(T& value, T& bottomValue, T& topValue);
 
 template<typename T>
-inline bool CheckRange(T value, T bottomValue, T topValue)
+T ReadValueInRange(T bottomValue, T topValue);
+
+template<typename T>
+inline bool CheckRange(T& value, T& bottomValue, T& topValue)
 {
 	if (bottomValue >= topValue)
 	{
@@ -66,5 +69,3 @@ inline T ReadValueInRange(T bottomValue, T topValue)
 	return value;
 }
 
-template<typename T>
-T ReadValueInRange(T bottomValue, T topValue);

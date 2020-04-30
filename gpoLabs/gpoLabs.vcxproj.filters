@@ -189,6 +189,9 @@
     <ClCompile Include="Common\InputChecking\IntegerReading.cpp">
       <Filter>Source Files\Common\InputChecking</Filter>
     </ClCompile>
+    <ClCompile Include="Lab_3\Route.cpp">
+      <Filter>Source Files\Lab_3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Consts\Consts.h">
@@ -270,6 +273,9 @@
       <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
     <ClInclude Include="Lab_3\Lab3_execute.h">
+      <Filter>Header Files\Lab_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_3\Route.h">
       <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
   </ItemGroup>
