@@ -192,6 +192,9 @@
     <ClCompile Include="Lab_3\Route.cpp">
       <Filter>Source Files\Lab_3</Filter>
     </ClCompile>
+    <ClCompile Include="Lab_3\Point.cpp">
+      <Filter>Source Files\Lab_3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Consts\Consts.h">
@@ -276,6 +279,9 @@
       <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
     <ClInclude Include="Lab_3\Route.h">
+      <Filter>Header Files\Lab_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_3\Point.h">
       <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
   </ItemGroup>

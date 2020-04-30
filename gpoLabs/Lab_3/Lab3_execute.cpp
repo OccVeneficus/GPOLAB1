@@ -2,8 +2,12 @@
 
 void Lab3()
 {
+	cout << "Demo Book: " << endl;
 	DemoBook();
+	cout << "Demo Route: " << endl;
 	DemoRoute();
+	cout << "Demo Rectangle: " << endl;
+	DemoRectangleWithPoint();
 }
 
 void DemoBook()
@@ -175,4 +179,31 @@ Route* FindRouteByStop(Route* routes, int routesCount, string stopName)
 		}
 	}
 	return nullptr;
+}
+
+void DemoRectangleWithPoint()
+{
+	cRectangle* rectangles = new cRectangle[5];
+	rectangles[0] = cRectangle(11.2,21.6,&Point(-22.3,1.3));
+	rectangles[1] = cRectangle(11.6, 13.1, &Point(32.1, -33.3));
+	rectangles[2] = cRectangle(5.8, 2.3, &Point(0.5, 0));
+	rectangles[3] = cRectangle(10.1, 9.3, &Point(-32.5, 33.0));
+	rectangles[4] = cRectangle(13.3, 4.8, &Point(0, 100.1));
+	for (int i = 0; i < 5; i++ )
+	{
+		cout << "X = " << rectangles[i].GetCentre()->GetX() << "; Y = " <<
+			rectangles[i].GetCentre()->GetY() << "; Length = " <<
+			rectangles[i].Getlength() << "; Width = " <<
+			rectangles[i].GetWidth() << endl;
+	}
+	double sumX = 0;
+	double sumY = 0;
+	for (int i = 0; i < 5; i++)
+	{
+		sumX = sumX + rectangles[i].GetCentre()->GetX();
+		sumY = sumY + rectangles[i].GetCentre()->GetY();
+	}
+	cout << "Xcenter = " << sumX / 5 << "; Ycenter = " << sumY / 5;
+	delete[] rectangles;
+	system("pause");
 }

@@ -180,6 +180,7 @@
     <ClCompile Include="Lab_3\Book.cpp" />
     <ClCompile Include="Lab_3\cRectangle.cpp" />
     <ClCompile Include="Lab_3\Lab3_execute.cpp" />
+    <ClCompile Include="Lab_3\Point.cpp" />
     <ClCompile Include="Lab_3\Route.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -211,6 +212,7 @@
     <ClInclude Include="Lab_3\Book.h" />
     <ClInclude Include="Lab_3\cRectangle.h" />
     <ClInclude Include="Lab_3\Lab3_execute.h" />
+    <ClInclude Include="Lab_3\Point.h" />
     <ClInclude Include="Lab_3\Route.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
