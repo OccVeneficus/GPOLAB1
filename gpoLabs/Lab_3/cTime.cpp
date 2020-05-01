@@ -81,3 +81,17 @@ int cTime::GetMinute()
 {
 	return this->_minute;
 }
+
+bool cTime::operator<=(const cTime& other)
+{
+	if (this->_day <= other._day && this->_hour <= other._hour &&
+		this->_minute <= other._minute && this->_month <= other._month &&
+		this->_year <= other._year)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}

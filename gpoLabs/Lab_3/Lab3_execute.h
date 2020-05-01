@@ -2,6 +2,7 @@
 #include "Book.h"
 #include "Route.h"
 #include "cRectangle.h"
+#include "cFlight.h"
 #include "../Common/ConsoleOutput/ConsoleOutput.h"
 #include "../Common/InputChecking/IntegerReading.h"
 
@@ -20,3 +21,7 @@ void ReadRouteFromConsole(int& number, int& timeAvgMinutes, int& frequencyMinute
 Route* FindRouteByStop(Route* routes, int routesCount, string stopName);
 
 void DemoRectangleWithPoint();
+
+void DemoFlightWithTime();
+void WriteFlightToConsole(cFlight* flight);
+void WriteTimeToConsole(cTime* time);

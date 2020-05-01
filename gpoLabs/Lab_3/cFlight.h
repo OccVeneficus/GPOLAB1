@@ -17,6 +17,7 @@ private:
 public:
 	cFlight(int number, string pointOfDeparture, string pointOfArrival,
 		cTime* timeOfDeparture, cTime* timeOfArrival);
+	cFlight();
 
 	void SetNumber(int number);
 	void SetPointDeparture(string pointOfDeparture);

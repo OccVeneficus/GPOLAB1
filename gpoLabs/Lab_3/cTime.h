@@ -21,5 +21,7 @@ public:
 	int GetDay();
 	int GetHour();
 	int GetMinute();
+
+	bool operator <= (const cTime& other);
 };
 

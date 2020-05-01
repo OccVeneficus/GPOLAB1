@@ -9,6 +9,12 @@ cFlight::cFlight(int number, string pointOfDeparture, string pointOfArrival,
     SetTimesDepartureArrival(timeOfDeparture, timeOfArrival);
 }
 
+cFlight::cFlight()
+{
+    this->_timeOfArrival = nullptr;
+    this->_timeOfDeparture = nullptr;
+}
+
 void cFlight::SetNumber(int number)
 {
     this->_number = number;
@@ -26,7 +32,7 @@ void cFlight::SetPointOfArrival(string pointOfArrival)
 
 void cFlight::SetTimesDepartureArrival(cTime* timeOfDeparture, cTime* timeOfArrival)
 {
-    if (timeOfDeparture >= timeOfArrival)
+    if (*timeOfArrival <= *timeOfDeparture)
     {
         throw exception("Time of departure cant be bigger than time of arrival.");
     }

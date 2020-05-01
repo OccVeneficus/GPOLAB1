@@ -2,12 +2,14 @@
 
 void Lab3()
 {
-	cout << "Demo Book: " << endl;
-	DemoBook();
-	cout << "Demo Route: " << endl;
-	DemoRoute();
-	cout << "Demo Rectangle: " << endl;
-	DemoRectangleWithPoint();
+	//cout << "Demo Book: " << endl;
+	//DemoBook();
+	//cout << "Demo Route: " << endl;
+	//DemoRoute();
+	//cout << "Demo Rectangle: " << endl;
+	//DemoRectangleWithPoint();
+	cout << "Demo Flight: " << endl;
+	DemoFlightWithTime();
 }
 
 void DemoBook()
@@ -206,4 +208,39 @@ void DemoRectangleWithPoint()
 	cout << "Xcenter = " << sumX / 5 << "; Ycenter = " << sumY / 5;
 	delete[] rectangles;
 	system("pause");
+}
+
+void DemoFlightWithTime()
+{
+	cFlight* flights = new cFlight[5];
+	flights[0] = cFlight(rand()%9999999,"Tomsk","Moscow",
+		&cTime(2020,6,23,13,43), &cTime(2020,6,23,17,50));
+	flights[1] = cFlight(rand() % 9999999, "Sochi", "Ekaterinburg",
+		&cTime(2020, 5, 12, 3, 0), &cTime(2020, 5, 12, 5, 30));
+	flights[2] = cFlight(rand() % 9999999, "Petrozavodsk", "Moscow",
+		&cTime(2020, 12, 22, 15, 10), &cTime(2020, 12, 22, 17, 10));
+	flights[3] = cFlight(rand() % 9999999, "Novosibirsk", "Kaliningrad",
+		&cTime(2020, 3, 5, 0, 10), &cTime(2020, 3, 5, 5, 20));
+	flights[4] = cFlight(rand() % 9999999, "Abakan", "Tver",
+		&cTime(2020, 7, 7, 7, 7), &cTime(2020, 7, 7, 10, 17));
+	for (int i = 0; i < 5; i++)
+	{
+		WriteFlightToConsole(&flights[i]);
+	}
+}
+
+void WriteFlightToConsole(cFlight* flight)
+{
+	cout << flight->GetNumber() << " " << flight->GetPointOfDeparture() << " - "
+		<< flight->GetPointOfArrival() << " departure time ";
+	WriteTimeToConsole(flight->GetTimeOfDeparture());
+	cout << " arrival time ";
+	WriteTimeToConsole(flight->GetTimeOFArrival());
+	cout << endl;
+}
+
+void WriteTimeToConsole(cTime* time)
+{
+	cout << time->GetDay() << '.' << time->GetMonth() << '.' << time->GetYear() << ' '
+		<< time->GetHour() << ':' << time->GetMinute();
 }
