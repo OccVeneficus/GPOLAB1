@@ -1,7 +1,7 @@
 #include "cTime.h"
 #include <exception>
 
-using namespace std;
+using std::exception;
 
 cTime::cTime(int year, int month, int day, int hour, int minute)
 {
@@ -55,4 +55,29 @@ void cTime::SetMinute(int minute)
 		throw exception("Minutes must be in range from 0 to 60");
 	}
 	this->_minute = minute;
+}
+
+int cTime::GetYear()
+{
+	return this->_year;
+}
+
+int cTime::GetMonth()
+{
+	return this->_month;
+}
+
+int cTime::GetDay()
+{
+	return this->_day;
+}
+
+int cTime::GetHour()
+{
+	return this->_hour;
+}
+
+int cTime::GetMinute()
+{
+	return this->_minute;
 }

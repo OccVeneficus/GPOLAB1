@@ -15,5 +15,11 @@ public:
 	void SetDay(int day);
 	void SetHour(int hour);
 	void SetMinute(int minute);
+
+	int GetYear();
+	int GetMonth();
+	int GetDay();
+	int GetHour();
+	int GetMinute();
 };
 

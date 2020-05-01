@@ -178,6 +178,7 @@
     <ClCompile Include="Lab_2\StructureStatic.cpp" />
     <ClCompile Include="Lab_2\Time.cpp" />
     <ClCompile Include="Lab_3\Book.cpp" />
+    <ClCompile Include="Lab_3\cFlight.cpp" />
     <ClCompile Include="Lab_3\cRectangle.cpp" />
     <ClCompile Include="Lab_3\cTime.cpp" />
     <ClCompile Include="Lab_3\Lab3_execute.cpp" />
@@ -211,6 +212,7 @@
     <ClInclude Include="Lab_2\Time.h" />
     <ClInclude Include="Lab_2\WeekDay.h" />
     <ClInclude Include="Lab_3\Book.h" />
+    <ClInclude Include="Lab_3\cFlight.h" />
     <ClInclude Include="Lab_3\cRectangle.h" />
     <ClInclude Include="Lab_3\cTime.h" />
     <ClInclude Include="Lab_3\Lab3_execute.h" />
