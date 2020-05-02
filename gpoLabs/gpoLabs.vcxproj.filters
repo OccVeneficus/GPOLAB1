@@ -201,6 +201,18 @@
     <ClCompile Include="Lab_3\cFlight.cpp">
       <Filter>Source Files\Lab_3</Filter>
     </ClCompile>
+    <ClCompile Include="Lab_3\cAlbum.cpp">
+      <Filter>Source Files\Lab_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_3\cBand.cpp">
+      <Filter>Source Files\Lab_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_3\cSong.cpp">
+      <Filter>Source Files\Lab_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_3\sGenre.cpp">
+      <Filter>Source Files\Lab_3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Consts\Consts.h">
@@ -294,6 +306,18 @@
       <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
     <ClInclude Include="Lab_3\cFlight.h">
+      <Filter>Header Files\Lab_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_3\sGenre.h">
+      <Filter>Header Files\Lab_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_3\cSong.h">
+      <Filter>Header Files\Lab_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_3\cAlbum.h">
+      <Filter>Header Files\Lab_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_3\cBand.h">
       <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -178,12 +178,16 @@
     <ClCompile Include="Lab_2\StructureStatic.cpp" />
     <ClCompile Include="Lab_2\Time.cpp" />
     <ClCompile Include="Lab_3\Book.cpp" />
+    <ClCompile Include="Lab_3\cAlbum.cpp" />
+    <ClCompile Include="Lab_3\cBand.cpp" />
     <ClCompile Include="Lab_3\cFlight.cpp" />
     <ClCompile Include="Lab_3\cRectangle.cpp" />
+    <ClCompile Include="Lab_3\cSong.cpp" />
     <ClCompile Include="Lab_3\cTime.cpp" />
     <ClCompile Include="Lab_3\Lab3_execute.cpp" />
     <ClCompile Include="Lab_3\Point.cpp" />
     <ClCompile Include="Lab_3\Route.cpp" />
+    <ClCompile Include="Lab_3\sGenre.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -212,12 +216,16 @@
     <ClInclude Include="Lab_2\Time.h" />
     <ClInclude Include="Lab_2\WeekDay.h" />
     <ClInclude Include="Lab_3\Book.h" />
+    <ClInclude Include="Lab_3\cAlbum.h" />
+    <ClInclude Include="Lab_3\cBand.h" />
     <ClInclude Include="Lab_3\cFlight.h" />
     <ClInclude Include="Lab_3\cRectangle.h" />
+    <ClInclude Include="Lab_3\cSong.h" />
     <ClInclude Include="Lab_3\cTime.h" />
     <ClInclude Include="Lab_3\Lab3_execute.h" />
     <ClInclude Include="Lab_3\Point.h" />
     <ClInclude Include="Lab_3\Route.h" />
+    <ClInclude Include="Lab_3\sGenre.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Lab_3\ClassDiagram.cd" />
