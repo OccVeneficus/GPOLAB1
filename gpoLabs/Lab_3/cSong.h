@@ -11,6 +11,7 @@ private:
 	sGenre _genre;
 public:
 	cSong(int durationSeconds, string name, sGenre genre);
+	cSong();
 
 	int GetDurationSeconds();
 	string GetName();
@@ -18,6 +19,6 @@ public:
 
 	void SetDurationSeconds(int durationSeconds);
 	void SetName(string name);
-	void SetGenre(string genre);
+	void SetGenre(sGenre genre);
 };
 
