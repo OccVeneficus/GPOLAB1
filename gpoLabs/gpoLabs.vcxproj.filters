@@ -297,4 +297,7 @@
       <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Lab_3\ClassDiagram.cd" />
+  </ItemGroup>
 </Project>

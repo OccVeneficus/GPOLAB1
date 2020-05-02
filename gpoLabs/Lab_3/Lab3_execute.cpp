@@ -1,4 +1,5 @@
 #include "Lab3_execute.h"
+#include "../Common/Consts/Consts.h"
 
 void Lab3()
 {
@@ -216,7 +217,7 @@ void DemoFlightWithTime()
 	flights[0] = cFlight(rand()%9999999,"Tomsk","Moscow",
 		&cTime(2020,6,23,13,43), &cTime(2020,6,23,17,50));
 	flights[1] = cFlight(rand() % 9999999, "Sochi", "Ekaterinburg",
-		&cTime(2020, 5, 12, 3, 0), &cTime(2020, 5, 12, 5, 30));
+		&cTime(2020, 5, 12, 3, 0), &cTime(2020, 5, 13, 5, 30));
 	flights[2] = cFlight(rand() % 9999999, "Petrozavodsk", "Moscow",
 		&cTime(2020, 12, 22, 15, 10), &cTime(2020, 12, 22, 17, 10));
 	flights[3] = cFlight(rand() % 9999999, "Novosibirsk", "Kaliningrad",
@@ -226,21 +227,67 @@ void DemoFlightWithTime()
 	for (int i = 0; i < 5; i++)
 	{
 		WriteFlightToConsole(&flights[i]);
+		cout << endl;
 	}
+	cout << endl;
+	cout << "Flight ";
+	WriteFlightToConsole(&flights[1]);
+	cout << " time in flight: ";
+	WriteTimeToConsole(&GetFlightTimeMinutes(&flights[1]));
+	cout << endl;
+	system("pause");
 }
 
 void WriteFlightToConsole(cFlight* flight)
 {
 	cout << flight->GetNumber() << " " << flight->GetPointOfDeparture() << " - "
-		<< flight->GetPointOfArrival() << " departure time ";
+		<< flight->GetPointOfArrival() << " departure ";
 	WriteTimeToConsole(flight->GetTimeOfDeparture());
-	cout << " arrival time ";
+	cout << " arrival ";
 	WriteTimeToConsole(flight->GetTimeOFArrival());
-	cout << endl;
 }
 
 void WriteTimeToConsole(cTime* time)
 {
 	cout << time->GetDay() << '.' << time->GetMonth() << '.' << time->GetYear() << ' '
 		<< time->GetHour() << ':' << time->GetMinute();
+}
+
+cTime GetFlightTimeMinutes(cFlight* flight)
+{
+	cTime timeInFlight(0,0,0,0,0);
+	int days = flight->GetTimeOFArrival()->GetDay() - 
+		flight->GetTimeOfDeparture()->GetDay();
+	int hours = flight->GetTimeOFArrival()->GetHour() - 
+		flight->GetTimeOfDeparture()->GetHour();
+	int minutes = flight->GetTimeOFArrival()->GetMinute() - 
+		flight->GetTimeOfDeparture()->GetMinute();
+	if (days != 0)
+	{
+		hours = MAX_HOUR + hours;
+		minutes = MAX_MINUTES - minutes;
+		if (minutes >= MAX_MINUTES)
+		{
+			hours++;
+			minutes = minutes - 60;
+		}
+		if (hours >= MAX_HOUR)
+		{
+			days = 1;
+			hours = hours - MAX_HOUR;
+			timeInFlight.SetDay(days);
+			timeInFlight.SetHour(hours);
+			timeInFlight.SetMinute(minutes);
+			return timeInFlight;
+		}
+		timeInFlight.SetHour(hours);
+		timeInFlight.SetMinute(minutes);
+		return timeInFlight;
+	}
+	else
+	{
+		timeInFlight.SetHour(hours);
+		timeInFlight.SetMinute(minutes);
+		return timeInFlight;
+	}
 }

@@ -1,5 +1,6 @@
 #include "cTime.h"
 #include <exception>
+#include "../Common/Consts/Consts.h"
 
 using std::exception;
 
@@ -12,29 +13,33 @@ cTime::cTime(int year, int month, int day, int hour, int minute)
 	SetMinute(minute);
 }
 
+cTime::cTime()
+{
+}
+
 void cTime::SetYear(int year)
 {
-	if (year < 1 || year > 2020)
+	if (year < 0 || year > 2020)
 	{
-		throw exception("Year must be in range from 1 to 2020");
+		throw exception("Year must be in range from 0 to 2020");
 	}
 	this->_year = year;
 }
 
 void cTime::SetMonth(int month)
 {
-	if (month < 1 || month > 12)
+	if (month < 0 || month > 12)
 	{
-		throw exception("Month must be in range from 1 to 12");
+		throw exception("Month must be in range from 0 to 12");
 	}
 	this->_month = month;
 }
 
 void cTime::SetDay(int day)
 {
-	if (day < 1 || day > 30)
+	if (day < 0 || day > 30)
 	{
-		throw exception("Day must be in range from 1 to 30");
+		throw exception("Day must be in range from 0 to 30");
 	}
 	this->_day = day;
 }
@@ -95,3 +100,4 @@ bool cTime::operator<=(const cTime& other)
 		return false;
 	}
 }
+

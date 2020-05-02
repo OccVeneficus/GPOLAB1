@@ -7,8 +7,10 @@ private:
 	int _day;
 	int _hour;
 	int _minute;
+
 public:
 	cTime(int year,int month, int day,int hour, int minute);
+	cTime();
 
 	void SetYear(int year);
 	void SetMonth(int month);

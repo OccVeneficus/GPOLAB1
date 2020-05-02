@@ -25,3 +25,4 @@ void DemoRectangleWithPoint();
 void DemoFlightWithTime();
 void WriteFlightToConsole(cFlight* flight);
 void WriteTimeToConsole(cTime* time);
+cTime GetFlightTimeMinutes(cFlight* flight);

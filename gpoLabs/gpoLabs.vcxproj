@@ -219,6 +219,9 @@
     <ClInclude Include="Lab_3\Point.h" />
     <ClInclude Include="Lab_3\Route.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Lab_3\ClassDiagram.cd" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
