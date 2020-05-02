@@ -18,5 +18,7 @@ public:
 	string GetName();
 	string GetDescription();
 	cAlbum* GetAlbum();
+
+	cSong* FindSong(string songName);
 };
 

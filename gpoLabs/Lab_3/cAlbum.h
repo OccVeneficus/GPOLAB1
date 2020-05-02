@@ -20,5 +20,7 @@ public:
 	int GetYeat();
 	cSong* GetSong();
 	int GetSongCounter();
+
+	cSong* FindSong(string songName);
 };
 

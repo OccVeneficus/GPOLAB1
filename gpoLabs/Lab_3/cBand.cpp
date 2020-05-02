@@ -42,3 +42,17 @@ cAlbum* cBand::GetAlbum()
 {
 	return this->_album;
 }
+
+cSong* cBand::FindSong(string songName)
+{
+	cSong* song = nullptr;
+	for (int i = 0; i < this->_albumCount; i++)
+	{
+		song = this->_album[i].FindSong(songName);
+		if (song != nullptr)
+		{
+			return song;
+		}
+	}
+	return song;
+}

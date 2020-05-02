@@ -58,3 +58,15 @@ int cAlbum::GetSongCounter()
 {
 	return this->_songCount;
 }
+
+cSong* cAlbum::FindSong(string songName)
+{
+	for (int i = 0; i < this->_songCount; i++)
+	{
+		if (this->GetSong()[i].GetName() == songName)
+		{
+			return &this->GetSong()[i];
+		}
+	}
+	return nullptr;
+}
