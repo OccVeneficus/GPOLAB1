@@ -3,12 +3,15 @@
 
 void Lab3()
 {
-	//cout << "Demo Rectangle: " << endl;
-	//DemoRectangleWithPoint();
-	//cout << "Demo Route: " << endl;
-	//DemoRoute();
-	//cout << "Demo Flight: " << endl;
-	//DemoFlightWithTime();
+	cout << "Demo Rectangle: " << endl;
+	DemoRectangleWithPoint();
+	cout << endl << "_________________________________________________" << endl;
+	cout << "Demo Route: " << endl;
+	DemoRoute();
+	cout << endl << "_________________________________________________" << endl;
+	cout << "Demo Flight: " << endl;
+	DemoFlightWithTime();
+	cout << endl << "_________________________________________________" << endl;
 	cout << "DemoBand: " << endl;
 	DemoBand();
 }
@@ -151,8 +154,8 @@ void WriteRouteInCounsole(Route& route)
 		" min." << endl;
 }
 
-void ReadRouteFromConsole(int& number, int& timeAvgMinutes, int& frequencyMinutes,
-	int& stopsCount, string*& stops)
+void ReadRouteFromConsole(int& number, int& timeAvgMinutes,
+	int& frequencyMinutes, int& stopsCount, string*& stops)
 {
 	cout << "Enter route number (from 0 to 2 147 483 647): ";
 	number = ReadValueInRange<int>(0, INT_MAX);
@@ -235,12 +238,14 @@ void DemoFlightWithTime()
 	cout << " time in flight: ";
 	WriteTimeToConsole(&GetFlightTimeMinutes(&flights[1]));
 	cout << endl;
+	delete[] flights;
 	system("pause");
 }
 
 void WriteFlightToConsole(cFlight* flight)
 {
-	cout << flight->GetNumber() << " " << flight->GetPointOfDeparture() << " - "
+	cout << flight->GetNumber() << " " <<
+		flight->GetPointOfDeparture() << " - "
 		<< flight->GetPointOfArrival() << " departure ";
 	WriteTimeToConsole(flight->GetTimeOfDeparture());
 	cout << " arrival ";
@@ -249,8 +254,8 @@ void WriteFlightToConsole(cFlight* flight)
 
 void WriteTimeToConsole(cTime* time)
 {
-	cout << time->GetDay() << '.' << time->GetMonth() << '.' << time->GetYear() << ' '
-		<< time->GetHour() << ':' << time->GetMinute();
+	cout << time->GetDay() << '.' << time->GetMonth() << '.' << 
+		time->GetYear() << ' ' << time->GetHour() << ':' << time->GetMinute();
 }
 
 cTime GetFlightTimeMinutes(cFlight* flight)
@@ -299,16 +304,19 @@ void DemoBand()
 	songsFirst[1] = cSong(233, "Lesniik", Pop);
 	songsFirst[2] = cSong(343, "30 years", EDM);
 	songsFirst[3] = cSong(200, "Bomj", Country);
+
 	cSong* songsSecond = new cSong[5];
 	songsSecond[0] = cSong(413, "aids", EDM);
 	songsSecond[1] = cSong(213, "cancer", Techno);
 	songsSecond[2] = cSong(323, "cunt", Techno);
 	songsSecond[3] = cSong(223, "faggot", EDM);
 	songsSecond[4] = cSong(261, "urmom", Techno);
+
 	cSong* songsThird = new cSong[3];
 	songsThird[0] = cSong(232, "The", Pop);
 	songsThird[1] = cSong(241, "Back", Rock);
 	songsThird[2] = cSong(360, "Take", Country);
+
 	cAlbum* albums = new cAlbum[3];
 	albums[0].SetName("Cock");
 	albums[0].SetYear(1999);
@@ -334,6 +342,7 @@ void DemoBand()
 		WriteSongToConsole(allSongs[i]);
 		cout << endl;
 	}
+
 	cout << endl << "All rock songs: " << endl;
 	cSong** allGenreSongs = band.GetAllGenreSongs(songCount, Rock);
 	for (int i = 0; i < songCount; i++)
@@ -344,10 +353,14 @@ void DemoBand()
 
 	cout << "Searching track The: " << endl;
 	WriteSongToConsole(band.FindSong("The"));
+
 	cout << endl <<"Searching album with The: " << endl;
 	WriteAlbumToConsole(band.FindAlbum("The"));
 	cout << endl;
 
+	delete[] songsFirst;
+	delete[] songsSecond;
+	delete[] songsThird;
 	system("pause");
 }
 

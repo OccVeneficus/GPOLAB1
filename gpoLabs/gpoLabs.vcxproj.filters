@@ -322,6 +322,8 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Lab_3\ClassDiagram.cd" />
+    <None Include="Lab_3\ClassDiagram.cd">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

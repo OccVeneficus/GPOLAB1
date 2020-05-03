@@ -8,6 +8,7 @@ private:
 	int _year;
 	cSong* _song;
 	int _songCount;
+
 public:
 	cAlbum(string name, int year, cSong* song, int songCount);
 	cAlbum();

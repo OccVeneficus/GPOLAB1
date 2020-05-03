@@ -6,6 +6,7 @@ private:
 	double _length;
 	double _width;
 	Point* _centre;
+
 public:
 	cRectangle();
 	cRectangle(double length, double width, Point* centre);

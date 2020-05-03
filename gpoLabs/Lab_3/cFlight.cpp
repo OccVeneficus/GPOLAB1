@@ -30,7 +30,8 @@ void cFlight::SetPointOfArrival(string pointOfArrival)
     this->_pointOfArrival = pointOfArrival;
 }
 
-void cFlight::SetTimesDepartureArrival(cTime* timeOfDeparture, cTime* timeOfArrival)
+void cFlight::SetTimesDepartureArrival(cTime* timeOfDeparture,
+    cTime* timeOfArrival)
 {
     if (*timeOfArrival <= *timeOfDeparture)
     {
