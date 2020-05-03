@@ -85,7 +85,6 @@
   <Class Name="cSong">
     <Position X="5" Y="4.5" Width="1.5" />
     <Members>
-      <Method Name="~cSong" Hidden="true" />
       <Method Name="cSong" Hidden="true" />
       <Method Name="GetDurationSeconds" Hidden="true" />
       <Method Name="GetGenre" Hidden="true" />
@@ -95,7 +94,7 @@
       <Method Name="SetName" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>CACAIAAAAEAAAAAAAAAAABAAAAAIACAAAAAA0AAABAA=</HashCode>
+      <HashCode>CACAIAAAAEAAAAAAAAAAABAAAAAIACAAAAAAwAAABAA=</HashCode>
       <FileName>Lab_3\cSong.h</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

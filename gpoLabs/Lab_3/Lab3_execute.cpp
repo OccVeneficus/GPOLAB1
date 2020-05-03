@@ -306,11 +306,11 @@ void DemoBand()
 	songsFirst[3] = cSong(200, "Bomj", Country);
 
 	cSong* songsSecond = new cSong[5];
-	songsSecond[0] = cSong(413, "aids", EDM);
-	songsSecond[1] = cSong(213, "cancer", Techno);
-	songsSecond[2] = cSong(323, "cunt", Techno);
-	songsSecond[3] = cSong(223, "faggot", EDM);
-	songsSecond[4] = cSong(261, "urmom", Techno);
+	songsSecond[0] = cSong(413, "Cake", EDM);
+	songsSecond[1] = cSong(213, "Step", Techno);
+	songsSecond[2] = cSong(323, "Dont", Techno);
+	songsSecond[3] = cSong(223, "facebook", EDM);
+	songsSecond[4] = cSong(261, "last stand", Techno);
 
 	cSong* songsThird = new cSong[3];
 	songsThird[0] = cSong(232, "The", Pop);
@@ -318,19 +318,19 @@ void DemoBand()
 	songsThird[2] = cSong(360, "Take", Country);
 
 	cAlbum* albums = new cAlbum[3];
-	albums[0].SetName("Cock");
+	albums[0].SetName("Mass");
 	albums[0].SetYear(1999);
 	albums[0].SetSong(songsFirst, 4);
 
-	albums[1].SetName("And");
+	albums[1].SetName("Afterlife");
 	albums[1].SetYear(2001);
 	albums[1].SetSong(songsSecond, 5);
 
-	albums[2].SetName("Ball");
+	albums[2].SetName("Effect");
 	albums[2].SetYear(2019);
 	albums[2].SetSong(songsThird, 3);
 
-	cBand band("CBT","ADfqdswdsc",albums,3);
+	cBand band("Cerberus","Sample_text",albums,3);
 	
 	WriteBandInfoToConsole(&band);
 
@@ -351,7 +351,7 @@ void DemoBand()
 		cout << endl;
 	}
 
-	cout << "Searching track The: " << endl;
+	cout << endl << "Searching track The: " << endl;
 	WriteSongToConsole(band.FindSong("The"));
 
 	cout << endl <<"Searching album with The: " << endl;
