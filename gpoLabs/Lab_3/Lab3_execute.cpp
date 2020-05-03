@@ -331,10 +331,24 @@ void DemoBand()
 	cSong** allSongs = band.GetAllSongs(songCount);
 	for (int i = 0; i < songCount; i++)
 	{
-		cout << "\"" << allSongs[i]->GetName() << "\"" << " genre ";
-		WriteSongGenreToConsole(allSongs[i]->GetGenre());
-		cout << " duration:" << allSongs[i]->GetDurationSeconds() << endl;
+		WriteSongToConsole(allSongs[i]);
+		cout << endl;
 	}
+	cout << endl << "All rock songs: " << endl;
+	cSong** allGenreSongs = band.GetAllGenreSongs(songCount, Rock);
+	for (int i = 0; i < songCount; i++)
+	{
+		WriteSongToConsole(allGenreSongs[i]);
+		cout << endl;
+	}
+
+	cout << "Searching track The: " << endl;
+	WriteSongToConsole(band.FindSong("The"));
+	cout << endl <<"Searching album with The: " << endl;
+	WriteAlbumToConsole(band.FindAlbum("The"));
+	cout << endl;
+
+	system("pause");
 }
 
 void WriteBandInfoToConsole(cBand* band)
@@ -342,21 +356,32 @@ void WriteBandInfoToConsole(cBand* band)
 	cout << "Band " << band->GetName() << endl;
 	for (int i = 0; i < band->GetAlbumCount(); i++)
 	{
-		cout << "Album ";
-		cout << band->GetAlbum()[i].GetName();
-		cout << endl <<"Song list " << endl;
-		WriteSongsToConsole(band->GetAlbum()[i].GetSong(),
-			band->GetAlbum()[i].GetSongCounter());
-		cout << endl;
+		WriteAlbumToConsole(&band->GetAlbum()[i]);
 	}
+}
+
+void WriteSongToConsole(cSong* song)
+{
+	cout << "\"" << song->GetName() << "\"" << " genre ";
+	WriteSongGenreToConsole(song->GetGenre());
+	cout << " duration:" << song->GetDurationSeconds();
 }
 
 void WriteSongsToConsole(cSong* song, int songCount)
 {
 	for (int i = 0; i < songCount; i++)
 	{
-		cout << "\"" << song[i].GetName() << "\"" << " genre ";
-		WriteSongGenreToConsole( song[i].GetGenre());
-		cout << " duration:" << song[i].GetDurationSeconds() << endl;
+		WriteSongToConsole(&song[i]);
+		cout << endl;
 	}
+}
+
+void WriteAlbumToConsole(cAlbum* album)
+{
+	cout << "Album ";
+	cout << album->GetName();
+	cout << endl << "Song list " << endl;
+	WriteSongsToConsole(album->GetSong(),
+		album->GetSongCounter());
+	cout << endl;
 }

@@ -104,3 +104,34 @@ cSong** cBand::GetAllSongs(int& songCount)
 	return allSongs;
 }
 
+cSong** cBand::GetAllGenreSongs(int& songCount, sGenre genre)
+{
+	songCount = 0;
+	for (int i = 0; i < this->_albumCount; i++)
+	{
+		for (int j = 0; j < this->_album[i].GetSongCounter(); j++)
+		{
+			if (this->_album[i].GetSong()[j].GetGenre() == genre)
+			{
+				songCount++;
+			}
+		}
+	}
+	cSong** allGenreSongs = new cSong * [songCount];
+	int j = 0;
+	for (int i = 0; i < this->_albumCount; i++)
+	{
+		int k = 0;
+		while (k != this->_album[i].GetSongCounter())
+		{
+			if (this->_album[i].GetSong()[k].GetGenre() == genre)
+			{
+				allGenreSongs[j] = &this->_album[i].GetSong()[k];
+				j++;
+			}
+			k++;
+		}
+	}
+	return allGenreSongs;
+}
+

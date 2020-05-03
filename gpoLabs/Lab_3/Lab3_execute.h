@@ -30,4 +30,6 @@ cTime GetFlightTimeMinutes(cFlight* flight);
 
 void DemoBand();
 void WriteBandInfoToConsole(cBand* band);
+void WriteSongToConsole(cSong* song);
 void WriteSongsToConsole(cSong* song, int songCount);
+void WriteAlbumToConsole(cAlbum* album);

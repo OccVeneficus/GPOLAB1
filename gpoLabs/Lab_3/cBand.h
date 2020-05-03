@@ -24,5 +24,6 @@ public:
 	cSong* FindSong(string name);
 	cAlbum* FindAlbum(string name);
 	cSong** GetAllSongs(int& songCount);
+	cSong** GetAllGenreSongs(int& songCount, sGenre genre);
 };
 
