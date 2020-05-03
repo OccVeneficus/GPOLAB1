@@ -12,6 +12,7 @@ private:
 public:
 	cSong(int durationSeconds, string name, sGenre genre);
 	cSong();
+	~cSong() {};
 
 	int GetDurationSeconds();
 	string GetName();

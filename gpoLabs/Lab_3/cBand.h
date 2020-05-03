@@ -10,6 +10,7 @@ private:
 	int _albumCount;
 public:
 	cBand(string name, string description, cAlbum* album, int albumCount);
+	~cBand();
 
 	void SetName(string name);
 	void SetDescription(string description);
@@ -18,7 +19,10 @@ public:
 	string GetName();
 	string GetDescription();
 	cAlbum* GetAlbum();
+	int GetAlbumCount();
 
-	cSong* FindSong(string songName);
+	cSong* FindSong(string name);
+	cAlbum* FindAlbum(string name);
+	cSong** GetAllSongs(int& songCount);
 };
 

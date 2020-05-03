@@ -3,14 +3,14 @@
 
 void Lab3()
 {
-	//cout << "Demo Book: " << endl;
-	//DemoBook();
-	//cout << "Demo Route: " << endl;
-	//DemoRoute();
 	//cout << "Demo Rectangle: " << endl;
 	//DemoRectangleWithPoint();
-	cout << "Demo Flight: " << endl;
-	DemoFlightWithTime();
+	//cout << "Demo Route: " << endl;
+	//DemoRoute();
+	//cout << "Demo Flight: " << endl;
+	//DemoFlightWithTime();
+	cout << "DemoBand: " << endl;
+	DemoBand();
 }
 
 void DemoBook()
@@ -289,5 +289,74 @@ cTime GetFlightTimeMinutes(cFlight* flight)
 		timeInFlight.SetHour(hours);
 		timeInFlight.SetMinute(minutes);
 		return timeInFlight;
+	}
+}
+
+void DemoBand()
+{
+	cSong* songsFirst = new cSong[4];
+	songsFirst[0] = cSong(123, "Banya", Rock);
+	songsFirst[1] = cSong(233, "Lesniik", Pop);
+	songsFirst[2] = cSong(343, "30 years", EDM);
+	songsFirst[3] = cSong(200, "Bomj", Country);
+	cSong* songsSecond = new cSong[5];
+	songsSecond[0] = cSong(413, "aids", EDM);
+	songsSecond[1] = cSong(213, "cancer", Techno);
+	songsSecond[2] = cSong(323, "cunt", Techno);
+	songsSecond[3] = cSong(223, "faggot", EDM);
+	songsSecond[4] = cSong(261, "urmom", Techno);
+	cSong* songsThird = new cSong[3];
+	songsThird[0] = cSong(232, "The", Pop);
+	songsThird[1] = cSong(241, "Back", Rock);
+	songsThird[2] = cSong(360, "Take", Country);
+	cAlbum* albums = new cAlbum[3];
+	albums[0].SetName("Cock");
+	albums[0].SetYear(1999);
+	albums[0].SetSong(songsFirst, 4);
+
+	albums[1].SetName("And");
+	albums[1].SetYear(2001);
+	albums[1].SetSong(songsSecond, 5);
+
+	albums[2].SetName("Ball");
+	albums[2].SetYear(2019);
+	albums[2].SetSong(songsThird, 3);
+
+	cBand band("CBT","ADfqdswdsc",albums,3);
+	
+	WriteBandInfoToConsole(&band);
+
+	int songCount = 0;
+	cout << endl << "All songs:" << endl;
+	cSong** allSongs = band.GetAllSongs(songCount);
+	for (int i = 0; i < songCount; i++)
+	{
+		cout << "\"" << allSongs[i]->GetName() << "\"" << " genre ";
+		WriteSongGenreToConsole(allSongs[i]->GetGenre());
+		cout << " duration:" << allSongs[i]->GetDurationSeconds() << endl;
+	}
+}
+
+void WriteBandInfoToConsole(cBand* band)
+{
+	cout << "Band " << band->GetName() << endl;
+	for (int i = 0; i < band->GetAlbumCount(); i++)
+	{
+		cout << "Album ";
+		cout << band->GetAlbum()[i].GetName();
+		cout << endl <<"Song list " << endl;
+		WriteSongsToConsole(band->GetAlbum()[i].GetSong(),
+			band->GetAlbum()[i].GetSongCounter());
+		cout << endl;
+	}
+}
+
+void WriteSongsToConsole(cSong* song, int songCount)
+{
+	for (int i = 0; i < songCount; i++)
+	{
+		cout << "\"" << song[i].GetName() << "\"" << " genre ";
+		WriteSongGenreToConsole( song[i].GetGenre());
+		cout << " duration:" << song[i].GetDurationSeconds() << endl;
 	}
 }

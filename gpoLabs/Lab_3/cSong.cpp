@@ -5,6 +5,9 @@ using std::exception;
 
 cSong::cSong(int durationSeconds, string name, sGenre genre)
 {
+	this->SetDurationSeconds(durationSeconds);
+	this->SetName(name);
+	this->SetGenre(genre);
 }
 
 cSong::cSong()

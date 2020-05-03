@@ -5,14 +5,19 @@ using std::exception;
 
 cAlbum::cAlbum(string name, int year, cSong* song, int songCount)
 {
-	SetName(name);
-	SetYear(year);
-	SetSong(song, songCount);
+	this->SetName(name);
+	this->SetYear(year);
+	this->SetSong(song, songCount);
 }
 
 cAlbum::cAlbum()
 {
-	this->_song = nullptr;
+	this->SetSong(nullptr,0);
+}
+
+cAlbum::~cAlbum()
+{
+	delete[] this->_song;
 }
 
 void cAlbum::SetName(string name)
@@ -26,11 +31,11 @@ void cAlbum::SetYear(int year)
 	{
 		throw exception("Year must be in range from 0 to 2020.");
 	}
+	this->_year = year;
 }
 
 void cAlbum::SetSong(cSong* song, int songCounter)
 {
-	delete[] this->_song;
 	this->_song = new cSong[songCounter];
 	this->_songCount = songCounter;
 	for (int i = 0; i < songCounter; i++)

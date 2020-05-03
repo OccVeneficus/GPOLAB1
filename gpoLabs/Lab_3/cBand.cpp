@@ -2,9 +2,14 @@
 
 cBand::cBand(string name, string description, cAlbum* album, int albumCount)
 {
-	SetName(name);
-	SetDescription(description);
-	SetAlbum(album, albumCount);
+	this->SetName(name);
+	this->SetDescription(description);
+	this->SetAlbum(album, albumCount);
+}
+
+cBand::~cBand()
+{
+	delete[] this->_album;
 }
 
 void cBand::SetName(string name)
@@ -19,7 +24,10 @@ void cBand::SetDescription(string description)
 
 void cBand::SetAlbum(cAlbum* album, int albumCount)
 {
-	delete[] this->_album;
+	if (this->_album != nullptr)
+	{
+		delete[] this->_album;
+	}
 	this->_album = new cAlbum[albumCount];
 	for (int i = 0; i < albumCount; i++)
 	{
@@ -43,12 +51,17 @@ cAlbum* cBand::GetAlbum()
 	return this->_album;
 }
 
-cSong* cBand::FindSong(string songName)
+int cBand::GetAlbumCount()
+{
+	return this->_albumCount;
+}
+
+cSong* cBand::FindSong(string name)
 {
 	cSong* song = nullptr;
 	for (int i = 0; i < this->_albumCount; i++)
 	{
-		song = this->_album[i].FindSong(songName);
+		song = this->_album[i].FindSong(name);
 		if (song != nullptr)
 		{
 			return song;
@@ -56,3 +69,38 @@ cSong* cBand::FindSong(string songName)
 	}
 	return song;
 }
+
+cAlbum* cBand::FindAlbum(string name)
+{
+	for (int i = 0; i < this->_albumCount; i++)
+	{
+		if (this->_album[i].FindSong(name) != nullptr)
+		{
+			return &this->_album[i];
+		}
+	}
+	return nullptr;
+}
+
+cSong** cBand::GetAllSongs(int& songCount)
+{
+	songCount = 0;
+	for (int i = 0; i < this->_albumCount; i++)
+	{
+		songCount = songCount + this->_album[i].GetSongCounter();
+	}
+	cSong** allSongs = new cSong*[songCount];
+	int j = 0;
+	for (int i = 0; i < this->_albumCount; i++)
+	{
+		int k = 0;
+		while (k != this->_album[i].GetSongCounter())
+		{
+			allSongs[j] = &this->_album[i].GetSong()[k];
+			k++;
+			j++;
+		}
+	}
+	return allSongs;
+}
+

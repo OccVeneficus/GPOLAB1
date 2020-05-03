@@ -22,5 +22,7 @@ public:
 	int GetSongCounter();
 
 	cSong* FindSong(string songName);
+
+	~cAlbum();
 };
 

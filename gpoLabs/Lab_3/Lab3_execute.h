@@ -3,6 +3,7 @@
 #include "Route.h"
 #include "cRectangle.h"
 #include "cFlight.h"
+#include "cBand.h"
 #include "../Common/ConsoleOutput/ConsoleOutput.h"
 #include "../Common/InputChecking/IntegerReading.h"
 
@@ -26,3 +27,7 @@ void DemoFlightWithTime();
 void WriteFlightToConsole(cFlight* flight);
 void WriteTimeToConsole(cTime* time);
 cTime GetFlightTimeMinutes(cFlight* flight);
+
+void DemoBand();
+void WriteBandInfoToConsole(cBand* band);
+void WriteSongsToConsole(cSong* song, int songCount);
