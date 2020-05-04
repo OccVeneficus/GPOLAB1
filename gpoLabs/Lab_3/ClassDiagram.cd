@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="cRectangle">
     <Position X="0.5" Y="0.75" Width="1.5" />
     <Members>
@@ -39,7 +39,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="cTime">
-    <Position X="3.5" Y="2.25" Width="1.5" />
+    <Position X="4.5" Y="2.25" Width="1.5" />
     <Members>
       <Method Name="cTime" Hidden="true" />
       <Method Name="GetDay" Hidden="true" />
@@ -78,8 +78,8 @@
       <FileName>Lab_3\cFlight.h</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="_timeOfArrival" />
       <Field Name="_timeOfDeparture" />
+      <Field Name="_timeOfArrival" />
     </ShowAsAssociation>
   </Class>
   <Class Name="cSong">

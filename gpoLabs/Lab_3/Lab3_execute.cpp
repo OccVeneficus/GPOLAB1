@@ -3,11 +3,14 @@
 
 void Lab3()
 {
-	cout << "Demo Rectangle: " << endl;
-	DemoRectangleWithPoint();
+	cout << "Demo book: " << endl;
+	DemoBook();
 	cout << endl << "_________________________________________________" << endl;
 	cout << "Demo Route: " << endl;
 	DemoRoute();
+	cout << endl << "_________________________________________________" << endl;
+	cout << "Demo Rectangle: " << endl;
+	DemoRectangleWithPoint();
 	cout << endl << "_________________________________________________" << endl;
 	cout << "Demo Flight: " << endl;
 	DemoFlightWithTime();
@@ -109,8 +112,8 @@ void DemoRoute()
 	int frequencyMinutes;
 	int stopsCount;
 	string* stops;
-	Route* routes = new Route[1];
-	for (int i = 0; i < 1; i++)
+	Route* routes = new Route[3];
+	for (int i = 0; i < 3; i++)
 	{
 		cout << "Route #" << i + 1 << endl;
 		ReadRouteFromConsole(number,timeAvgMinutes,frequencyMinutes,stopsCount,
@@ -119,7 +122,7 @@ void DemoRoute()
 			stops);
 		routes[i] = newRoute;
 	}
-	for (int i = 0; i < 1; i++)
+	for (int i = 0; i < 3; i++)
 	{
 		WriteRouteInCounsole(routes[i]);
 	}
@@ -127,7 +130,7 @@ void DemoRoute()
 	string name;
 	cin.clear();
 	getline(cin, name);
-	Route* route = FindRouteByStop(routes, 1, name);
+	Route* route = FindRouteByStop(routes, 3, name);
 	if (route != nullptr)
 	{
 		cout << "Route with this stop: ";

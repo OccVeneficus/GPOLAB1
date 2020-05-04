@@ -323,7 +323,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Lab_3\ClassDiagram.cd">
-      <Filter>Source Files</Filter>
+      <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Lab_3\cd.PNG">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
