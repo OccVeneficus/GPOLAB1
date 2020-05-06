@@ -25,7 +25,7 @@ public:
 	void SetName(string name);
 	void SetYear(short year);
 	void SetPages(short pages);
-	void SetAuthors(string* authors, short authorsCount); // TODO: сразу сделал задание с следующей лабы? )) Ок
+	void SetAuthors(string* authors, short authorsCount);
 
 	short GetYear();
 	short GetPages();

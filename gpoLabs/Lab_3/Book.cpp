@@ -72,7 +72,7 @@ short Book::GetPages()
 {
 	return this->_pages;
 }
-// TODO: именование
+
 short Book::GetAuthorsCount()
 {
 	return this->_authorsCount;

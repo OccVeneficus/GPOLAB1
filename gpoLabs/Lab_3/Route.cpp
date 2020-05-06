@@ -22,8 +22,6 @@ Route::~Route()
 
 Route& Route::operator=(const Route& other)
 {
-	// TODO: ты не можешь гарантировать, что массив динамический
-	// TODO: почему в обход сеттеров?
 	this->SetStops(other._stopsCount, other._stops);
 	this->SetFrequencyMinutes(other._frequencyMinutes);
 	this->SetTimeAvgMin(other._timeAvgMinutes);
@@ -48,7 +46,6 @@ void Route::SetFrequencyMinutes(int frequencyMinutes)
 
 void Route::SetStops(int stopsCount, string* stops)
 {
-	// TODO:
 	this->_stopsCount = stopsCount;
 	this->_stops = new string[stopsCount];
 	for (int i = 0; i < stopsCount; i++)

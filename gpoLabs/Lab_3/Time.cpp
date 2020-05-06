@@ -87,8 +87,7 @@ int Time::GetMinute()
 {
 	return this->_minute;
 }
-// TODO: обычно реализуют сразу все операторы сравнения, потому что под условием if может использоваться любой
-// TODO: реализуй операторы == и <, а на основе этих двух сделай > <= >= !=
+
 
 bool Time::operator==(const Time& other)
 {
@@ -125,6 +124,5 @@ bool Time::operator>=(const Time& other)
 
 bool Time::operator<=(const Time& other)
 {
-	// TODO: можно сделать проще, без if и ветвления
 	return(*this == other || *this < other);
 }

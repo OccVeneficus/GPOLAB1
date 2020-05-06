@@ -4,7 +4,7 @@
 
 using std::string;
 using std::exception;
-// TODO: именование
+
 class Flight
 {
 private:

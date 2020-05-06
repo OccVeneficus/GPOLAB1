@@ -4,7 +4,7 @@
 
 using std::string;
 
-class Song // TODO: имемнование
+class Song
 {
 private:
 	int _durationSeconds;

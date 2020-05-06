@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include "Point.h"
 
-class Rectangle // TODO:именование, пустые строки 
+class Rectangle
 {
 private:
 	double _length;

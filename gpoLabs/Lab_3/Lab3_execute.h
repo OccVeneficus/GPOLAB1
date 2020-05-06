@@ -9,7 +9,7 @@
 
 void Lab3();
 
-// TODO:зашакаленные комментарии
+
 void DemoBook();
 void WriteBookInConsole(Book& book);
 void ReadBookFromConsole(string& name, short& year, short& pages, short&

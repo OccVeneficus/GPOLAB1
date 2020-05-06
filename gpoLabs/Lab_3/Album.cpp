@@ -5,7 +5,6 @@
 
 using std::exception;
 
-// TODO: песни в множественном числе. Это массив, поэтому это важно!
 Album::Album(string name, int year, Song* songs, int songsCount)
 {
 	this->SetName(name);
@@ -30,17 +29,15 @@ void Album::SetName(string name)
 
 void Album::SetYear(int year)
 {
-	// TODO:можешь системными функциями узнать текущий год?
 	if (year < 1 || year > GetCurrentYear())
 	{
 		throw exception("Year must be in range from 1 to currentYear");
 	}
 	this->_year = year;
 }
-// TODO:множественное число!
+
 void Album::SetSongs(Song* songs, int songsCounter)
-{	// TODO: обычно делают просто сохранение переданного указателя, без поэлементного копирования,
-	// иначе поведение с выделением и освобождением памяти становится неочевидным
+{
 	this->_songs = songs;
 	this->_songCount = songsCounter;
 }
@@ -54,7 +51,7 @@ int Album::GetYear()
 {
 	return this->_year;
 }
-// TODO: множественное число!
+
 Song* Album::GetSongs()
 {
 	return this->_songs;

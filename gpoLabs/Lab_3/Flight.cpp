@@ -1,5 +1,5 @@
 ﻿#include "Flight.h"
-// TODO: именование без Of - по правилам образования родительного падежа в англ.
+
 Flight::Flight(int number, string pointDeparture, string pointArrival,
     Time* timeDeparture, Time* timeArrival)
 {

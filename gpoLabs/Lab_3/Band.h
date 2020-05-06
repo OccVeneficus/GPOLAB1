@@ -1,6 +1,6 @@
 ﻿#pragma once
 #include "Album.h"
-// TODO: именование
+
 class Band
 {
 private:

@@ -1,5 +1,5 @@
 ﻿#pragma once
-// TODO:именование
+
 enum Genre
 {
 	Rock,

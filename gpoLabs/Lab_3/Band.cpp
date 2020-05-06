@@ -1,5 +1,5 @@
 ﻿#include "Band.h"
-// TODO: множественное число для альбомов
+
 Band::Band(string name, string description, Album* albums, int albumsCount)
 {
 	this->SetName(name);
@@ -21,10 +21,9 @@ void Band::SetDescription(string description)
 {
 	this->_description = description;
 }
-// TODO: множ число
+
 void Band::SetAlbums(Album* albums, int albumsCount)
 {
-	// TODO: ты не можешь быть уверенным, что массив динамический
 	this->_albums = new Album[albumsCount];
 	for (int i = 0; i < albumsCount; i++)
 	{
@@ -42,12 +41,12 @@ string Band::GetDescription()
 {
 	return this->_description;
 }
-// TODO:
+
 Album* Band::GetAlbums()
 {
 	return this->_albums;
 }
-// TODO:
+
 int Band::GetAlbumsCount()
 {
 	return this->_albumsCount;
