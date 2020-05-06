@@ -1,5 +1,5 @@
-#include "cFlight.h"
-
+﻿#include "cFlight.h"
+// TODO: именование без Of - по правилам образования родительного падежа в англ.
 cFlight::cFlight(int number, string pointOfDeparture, string pointOfArrival,
     cTime* timeOfDeparture, cTime* timeOfArrival)
 {

@@ -1,4 +1,4 @@
-#include "Book.h"
+﻿#include "Book.h"
 
 Book::Book()
 {
@@ -72,7 +72,7 @@ short Book::GetPages()
 {
 	return this->_pages;
 }
-
+// TODO: именование
 short Book::GetAutorsCount()
 {
 	return this->_authorsCount;

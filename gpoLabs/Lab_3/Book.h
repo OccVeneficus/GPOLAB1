@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include <string>
 #include <iostream>
 
@@ -25,7 +25,7 @@ public:
 	void SetName(string name);
 	void SetYear(short year);
 	void SetPages(short pages);
-	void SetAuthors(string* authors, short authorsCount);
+	void SetAuthors(string* authors, short authorsCount); // TODO: сразу сделал задание с следующей лабы? )) Ок
 
 	short GetYear();
 	short GetPages();

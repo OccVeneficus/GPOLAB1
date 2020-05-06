@@ -1,6 +1,6 @@
-#pragma once
+﻿#pragma once
 #include "Point.h"
-class cRectangle
+class cRectangle // TODO:именование, пустые строки 
 {
 private:
 	double _length;

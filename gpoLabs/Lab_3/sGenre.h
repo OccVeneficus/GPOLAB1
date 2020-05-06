@@ -1,5 +1,5 @@
-#pragma once
-
+﻿#pragma once
+// TODO:именование
 enum sGenre
 {
 	Rock,

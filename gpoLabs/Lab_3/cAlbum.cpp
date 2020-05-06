@@ -1,8 +1,9 @@
-#include "cAlbum.h"
+﻿#include "cAlbum.h"
 #include <exception>
 
 using std::exception;
 
+// TODO: песни в множественном числе. Это массив, поэтому это важно!
 cAlbum::cAlbum(string name, int year, cSong* song, int songCount)
 {
 	this->SetName(name);
@@ -27,15 +28,17 @@ void cAlbum::SetName(string name)
 
 void cAlbum::SetYear(int year)
 {
+	// TODO:можешь системными функциями узнать текущий год?
 	if (year < 1 || year > 2020)
 	{
 		throw exception("Year must be in range from 0 to 2020.");
 	}
 	this->_year = year;
 }
-
+// TODO:множественное число!
 void cAlbum::SetSong(cSong* song, int songCounter)
-{
+{	// TODO: обычно делают просто сохранение переданного указателя, без поэлементного копирования,
+	// иначе поведение с выделением и освобождением памяти становится неочевидным
 	this->_song = new cSong[songCounter];
 	this->_songCount = songCounter;
 	for (int i = 0; i < songCounter; i++)
@@ -53,7 +56,7 @@ int cAlbum::GetYeat()
 {
 	return this->_year;
 }
-
+// TODO: множественное число!
 cSong* cAlbum::GetSong()
 {
 	return this->_song;

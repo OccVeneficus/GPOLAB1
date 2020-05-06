@@ -1,4 +1,4 @@
-#include "Route.h"
+﻿#include "Route.h"
 
 Route::Route()
 {
@@ -22,10 +22,12 @@ Route::~Route()
 
 Route& Route::operator=(const Route& other)
 {
+	// TODO: ты не можешь гарантировать, что массив динамический
 	if (this->_stops != nullptr)
 	{
 		delete[] this->_stops;
 	}
+	// TODO: почему в обход сеттеров?
 	this->_stopsCount = other._stopsCount;
 	this->_frequencyMinutes = other._frequencyMinutes;
 	this->_timeAvgMinutes = other._timeAvgMinutes;
@@ -55,6 +57,7 @@ void Route::SetFrequencyMinutes(int frequencyMinutes)
 
 void Route::SetStops(int stopsCount, string* stops)
 {
+	// TODO:
 	if (this->_stops != nullptr)
 	{
 		delete[] this->_stops;

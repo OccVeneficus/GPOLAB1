@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "Book.h"
 #include "Route.h"
 #include "cRectangle.h"
@@ -9,35 +9,35 @@
 
 void Lab3();
 
-/*Задания 3.2.1-5*/
-/*Демонстрация работы класса Book*/
+/*Г‡Г Г¤Г Г­ГЁГї 3.2.1-5*/// TODO:Р·Р°С€Р°РєР°Р»РµРЅРЅС‹Рµ РєРѕРјРјРµРЅС‚Р°СЂРёРё
+/*Г„ГҐГ¬Г®Г­Г±ГІГ°Г Г¶ГЁГї Г°Г ГЎГ®ГІГ» ГЄГ«Г Г±Г±Г  Book*/
 void DemoBook();
 void WriteBookInConsole(Book& book);
 void ReadBookFromConsole(string& name, short& year, short& pages, short&
 	authorsCount, string*& authors);
 Book* FindBookByAuthor(Book* books, short booksCount, string author);
 
-/*Задание 3.2.6*/
-/*Демонстрация работы класса Route*/
+/*Г‡Г Г¤Г Г­ГЁГҐ 3.2.6*/
+/*Г„ГҐГ¬Г®Г­Г±ГІГ°Г Г¶ГЁГї Г°Г ГЎГ®ГІГ» ГЄГ«Г Г±Г±Г  Route*/
 void DemoRoute();
 void WriteRouteInCounsole(Route& route);
 void ReadRouteFromConsole(int& number, int& timeAvgMinutes, int& frequencyMinutes,
 	int& stopsCount, string*& stops);
 Route* FindRouteByStop(Route* routes, int routesCount, string stopName);
 
-/*Задания 3.3.1-5*/
-/*Демонстрация работы классов Point и cRectangle*/
+/*Г‡Г Г¤Г Г­ГЁГї 3.3.1-5*/
+/*Г„ГҐГ¬Г®Г­Г±ГІГ°Г Г¶ГЁГї Г°Г ГЎГ®ГІГ» ГЄГ«Г Г±Г±Г®Гў Point ГЁ cRectangle*/
 void DemoRectangleWithPoint();
 
-/*Задания 3.3.7-11*/
-/*Демонстрация работы классов cTime и cFlight*/
+/*Г‡Г Г¤Г Г­ГЁГї 3.3.7-11*/
+/*Г„ГҐГ¬Г®Г­Г±ГІГ°Г Г¶ГЁГї Г°Г ГЎГ®ГІГ» ГЄГ«Г Г±Г±Г®Гў cTime ГЁ cFlight*/
 void DemoFlightWithTime();
 void WriteFlightToConsole(cFlight* flight);
 void WriteTimeToConsole(cTime* time);
 cTime GetFlightTimeMinutes(cFlight* flight);
 
-/*Задания 3.4.х 3.5.х*/
-/*Демонстарция работы классов cSong cAlbum cBand*/
+/*Г‡Г Г¤Г Г­ГЁГї 3.4.Гµ 3.5.Гµ*/
+/*Г„ГҐГ¬Г®Г­Г±ГІГ Г°Г¶ГЁГї Г°Г ГЎГ®ГІГ» ГЄГ«Г Г±Г±Г®Гў cSong cAlbum cBand*/
 void DemoBand();
 void WriteBandInfoToConsole(cBand* band);
 void WriteSongToConsole(cSong* song);

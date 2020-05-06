@@ -1,4 +1,4 @@
-#include "cTime.h"
+﻿#include "cTime.h"
 #include <exception>
 #include "../Common/Consts/Consts.h"
 
@@ -86,9 +86,11 @@ int cTime::GetMinute()
 {
 	return this->_minute;
 }
-
+// TODO: обычно реализуют сразу все операторы сравнения, потому что под условием if может использоваться любой
+// TODO: реализуй операторы == и <, а на основе этих двух сделай > <= >= !=
 bool cTime::operator<=(const cTime& other)
 {
+	// TODO: можно сделать проще, без if и ветвления
 	if (this->_day <= other._day && this->_hour <= other._hour &&
 		this->_minute <= other._minute && this->_month <= other._month &&
 		this->_year <= other._year)

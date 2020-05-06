@@ -1,4 +1,4 @@
-#include "Common/ConsoleOutput/ConsoleOutput.h"
+﻿#include "Common/ConsoleOutput/ConsoleOutput.h"
 #include "Common/InputChecking/IntegerReading.h"
 #include "Common/Consts/Consts.h"
 #include "Lab_3/Lab3_execute.h"
@@ -16,6 +16,7 @@ int main()
 		{
 			case 1:
 			{
+				// TODO: сделать одинаковое именование для функций, запускающих лабы
 				ChooseTaskFirstLab();
 				break;
 			}

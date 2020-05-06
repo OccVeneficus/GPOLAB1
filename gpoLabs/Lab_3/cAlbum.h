@@ -1,6 +1,6 @@
-#pragma once
+﻿#pragma once
 #include "cSong.h"
-
+// TODO: что за венгерка? Переименовать класс правильно. Если конфликтует с именами с предыдущей лабы, то их можно удалить
 class cAlbum
 {
 private:
@@ -18,6 +18,7 @@ public:
 	void SetSong(cSong* song, int songCounter);
 
 	string GetName();
+	// TODO:ошибка в именовании
 	int GetYeat();
 	cSong* GetSong();
 	int GetSongCounter();

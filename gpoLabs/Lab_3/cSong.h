@@ -1,9 +1,9 @@
-#pragma once
+﻿#pragma once
 #include "sGenre.h"
 #include <string>
 
 using std::string;
-class cSong
+class cSong // TODO: имемнование
 {
 private:
 	int _durationSeconds;

@@ -1,5 +1,5 @@
-#include "cBand.h"
-
+﻿#include "cBand.h"
+// TODO: множественное число для альбомов
 cBand::cBand(string name, string description, cAlbum* album, int albumCount)
 {
 	this->SetName(name);
@@ -21,9 +21,10 @@ void cBand::SetDescription(string description)
 {
 	this->_description = description;
 }
-
+// TODO: множ число
 void cBand::SetAlbum(cAlbum* album, int albumCount)
 {
+	// TODO: ты не можешь быть уверенным, что массив динамический
 	if (this->_album != nullptr)
 	{
 		delete[] this->_album;
@@ -45,12 +46,12 @@ string cBand::GetDescription()
 {
 	return this->_description;
 }
-
+// TODO:
 cAlbum* cBand::GetAlbum()
 {
 	return this->_album;
 }
-
+// TODO:
 int cBand::GetAlbumCount()
 {
 	return this->_albumCount;

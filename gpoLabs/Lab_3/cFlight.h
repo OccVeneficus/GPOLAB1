@@ -1,10 +1,10 @@
-#pragma once
+﻿#pragma once
 #include <string>
 #include "cTime.h"
 
 using std::string;
 using std::exception;
-
+// TODO: именование
 class cFlight
 {
 private:

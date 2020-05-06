@@ -1,6 +1,6 @@
-#pragma once
+﻿#pragma once
 #include "cAlbum.h"
-
+// TODO: именование
 class cBand
 {
 private:
