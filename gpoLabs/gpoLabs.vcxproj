@@ -182,6 +182,7 @@
     <ClCompile Include="Lab_3\Route.cpp" />
     <ClCompile Include="Lab_3\Genre.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="TimeCheck.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\ConsoleOutput\ConsoleOutput.h" />
@@ -210,6 +211,7 @@
     <ClInclude Include="Lab_3\Point.h" />
     <ClInclude Include="Lab_3\Route.h" />
     <ClInclude Include="Lab_3\Genre.h" />
+    <ClInclude Include="TimeCheck.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Lab_3\ClassDiagram.cd" />

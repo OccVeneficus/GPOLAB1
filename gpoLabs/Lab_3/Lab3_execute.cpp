@@ -221,15 +221,15 @@ void DemoFlightWithTime()
 {
 	Flight* flights = new Flight[5];
 	flights[0] = Flight(rand()%9999999,"Tomsk","Moscow",
-		&Time(2020,6,23,13,43), &Time(2020,6,23,17,50));
+		&Time(2010,6,23,13,43), &Time(2010,6,23,17,50));
 	flights[1] = Flight(rand() % 9999999, "Sochi", "Ekaterinburg",
-		&Time(2020, 5, 12, 3, 0), &Time(2020, 5, 13, 5, 30));
+		&Time(2010, 5, 12, 3, 0), &Time(2010, 5, 13, 5, 30));
 	flights[2] = Flight(rand() % 9999999, "Petrozavodsk", "Moscow",
-		&Time(2020, 12, 22, 15, 10), &Time(2020, 12, 22, 17, 10));
+		&Time(2010, 12, 22, 15, 10), &Time(2010, 12, 22, 17, 10));
 	flights[3] = Flight(rand() % 9999999, "Novosibirsk", "Kaliningrad",
-		&Time(2020, 3, 5, 0, 10), &Time(2020, 3, 5, 5, 20));
+		&Time(2010, 3, 5, 0, 10), &Time(2010, 3, 5, 5, 20));
 	flights[4] = Flight(rand() % 9999999, "Abakan", "Tver",
-		&Time(2020, 7, 7, 7, 7), &Time(2020, 7, 7, 10, 17));
+		&Time(2010, 7, 7, 7, 7), &Time(2010, 7, 7, 10, 17));
 	for (int i = 0; i < 5; i++)
 	{
 		WriteFlightToConsole(&flights[i]);

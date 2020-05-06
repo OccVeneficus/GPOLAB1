@@ -1,6 +1,7 @@
 ﻿#include "Time.h"
 #include <exception>
 #include "../Common/Consts/Consts.h"
+#include "../TimeCheck.h";
 
 using std::exception;
 
@@ -19,7 +20,7 @@ Time::Time()
 
 void Time::SetYear(int year)
 {
-	if (year < 0 || year > timePtr->tm_year)
+	if (year < 0 || year > GetCurrentYear())
 	{
 		throw exception("Year must be in range from 0 to currentYear");
 	}
@@ -88,18 +89,42 @@ int Time::GetMinute()
 }
 // TODO: обычно реализуют сразу все операторы сравнения, потому что под условием if может использоваться любой
 // TODO: реализуй операторы == и <, а на основе этих двух сделай > <= >= !=
+
+bool Time::operator==(const Time& other)
+{
+	return(this->_day == other._day &&
+		this->_hour == other._hour &&
+		this->_minute == other._minute &&
+		this->_month == other._month &&
+		this->_year == other._year);
+}
+
+bool Time::operator<(const Time& other)
+{
+	return(this->_day < other._day &&
+		this->_hour < other._hour &&
+		this->_minute < other._minute &&
+		this->_month < other._month &&
+		this->_year < other._year);
+}
+
+bool Time::operator!=(const Time& other)
+{
+	return !(*this == other);
+}
+
+bool Time::operator>(const Time& other)
+{
+	return !(*this < other);
+}
+
+bool Time::operator>=(const Time& other)
+{
+	return (*this == other || *this > other);
+}
+
 bool Time::operator<=(const Time& other)
 {
 	// TODO: можно сделать проще, без if и ветвления
-	if (this->_day <= other._day && this->_hour <= other._hour &&
-		this->_minute <= other._minute && this->_month <= other._month &&
-		this->_year <= other._year)
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
+	return(*this == other || *this < other);
 }
-

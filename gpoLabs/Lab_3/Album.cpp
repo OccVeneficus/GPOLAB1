@@ -1,6 +1,7 @@
 ﻿#include "Album.h"
 #include <exception>
 #include "../Common/Consts/Consts.h"
+#include "../TimeCheck.h"
 
 using std::exception;
 
@@ -30,7 +31,7 @@ void Album::SetName(string name)
 void Album::SetYear(int year)
 {
 	// TODO:можешь системными функциями узнать текущий год?
-	if (year < 1 || year > timePtr->tm_year + 1900)
+	if (year < 1 || year > GetCurrentYear())
 	{
 		throw exception("Year must be in range from 1 to currentYear");
 	}
@@ -40,12 +41,8 @@ void Album::SetYear(int year)
 void Album::SetSongs(Song* songs, int songsCounter)
 {	// TODO: обычно делают просто сохранение переданного указателя, без поэлементного копирования,
 	// иначе поведение с выделением и освобождением памяти становится неочевидным
-	this->_songs = new Song[songsCounter];
+	this->_songs = songs;
 	this->_songCount = songsCounter;
-	for (int i = 0; i < songsCounter; i++)
-	{
-		this->_songs[i] = songs[i];
-	}
 }
 
 string Album::GetName()

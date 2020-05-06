@@ -25,6 +25,11 @@ public:
 	int GetHour();
 	int GetMinute();
 
+	bool operator == (const Time& other);
+	bool operator < (const Time& other);
+	bool operator !=(const Time& other);
+	bool operator > (const Time& other);
+	bool operator >= (const Time& other);
 	bool operator <= (const Time& other);
 };
 

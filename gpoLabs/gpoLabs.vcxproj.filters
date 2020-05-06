@@ -61,6 +61,9 @@
     <Filter Include="Source Files\Lab_3">
       <UniqueIdentifier>{0d6cd3e9-2017-4c03-bca8-64ba0e326443}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Common\TimeCheck">
+      <UniqueIdentifier>{df3f2971-3c22-4ed2-91b0-aca419aab7aa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Common\ConsoleOutput\ConsoleOutput.cpp">
@@ -192,6 +195,9 @@
     <ClCompile Include="Lab_2\Execute.cpp">
       <Filter>Source Files\Lab_2</Filter>
     </ClCompile>
+    <ClCompile Include="TimeCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Consts\Consts.h">
@@ -271,6 +277,9 @@
     </ClInclude>
     <ClInclude Include="Lab_2\WeekDay.h">
       <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeCheck.h">
+      <Filter>Header Files\Common\TimeCheck</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

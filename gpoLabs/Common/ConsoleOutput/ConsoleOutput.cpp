@@ -1,5 +1,3 @@
-
-
 #include "ConsoleOutput.h"
 #include "../../Lab_1/Tasks/FirstLabTasks.h"
 #include "../InputChecking/IntegerReading.h"
