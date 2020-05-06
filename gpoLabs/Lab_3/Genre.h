@@ -1,6 +1,6 @@
 ﻿#pragma once
 // TODO:именование
-enum sGenre
+enum Genre
 {
 	Rock,
 	Pop,
@@ -9,4 +9,4 @@ enum sGenre
 	Country
 };
 
-void WriteSongGenreToConsole(sGenre genre);
+void WriteSongGenreToConsole(Genre genre);

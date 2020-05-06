@@ -1,33 +1,33 @@
 ﻿#pragma once
 #include <string>
-#include "cTime.h"
+#include "Time.h"
 
 using std::string;
 using std::exception;
 // TODO: именование
-class cFlight
+class Flight
 {
 private:
 	int _number;
 	string _pointOfDeparture;
 	string _pointOfArrival;
-	cTime* _timeOfDeparture;
-	cTime* _timeOfArrival;
+	Time* _timeOfDeparture;
+	Time* _timeOfArrival;
 
 public:
-	cFlight(int number, string pointOfDeparture, string pointOfArrival,
-		cTime* timeOfDeparture, cTime* timeOfArrival);
-	cFlight();
+	Flight(int number, string pointOfDeparture, string pointOfArrival,
+		Time* timeOfDeparture, Time* timeOfArrival);
+	Flight();
 
 	void SetNumber(int number);
 	void SetPointDeparture(string pointOfDeparture);
 	void SetPointOfArrival(string pointOfArrival);
-	void SetTimesDepartureArrival(cTime* timeOfDeparture, cTime* timeOfArrival);
+	void SetTimesDepartureArrival(Time* timeOfDeparture, Time* timeOfArrival);
 
 	int GetNumber();
 	string GetPointOfDeparture();
 	string GetPointOfArrival();
-	cTime* GetTimeOfDeparture();
-	cTime* GetTimeOFArrival();
+	Time* GetTimeOfDeparture();
+	Time* GetTimeOFArrival();
 };
 

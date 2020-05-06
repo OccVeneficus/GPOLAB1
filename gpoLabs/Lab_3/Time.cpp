@@ -1,10 +1,10 @@
-﻿#include "cTime.h"
+﻿#include "Time.h"
 #include <exception>
 #include "../Common/Consts/Consts.h"
 
 using std::exception;
 
-cTime::cTime(int year, int month, int day, int hour, int minute)
+Time::Time(int year, int month, int day, int hour, int minute)
 {
 	SetYear(year);
 	SetMonth(month);
@@ -13,11 +13,11 @@ cTime::cTime(int year, int month, int day, int hour, int minute)
 	SetMinute(minute);
 }
 
-cTime::cTime()
+Time::Time()
 {
 }
 
-void cTime::SetYear(int year)
+void Time::SetYear(int year)
 {
 	if (year < 0 || year > 2020)
 	{
@@ -26,7 +26,7 @@ void cTime::SetYear(int year)
 	this->_year = year;
 }
 
-void cTime::SetMonth(int month)
+void Time::SetMonth(int month)
 {
 	if (month < 0 || month > 12)
 	{
@@ -35,7 +35,7 @@ void cTime::SetMonth(int month)
 	this->_month = month;
 }
 
-void cTime::SetDay(int day)
+void Time::SetDay(int day)
 {
 	if (day < 0 || day > 30)
 	{
@@ -44,7 +44,7 @@ void cTime::SetDay(int day)
 	this->_day = day;
 }
 
-void cTime::SetHour(int hour)
+void Time::SetHour(int hour)
 {
 	if (hour < 0 || hour > 23)
 	{
@@ -53,7 +53,7 @@ void cTime::SetHour(int hour)
 	this->_hour = hour;
 }
 
-void cTime::SetMinute(int minute)
+void Time::SetMinute(int minute)
 {
 	if (minute < 0 || minute > 60)
 	{
@@ -62,33 +62,33 @@ void cTime::SetMinute(int minute)
 	this->_minute = minute;
 }
 
-int cTime::GetYear()
+int Time::GetYear()
 {
 	return this->_year;
 }
 
-int cTime::GetMonth()
+int Time::GetMonth()
 {
 	return this->_month;
 }
 
-int cTime::GetDay()
+int Time::GetDay()
 {
 	return this->_day;
 }
 
-int cTime::GetHour()
+int Time::GetHour()
 {
 	return this->_hour;
 }
 
-int cTime::GetMinute()
+int Time::GetMinute()
 {
 	return this->_minute;
 }
 // TODO: обычно реализуют сразу все операторы сравнения, потому что под условием if может использоваться любой
 // TODO: реализуй операторы == и <, а на основе этих двух сделай > <= >= !=
-bool cTime::operator<=(const cTime& other)
+bool Time::operator<=(const Time& other)
 {
 	// TODO: можно сделать проще, без if и ветвления
 	if (this->_day <= other._day && this->_hour <= other._hour &&

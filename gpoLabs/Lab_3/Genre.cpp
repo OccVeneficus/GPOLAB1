@@ -1,11 +1,11 @@
-#include "sGenre.h"
+#include "Genre.h"
 #include <iostream>
 
 using std::cin;
 using std::cout;
 using std::endl;
 
-void WriteSongGenreToConsole(sGenre genre)
+void WriteSongGenreToConsole(Genre genre)
 {
 	switch (genre)
 	{

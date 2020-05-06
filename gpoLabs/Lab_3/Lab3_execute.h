@@ -1,9 +1,9 @@
 ﻿#pragma once
 #include "Book.h"
 #include "Route.h"
-#include "cRectangle.h"
-#include "cFlight.h"
-#include "cBand.h"
+#include "Rectangle.h"
+#include "Flight.h"
+#include "Band.h"
 #include "../Common/ConsoleOutput/ConsoleOutput.h"
 #include "../Common/InputChecking/IntegerReading.h"
 
@@ -32,14 +32,14 @@ void DemoRectangleWithPoint();
 /*Çàäàíèÿ 3.3.7-11*/
 /*Äåìîíñòðàöèÿ ðàáîòû êëàññîâ cTime è cFlight*/
 void DemoFlightWithTime();
-void WriteFlightToConsole(cFlight* flight);
-void WriteTimeToConsole(cTime* time);
-cTime GetFlightTimeMinutes(cFlight* flight);
+void WriteFlightToConsole(Flight* flight);
+void WriteTimeToConsole(Time* time);
+Time GetFlightTimeMinutes(Flight* flight);
 
 /*Çàäàíèÿ 3.4.õ 3.5.õ*/
 /*Äåìîíñòàðöèÿ ðàáîòû êëàññîâ cSong cAlbum cBand*/
 void DemoBand();
-void WriteBandInfoToConsole(cBand* band);
-void WriteSongToConsole(cSong* song);
-void WriteSongsToConsole(cSong* song, int songCount);
-void WriteAlbumToConsole(cAlbum* album);
+void WriteBandInfoToConsole(Band* band);
+void WriteSongToConsole(Song* song);
+void WriteSongsToConsole(Song* song, int songCount);
+void WriteAlbumToConsole(Album* album);

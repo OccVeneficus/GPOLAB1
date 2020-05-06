@@ -1,25 +1,26 @@
 ﻿#pragma once
-#include "sGenre.h"
+#include "Genre.h"
 #include <string>
 
 using std::string;
-class cSong // TODO: имемнование
+
+class Song // TODO: имемнование
 {
 private:
 	int _durationSeconds;
 	string _name;
-	sGenre _genre;
+	Genre _genre;
 
 public:
-	cSong(int durationSeconds, string name, sGenre genre);
-	cSong();
+	Song(int durationSeconds, string name, Genre genre);
+	Song();
 
 	int GetDurationSeconds();
 	string GetName();
-	sGenre GetGenre();
+	Genre GetGenre();
 
 	void SetDurationSeconds(int durationSeconds);
 	void SetName(string name);
-	void SetGenre(sGenre genre);
+	void SetGenre(Genre genre);
 };
 

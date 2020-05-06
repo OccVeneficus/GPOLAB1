@@ -1,6 +1,7 @@
 ﻿#pragma once
 #include "Point.h"
-class cRectangle // TODO:именование, пустые строки 
+
+class Rectangle // TODO:именование, пустые строки 
 {
 private:
 	double _length;
@@ -8,8 +9,8 @@ private:
 	Point* _centre;
 
 public:
-	cRectangle();
-	cRectangle(double length, double width, Point* centre);
+	Rectangle();
+	Rectangle(double length, double width, Point* centre);
 
 	void SetLength(double length);
 	void SetWidth(double width);

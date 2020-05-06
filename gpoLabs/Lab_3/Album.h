@@ -1,30 +1,30 @@
 ﻿#pragma once
-#include "cSong.h"
+#include "Song.h"
 // TODO: что за венгерка? Переименовать класс правильно. Если конфликтует с именами с предыдущей лабы, то их можно удалить
-class cAlbum
+class Album
 {
 private:
 	string _name;
 	int _year;
-	cSong* _song;
+	Song* _song;
 	int _songCount;
 
 public:
-	cAlbum(string name, int year, cSong* song, int songCount);
-	cAlbum();
+	Album(string name, int year, Song* song, int songCount);
+	Album();
 
 	void SetName(string name);
 	void SetYear(int year);
-	void SetSong(cSong* song, int songCounter);
+	void SetSong(Song* song, int songCounter);
 
 	string GetName();
 	// TODO:ошибка в именовании
-	int GetYeat();
-	cSong* GetSong();
+	int GetYear();
+	Song* GetSong();
 	int GetSongCounter();
 
-	cSong* FindSong(string songName);
+	Song* FindSong(string songName);
 
-	~cAlbum();
+	~Album();
 };
 

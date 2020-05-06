@@ -1,5 +1,6 @@
 #pragma once
-class cTime
+
+class Time
 {
 private:
 	int _year;
@@ -9,8 +10,8 @@ private:
 	int _minute;
 
 public:
-	cTime(int year,int month, int day,int hour, int minute);
-	cTime();
+	Time(int year,int month, int day,int hour, int minute);
+	Time();
 
 	void SetYear(int year);
 	void SetMonth(int month);
@@ -24,6 +25,6 @@ public:
 	int GetHour();
 	int GetMinute();
 
-	bool operator <= (const cTime& other);
+	bool operator <= (const Time& other);
 };
 

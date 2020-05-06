@@ -29,7 +29,7 @@ public:
 
 	short GetYear();
 	short GetPages();
-	short GetAutorsCount();
+	short GetAuthorsCount();
 	string& GetName();
 	string* GetAuthors();
 

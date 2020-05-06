@@ -144,42 +144,6 @@
     <ClCompile Include="Lab_1\Tasks\Task_1.1.5.8.cpp">
       <Filter>Source Files\Lab_1\Tasks</Filter>
     </ClCompile>
-    <ClCompile Include="Lab_2\Circle.cpp">
-      <Filter>Source Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_2\Enums.cpp">
-      <Filter>Source Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_2\Exceptions.cpp">
-      <Filter>Source Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_2\Flight.cpp">
-      <Filter>Source Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_2\Movie.cpp">
-      <Filter>Source Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_2\Rectangle.cpp">
-      <Filter>Source Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_2\StructureDynamic.cpp">
-      <Filter>Source Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_2\StructureStatic.cpp">
-      <Filter>Source Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_2\StructureFunction.cpp">
-      <Filter>Source Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_2\Execute.cpp">
-      <Filter>Source Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_2\Time.cpp">
-      <Filter>Source Files\Lab_2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab_3\cRectangle.cpp">
-      <Filter>Source Files\Lab_3</Filter>
-    </ClCompile>
     <ClCompile Include="Lab_3\Book.cpp">
       <Filter>Source Files\Lab_3</Filter>
     </ClCompile>
@@ -195,23 +159,38 @@
     <ClCompile Include="Lab_3\Point.cpp">
       <Filter>Source Files\Lab_3</Filter>
     </ClCompile>
-    <ClCompile Include="Lab_3\cTime.cpp">
+    <ClCompile Include="Lab_3\Album.cpp">
       <Filter>Source Files\Lab_3</Filter>
     </ClCompile>
-    <ClCompile Include="Lab_3\cFlight.cpp">
+    <ClCompile Include="Lab_3\Band.cpp">
       <Filter>Source Files\Lab_3</Filter>
     </ClCompile>
-    <ClCompile Include="Lab_3\cAlbum.cpp">
+    <ClCompile Include="Lab_3\Flight.cpp">
       <Filter>Source Files\Lab_3</Filter>
     </ClCompile>
-    <ClCompile Include="Lab_3\cBand.cpp">
+    <ClCompile Include="Lab_3\Rectangle.cpp">
       <Filter>Source Files\Lab_3</Filter>
     </ClCompile>
-    <ClCompile Include="Lab_3\cSong.cpp">
+    <ClCompile Include="Lab_3\Song.cpp">
       <Filter>Source Files\Lab_3</Filter>
     </ClCompile>
-    <ClCompile Include="Lab_3\sGenre.cpp">
+    <ClCompile Include="Lab_3\Time.cpp">
       <Filter>Source Files\Lab_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_3\Genre.cpp">
+      <Filter>Source Files\Lab_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_2\Circle.cpp">
+      <Filter>Source Files\Lab_2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_2\Enums.cpp">
+      <Filter>Source Files\Lab_2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_2\Exceptions.cpp">
+      <Filter>Source Files\Lab_2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_2\Execute.cpp">
+      <Filter>Source Files\Lab_2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -227,69 +206,6 @@
     <ClInclude Include="Common\InputChecking\IntegerReading.h">
       <Filter>Header Files\Common\InputChecking</Filter>
     </ClInclude>
-    <ClInclude Include="Lab_2\Enums.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\Rectangle.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\Flight.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\Movie.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\Circle.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\Exceptions.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\StructureStatic.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\StructureDynamic.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\StructureFunction.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\Execute.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\Time.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\Color.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\WeekDay.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\Genre.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\StudyType.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\PhoneCompany.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\Season.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\Contact.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\Song.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_2\Subject.h">
-      <Filter>Header Files\Lab_2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_3\cRectangle.h">
-      <Filter>Header Files\Lab_3</Filter>
-    </ClInclude>
     <ClInclude Include="Lab_3\Book.h">
       <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
@@ -302,23 +218,59 @@
     <ClInclude Include="Lab_3\Point.h">
       <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
-    <ClInclude Include="Lab_3\cTime.h">
+    <ClInclude Include="Lab_3\Album.h">
       <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
-    <ClInclude Include="Lab_3\cFlight.h">
+    <ClInclude Include="Lab_3\Band.h">
       <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
-    <ClInclude Include="Lab_3\sGenre.h">
+    <ClInclude Include="Lab_3\Song.h">
       <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
-    <ClInclude Include="Lab_3\cSong.h">
+    <ClInclude Include="Lab_3\Genre.h">
       <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
-    <ClInclude Include="Lab_3\cAlbum.h">
+    <ClInclude Include="Lab_3\Flight.h">
       <Filter>Header Files\Lab_3</Filter>
     </ClInclude>
-    <ClInclude Include="Lab_3\cBand.h">
+    <ClInclude Include="Lab_3\Rectangle.h">
       <Filter>Header Files\Lab_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_3\Time.h">
+      <Filter>Header Files\Lab_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\Circle.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\Color.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\Contact.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\Enums.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\Exceptions.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\Execute.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\PhoneCompany.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\Season.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\StudyType.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\Subject.h">
+      <Filter>Header Files\Lab_2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_2\WeekDay.h">
+      <Filter>Header Files\Lab_2</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -1,32 +1,32 @@
-﻿#include "cAlbum.h"
+﻿#include "Album.h"
 #include <exception>
 
 using std::exception;
 
 // TODO: песни в множественном числе. Это массив, поэтому это важно!
-cAlbum::cAlbum(string name, int year, cSong* song, int songCount)
+Album::Album(string name, int year, Song* song, int songCount)
 {
 	this->SetName(name);
 	this->SetYear(year);
 	this->SetSong(song, songCount);
 }
 
-cAlbum::cAlbum()
+Album::Album()
 {
 	this->SetSong(nullptr,0);
 }
 
-cAlbum::~cAlbum()
+Album::~Album()
 {
 	delete[] this->_song;
 }
 
-void cAlbum::SetName(string name)
+void Album::SetName(string name)
 {
 	this->_name = name;
 }
 
-void cAlbum::SetYear(int year)
+void Album::SetYear(int year)
 {
 	// TODO:можешь системными функциями узнать текущий год?
 	if (year < 1 || year > 2020)
@@ -36,10 +36,10 @@ void cAlbum::SetYear(int year)
 	this->_year = year;
 }
 // TODO:множественное число!
-void cAlbum::SetSong(cSong* song, int songCounter)
+void Album::SetSong(Song* song, int songCounter)
 {	// TODO: обычно делают просто сохранение переданного указателя, без поэлементного копирования,
 	// иначе поведение с выделением и освобождением памяти становится неочевидным
-	this->_song = new cSong[songCounter];
+	this->_song = new Song[songCounter];
 	this->_songCount = songCounter;
 	for (int i = 0; i < songCounter; i++)
 	{
@@ -47,27 +47,27 @@ void cAlbum::SetSong(cSong* song, int songCounter)
 	}
 }
 
-string cAlbum::GetName()
+string Album::GetName()
 {
 	return this->_name;
 }
 
-int cAlbum::GetYeat()
+int Album::GetYear()
 {
 	return this->_year;
 }
 // TODO: множественное число!
-cSong* cAlbum::GetSong()
+Song* Album::GetSong()
 {
 	return this->_song;
 }
 
-int cAlbum::GetSongCounter()
+int Album::GetSongCounter()
 {
 	return this->_songCount;
 }
 
-cSong* cAlbum::FindSong(string songName)
+Song* Album::FindSong(string songName)
 {
 	for (int i = 0; i < this->_songCount; i++)
 	{

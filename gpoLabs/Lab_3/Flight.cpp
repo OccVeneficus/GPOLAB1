@@ -1,7 +1,7 @@
-﻿#include "cFlight.h"
+﻿#include "Flight.h"
 // TODO: именование без Of - по правилам образования родительного падежа в англ.
-cFlight::cFlight(int number, string pointOfDeparture, string pointOfArrival,
-    cTime* timeOfDeparture, cTime* timeOfArrival)
+Flight::Flight(int number, string pointOfDeparture, string pointOfArrival,
+    Time* timeOfDeparture, Time* timeOfArrival)
 {
     SetNumber(number);
     SetPointDeparture(pointOfDeparture);
@@ -9,29 +9,29 @@ cFlight::cFlight(int number, string pointOfDeparture, string pointOfArrival,
     SetTimesDepartureArrival(timeOfDeparture, timeOfArrival);
 }
 
-cFlight::cFlight()
+Flight::Flight()
 {
     this->_timeOfArrival = nullptr;
     this->_timeOfDeparture = nullptr;
 }
 
-void cFlight::SetNumber(int number)
+void Flight::SetNumber(int number)
 {
     this->_number = number;
 }
 
-void cFlight::SetPointDeparture(string pointOfDeparture)
+void Flight::SetPointDeparture(string pointOfDeparture)
 {
     this->_pointOfDeparture = pointOfDeparture;
 }
 
-void cFlight::SetPointOfArrival(string pointOfArrival)
+void Flight::SetPointOfArrival(string pointOfArrival)
 {
     this->_pointOfArrival = pointOfArrival;
 }
 
-void cFlight::SetTimesDepartureArrival(cTime* timeOfDeparture,
-    cTime* timeOfArrival)
+void Flight::SetTimesDepartureArrival(Time* timeOfDeparture,
+    Time* timeOfArrival)
 {
     if (*timeOfArrival <= *timeOfDeparture)
     {
@@ -41,27 +41,27 @@ void cFlight::SetTimesDepartureArrival(cTime* timeOfDeparture,
     this->_timeOfDeparture = timeOfDeparture;
 }
 
-int cFlight::GetNumber()
+int Flight::GetNumber()
 {
     return this->_number;
 }
 
-string cFlight::GetPointOfDeparture()
+string Flight::GetPointOfDeparture()
 {
     return this->_pointOfDeparture;
 }
 
-string cFlight::GetPointOfArrival()
+string Flight::GetPointOfArrival()
 {
     return this->_pointOfArrival;
 }
 
-cTime* cFlight::GetTimeOfDeparture()
+Time* Flight::GetTimeOfDeparture()
 {
     return this->_timeOfDeparture;
 }
 
-cTime* cFlight::GetTimeOFArrival()
+Time* Flight::GetTimeOFArrival()
 {
     return this->_timeOfArrival;
 }

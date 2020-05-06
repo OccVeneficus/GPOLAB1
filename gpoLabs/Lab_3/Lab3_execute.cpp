@@ -60,11 +60,11 @@ void DemoBook()
 
 void WriteBookInConsole(Book& book)
 {
-	for (int i = 0; i < book.GetAutorsCount() - 1; i++)
+	for (int i = 0; i < book.GetAuthorsCount() - 1; i++)
 	{
 		cout << book.GetAuthors()[i] << ", ";
 	}
-	cout << book.GetAuthors()[book.GetAutorsCount() - 1] << " ";
+	cout << book.GetAuthors()[book.GetAuthorsCount() - 1] << " ";
 	cout << book.GetName() << ". ";
 	cout << book.GetYear() << ". ";
 	cout << "- " << book.GetPages() << "p." << endl;
@@ -192,12 +192,12 @@ Route* FindRouteByStop(Route* routes, int routesCount, string stopName)
 
 void DemoRectangleWithPoint()
 {
-	cRectangle* rectangles = new cRectangle[5];
-	rectangles[0] = cRectangle(11.2,21.6,&Point(-22.3,1.3));
-	rectangles[1] = cRectangle(11.6, 13.1, &Point(32.1, -33.3));
-	rectangles[2] = cRectangle(5.8, 2.3, &Point(0.5, 0));
-	rectangles[3] = cRectangle(10.1, 9.3, &Point(-32.5, 33.0));
-	rectangles[4] = cRectangle(13.3, 4.8, &Point(0, 100.1));
+	Rectangle* rectangles = new Rectangle[5];
+	rectangles[0] = Rectangle(11.2,21.6,&Point(-22.3,1.3));
+	rectangles[1] = Rectangle(11.6, 13.1, &Point(32.1, -33.3));
+	rectangles[2] = Rectangle(5.8, 2.3, &Point(0.5, 0));
+	rectangles[3] = Rectangle(10.1, 9.3, &Point(-32.5, 33.0));
+	rectangles[4] = Rectangle(13.3, 4.8, &Point(0, 100.1));
 	for (int i = 0; i < 5; i++ )
 	{
 		cout << "X = " << rectangles[i].GetCentre()->GetX() << "; Y = " <<
@@ -219,17 +219,17 @@ void DemoRectangleWithPoint()
 
 void DemoFlightWithTime()
 {
-	cFlight* flights = new cFlight[5];
-	flights[0] = cFlight(rand()%9999999,"Tomsk","Moscow",
-		&cTime(2020,6,23,13,43), &cTime(2020,6,23,17,50));
-	flights[1] = cFlight(rand() % 9999999, "Sochi", "Ekaterinburg",
-		&cTime(2020, 5, 12, 3, 0), &cTime(2020, 5, 13, 5, 30));
-	flights[2] = cFlight(rand() % 9999999, "Petrozavodsk", "Moscow",
-		&cTime(2020, 12, 22, 15, 10), &cTime(2020, 12, 22, 17, 10));
-	flights[3] = cFlight(rand() % 9999999, "Novosibirsk", "Kaliningrad",
-		&cTime(2020, 3, 5, 0, 10), &cTime(2020, 3, 5, 5, 20));
-	flights[4] = cFlight(rand() % 9999999, "Abakan", "Tver",
-		&cTime(2020, 7, 7, 7, 7), &cTime(2020, 7, 7, 10, 17));
+	Flight* flights = new Flight[5];
+	flights[0] = Flight(rand()%9999999,"Tomsk","Moscow",
+		&Time(2020,6,23,13,43), &Time(2020,6,23,17,50));
+	flights[1] = Flight(rand() % 9999999, "Sochi", "Ekaterinburg",
+		&Time(2020, 5, 12, 3, 0), &Time(2020, 5, 13, 5, 30));
+	flights[2] = Flight(rand() % 9999999, "Petrozavodsk", "Moscow",
+		&Time(2020, 12, 22, 15, 10), &Time(2020, 12, 22, 17, 10));
+	flights[3] = Flight(rand() % 9999999, "Novosibirsk", "Kaliningrad",
+		&Time(2020, 3, 5, 0, 10), &Time(2020, 3, 5, 5, 20));
+	flights[4] = Flight(rand() % 9999999, "Abakan", "Tver",
+		&Time(2020, 7, 7, 7, 7), &Time(2020, 7, 7, 10, 17));
 	for (int i = 0; i < 5; i++)
 	{
 		WriteFlightToConsole(&flights[i]);
@@ -245,7 +245,7 @@ void DemoFlightWithTime()
 	system("pause");
 }
 
-void WriteFlightToConsole(cFlight* flight)
+void WriteFlightToConsole(Flight* flight)
 {
 	cout << flight->GetNumber() << " " <<
 		flight->GetPointOfDeparture() << " - "
@@ -255,15 +255,15 @@ void WriteFlightToConsole(cFlight* flight)
 	WriteTimeToConsole(flight->GetTimeOFArrival());
 }
 
-void WriteTimeToConsole(cTime* time)
+void WriteTimeToConsole(Time* time)
 {
 	cout << time->GetDay() << '.' << time->GetMonth() << '.' << 
 		time->GetYear() << ' ' << time->GetHour() << ':' << time->GetMinute();
 }
 
-cTime GetFlightTimeMinutes(cFlight* flight)
+Time GetFlightTimeMinutes(Flight* flight)
 {
-	cTime timeInFlight(0,0,0,0,0);
+	Time timeInFlight(0,0,0,0,0);
 	int days = flight->GetTimeOFArrival()->GetDay() - 
 		flight->GetTimeOfDeparture()->GetDay();
 	int hours = flight->GetTimeOFArrival()->GetHour() - 
@@ -302,25 +302,25 @@ cTime GetFlightTimeMinutes(cFlight* flight)
 
 void DemoBand()
 {
-	cSong* songsFirst = new cSong[4];
-	songsFirst[0] = cSong(123, "Banya", Rock);
-	songsFirst[1] = cSong(233, "Lesniik", Pop);
-	songsFirst[2] = cSong(343, "30 years", EDM);
-	songsFirst[3] = cSong(200, "Bomj", Country);
+	Song* songsFirst = new Song[4];
+	songsFirst[0] = Song(123, "Banya", Rock);
+	songsFirst[1] = Song(233, "Lesniik", Pop);
+	songsFirst[2] = Song(343, "30 years", EDM);
+	songsFirst[3] = Song(200, "Bomj", Country);
 
-	cSong* songsSecond = new cSong[5];
-	songsSecond[0] = cSong(413, "Cake", EDM);
-	songsSecond[1] = cSong(213, "Step", Techno);
-	songsSecond[2] = cSong(323, "Dont", Techno);
-	songsSecond[3] = cSong(223, "facebook", EDM);
-	songsSecond[4] = cSong(261, "last stand", Techno);
+	Song* songsSecond = new Song[5];
+	songsSecond[0] = Song(413, "Cake", EDM);
+	songsSecond[1] = Song(213, "Step", Techno);
+	songsSecond[2] = Song(323, "Dont", Techno);
+	songsSecond[3] = Song(223, "facebook", EDM);
+	songsSecond[4] = Song(261, "last stand", Techno);
 
-	cSong* songsThird = new cSong[3];
-	songsThird[0] = cSong(232, "The", Pop);
-	songsThird[1] = cSong(241, "Back", Rock);
-	songsThird[2] = cSong(360, "Take", Country);
+	Song* songsThird = new Song[3];
+	songsThird[0] = Song(232, "The", Pop);
+	songsThird[1] = Song(241, "Back", Rock);
+	songsThird[2] = Song(360, "Take", Country);
 
-	cAlbum* albums = new cAlbum[3];
+	Album* albums = new Album[3];
 	albums[0].SetName("Mass");
 	albums[0].SetYear(1999);
 	albums[0].SetSong(songsFirst, 4);
@@ -333,13 +333,13 @@ void DemoBand()
 	albums[2].SetYear(2019);
 	albums[2].SetSong(songsThird, 3);
 
-	cBand band("Cerberus","Sample_text",albums,3);
+	Band band("Cerberus","Sample_text",albums,3);
 	
 	WriteBandInfoToConsole(&band);
 
 	int songCount = 0;
 	cout << endl << "All songs:" << endl;
-	cSong** allSongs = band.GetAllSongs(songCount);
+	Song** allSongs = band.GetAllSongs(songCount);
 	for (int i = 0; i < songCount; i++)
 	{
 		WriteSongToConsole(allSongs[i]);
@@ -347,7 +347,7 @@ void DemoBand()
 	}
 
 	cout << endl << "All rock songs: " << endl;
-	cSong** allGenreSongs = band.GetAllGenreSongs(songCount, Rock);
+	Song** allGenreSongs = band.GetAllGenreSongs(songCount, Rock);
 	for (int i = 0; i < songCount; i++)
 	{
 		WriteSongToConsole(allGenreSongs[i]);
@@ -367,7 +367,7 @@ void DemoBand()
 	system("pause");
 }
 
-void WriteBandInfoToConsole(cBand* band)
+void WriteBandInfoToConsole(Band* band)
 {
 	cout << "Band " << band->GetName() << endl;
 	for (int i = 0; i < band->GetAlbumCount(); i++)
@@ -376,14 +376,14 @@ void WriteBandInfoToConsole(cBand* band)
 	}
 }
 
-void WriteSongToConsole(cSong* song)
+void WriteSongToConsole(Song* song)
 {
 	cout << "\"" << song->GetName() << "\"" << " genre ";
 	WriteSongGenreToConsole(song->GetGenre());
 	cout << " duration:" << song->GetDurationSeconds();
 }
 
-void WriteSongsToConsole(cSong* song, int songCount)
+void WriteSongsToConsole(Song* song, int songCount)
 {
 	for (int i = 0; i < songCount; i++)
 	{
@@ -392,7 +392,7 @@ void WriteSongsToConsole(cSong* song, int songCount)
 	}
 }
 
-void WriteAlbumToConsole(cAlbum* album)
+void WriteAlbumToConsole(Album* album)
 {
 	cout << "Album ";
 	cout << album->GetName();
