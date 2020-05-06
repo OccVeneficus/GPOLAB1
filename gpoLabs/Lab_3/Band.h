@@ -21,8 +21,8 @@ public:
 
 	string GetName();
 	string GetDescription();
-	Album* GetAlbum();
-	int GetAlbumCount();
+	Album* GetAlbums();
+	int GetAlbumsCount();
 
 	Song* FindSong(string name);
 	Album* FindAlbum(string name);

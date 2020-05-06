@@ -19,6 +19,5 @@ public:
 	double Getlength();
 	double GetWidth();
 	Point* GetCentre();
-
 };
 

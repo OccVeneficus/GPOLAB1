@@ -370,9 +370,9 @@ void DemoBand()
 void WriteBandInfoToConsole(Band* band)
 {
 	cout << "Band " << band->GetName() << endl;
-	for (int i = 0; i < band->GetAlbumCount(); i++)
+	for (int i = 0; i < band->GetAlbumsCount(); i++)
 	{
-		WriteAlbumToConsole(&band->GetAlbum()[i]);
+		WriteAlbumToConsole(&band->GetAlbums()[i]);
 	}
 }
 

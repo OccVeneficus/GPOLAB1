@@ -43,12 +43,12 @@ string Band::GetDescription()
 	return this->_description;
 }
 // TODO:
-Album* Band::GetAlbum()
+Album* Band::GetAlbums()
 {
 	return this->_albums;
 }
 // TODO:
-int Band::GetAlbumCount()
+int Band::GetAlbumsCount()
 {
 	return this->_albumsCount;
 }
