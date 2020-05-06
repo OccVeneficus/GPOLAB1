@@ -9,25 +9,25 @@ class Flight
 {
 private:
 	int _number;
-	string _pointOfDeparture;
-	string _pointOfArrival;
-	Time* _timeOfDeparture;
-	Time* _timeOfArrival;
+	string _pointDeparture;
+	string _pointArrival;
+	Time* _timeDeparture;
+	Time* _timeArrival;
 
 public:
-	Flight(int number, string pointOfDeparture, string pointOfArrival,
-		Time* timeOfDeparture, Time* timeOfArrival);
+	Flight(int number, string pointDeparture, string pointArrival,
+		Time* timeDeparture, Time* timeArrival);
 	Flight();
 
 	void SetNumber(int number);
-	void SetPointDeparture(string pointOfDeparture);
-	void SetPointOfArrival(string pointOfArrival);
-	void SetTimesDepartureArrival(Time* timeOfDeparture, Time* timeOfArrival);
+	void SetPointDeparture(string pointDeparture);
+	void SetPointArrival(string pointArrival);
+	void SetTimesDepartureArrival(Time* timeDeparture, Time* timeArrival);
 
 	int GetNumber();
-	string GetPointOfDeparture();
-	string GetPointOfArrival();
-	Time* GetTimeOfDeparture();
-	Time* GetTimeOFArrival();
+	string GetPointDeparture();
+	string GetPointArrival();
+	Time* GetTimeDeparture();
+	Time* GetTimeArrival();
 };
 

@@ -20,5 +20,4 @@ void Lab_2()
 	cout << endl << "Task 2.2.9." << endl;
 	system("pause");
 	cout << endl << "Done. " << endl;
-	//TODO: каждая переменная должна удаляться в своей строке, аналогично объявлению
 }

@@ -248,11 +248,11 @@ void DemoFlightWithTime()
 void WriteFlightToConsole(Flight* flight)
 {
 	cout << flight->GetNumber() << " " <<
-		flight->GetPointOfDeparture() << " - "
-		<< flight->GetPointOfArrival() << " departure ";
-	WriteTimeToConsole(flight->GetTimeOfDeparture());
+		flight->GetPointDeparture() << " - "
+		<< flight->GetPointArrival() << " departure ";
+	WriteTimeToConsole(flight->GetTimeDeparture());
 	cout << " arrival ";
-	WriteTimeToConsole(flight->GetTimeOFArrival());
+	WriteTimeToConsole(flight->GetTimeArrival());
 }
 
 void WriteTimeToConsole(Time* time)
@@ -264,12 +264,12 @@ void WriteTimeToConsole(Time* time)
 Time GetFlightTimeMinutes(Flight* flight)
 {
 	Time timeInFlight(0,0,0,0,0);
-	int days = flight->GetTimeOFArrival()->GetDay() - 
-		flight->GetTimeOfDeparture()->GetDay();
-	int hours = flight->GetTimeOFArrival()->GetHour() - 
-		flight->GetTimeOfDeparture()->GetHour();
-	int minutes = flight->GetTimeOFArrival()->GetMinute() - 
-		flight->GetTimeOfDeparture()->GetMinute();
+	int days = flight->GetTimeArrival()->GetDay() - 
+		flight->GetTimeDeparture()->GetDay();
+	int hours = flight->GetTimeArrival()->GetHour() - 
+		flight->GetTimeDeparture()->GetHour();
+	int minutes = flight->GetTimeArrival()->GetMinute() - 
+		flight->GetTimeDeparture()->GetMinute();
 	if (days != 0)
 	{
 		hours = MAX_HOUR + hours;
@@ -323,15 +323,15 @@ void DemoBand()
 	Album* albums = new Album[3];
 	albums[0].SetName("Mass");
 	albums[0].SetYear(1999);
-	albums[0].SetSong(songsFirst, 4);
+	albums[0].SetSongs(songsFirst, 4);
 
 	albums[1].SetName("Afterlife");
 	albums[1].SetYear(2001);
-	albums[1].SetSong(songsSecond, 5);
+	albums[1].SetSongs(songsSecond, 5);
 
 	albums[2].SetName("Effect");
 	albums[2].SetYear(2019);
-	albums[2].SetSong(songsThird, 3);
+	albums[2].SetSongs(songsThird, 3);
 
 	Band band("Cerberus","Sample_text",albums,3);
 	
@@ -397,7 +397,7 @@ void WriteAlbumToConsole(Album* album)
 	cout << "Album ";
 	cout << album->GetName();
 	cout << endl << "Song list " << endl;
-	WriteSongsToConsole(album->GetSong(),
+	WriteSongsToConsole(album->GetSongs(),
 		album->GetSongCounter());
 	cout << endl;
 }

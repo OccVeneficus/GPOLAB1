@@ -4,5 +4,5 @@
 void PrintMainMenuText();
 void PrintFirstLabMenuText();
 void PrintSecondLabMenuText();
-void ChooseTaskFirstLab();
-void ExecuteSecondLabTasks();
+void Lab1();
+void Lab2();

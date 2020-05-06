@@ -23,20 +23,11 @@ Route::~Route()
 Route& Route::operator=(const Route& other)
 {
 	// TODO: ты не можешь гарантировать, что массив динамический
-	if (this->_stops != nullptr)
-	{
-		delete[] this->_stops;
-	}
 	// TODO: почему в обход сеттеров?
-	this->_stopsCount = other._stopsCount;
-	this->_frequencyMinutes = other._frequencyMinutes;
-	this->_timeAvgMinutes = other._timeAvgMinutes;
-	this->_number = other._number;
-	this->_stops = new string[other._stopsCount];
-	for (int i = 0; i < other._stopsCount; i++)
-	{
-		this->_stops[i] = other._stops[i];
-	}
+	this->SetStops(other._stopsCount, other._stops);
+	this->SetFrequencyMinutes(other._frequencyMinutes);
+	this->SetTimeAvgMin(other._timeAvgMinutes);
+	this->SetNumber(other._number);
 	return *this;
 }
 
@@ -58,10 +49,6 @@ void Route::SetFrequencyMinutes(int frequencyMinutes)
 void Route::SetStops(int stopsCount, string* stops)
 {
 	// TODO:
-	if (this->_stops != nullptr)
-	{
-		delete[] this->_stops;
-	}
 	this->_stopsCount = stopsCount;
 	this->_stops = new string[stopsCount];
 	for (int i = 0; i < stopsCount; i++)

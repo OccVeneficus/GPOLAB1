@@ -1,18 +1,18 @@
 ﻿#include "Flight.h"
 // TODO: именование без Of - по правилам образования родительного падежа в англ.
-Flight::Flight(int number, string pointOfDeparture, string pointOfArrival,
-    Time* timeOfDeparture, Time* timeOfArrival)
+Flight::Flight(int number, string pointDeparture, string pointArrival,
+    Time* timeDeparture, Time* timeArrival)
 {
     SetNumber(number);
-    SetPointDeparture(pointOfDeparture);
-    SetPointOfArrival(pointOfArrival);
-    SetTimesDepartureArrival(timeOfDeparture, timeOfArrival);
+    SetPointDeparture(pointDeparture);
+    SetPointArrival(pointArrival);
+    SetTimesDepartureArrival(timeDeparture, timeArrival);
 }
 
 Flight::Flight()
 {
-    this->_timeOfArrival = nullptr;
-    this->_timeOfDeparture = nullptr;
+    this->_timeArrival = nullptr;
+    this->_timeDeparture = nullptr;
 }
 
 void Flight::SetNumber(int number)
@@ -20,25 +20,25 @@ void Flight::SetNumber(int number)
     this->_number = number;
 }
 
-void Flight::SetPointDeparture(string pointOfDeparture)
+void Flight::SetPointDeparture(string pointDeparture)
 {
-    this->_pointOfDeparture = pointOfDeparture;
+    this->_pointDeparture = pointDeparture;
 }
 
-void Flight::SetPointOfArrival(string pointOfArrival)
+void Flight::SetPointArrival(string pointArrival)
 {
-    this->_pointOfArrival = pointOfArrival;
+    this->_pointArrival = pointArrival;
 }
 
-void Flight::SetTimesDepartureArrival(Time* timeOfDeparture,
-    Time* timeOfArrival)
+void Flight::SetTimesDepartureArrival(Time* timeDeparture,
+    Time* timeArrival)
 {
-    if (*timeOfArrival <= *timeOfDeparture)
+    if (*timeArrival <= *timeDeparture)
     {
         throw exception("Time of departure cant be bigger than time of arrival.");
     }
-    this->_timeOfArrival = timeOfArrival;
-    this->_timeOfDeparture = timeOfDeparture;
+    this->_timeArrival = timeArrival;
+    this->_timeDeparture = timeDeparture;
 }
 
 int Flight::GetNumber()
@@ -46,23 +46,23 @@ int Flight::GetNumber()
     return this->_number;
 }
 
-string Flight::GetPointOfDeparture()
+string Flight::GetPointDeparture()
 {
-    return this->_pointOfDeparture;
+    return this->_pointDeparture;
 }
 
-string Flight::GetPointOfArrival()
+string Flight::GetPointArrival()
 {
-    return this->_pointOfArrival;
+    return this->_pointArrival;
 }
 
-Time* Flight::GetTimeOfDeparture()
+Time* Flight::GetTimeDeparture()
 {
-    return this->_timeOfDeparture;
+    return this->_timeDeparture;
 }
 
-Time* Flight::GetTimeOFArrival()
+Time* Flight::GetTimeArrival()
 {
-    return this->_timeOfArrival;
+    return this->_timeArrival;
 }
 

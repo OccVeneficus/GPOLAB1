@@ -7,17 +7,17 @@ private:
 
 	string _name;
 	string _description;
-	Album* _album;
-	int _albumCount;
+	Album* _albums;
+	int _albumsCount;
 
 public:
 
-	Band(string name, string description, Album* album, int albumCount);
+	Band(string name, string description, Album* albums, int albumsCount);
 	~Band();
 
 	void SetName(string name);
 	void SetDescription(string description);
-	void SetAlbum(Album* Album, int albumCount);
+	void SetAlbums(Album* albums, int albumsCount);
 
 	string GetName();
 	string GetDescription();

@@ -1,15 +1,15 @@
 ﻿#include "Band.h"
 // TODO: множественное число для альбомов
-Band::Band(string name, string description, Album* album, int albumCount)
+Band::Band(string name, string description, Album* albums, int albumsCount)
 {
 	this->SetName(name);
 	this->SetDescription(description);
-	this->SetAlbum(album, albumCount);
+	this->SetAlbums(albums, albumsCount);
 }
 
 Band::~Band()
 {
-	delete[] this->_album;
+	delete[] this->_albums;
 }
 
 void Band::SetName(string name)
@@ -22,19 +22,15 @@ void Band::SetDescription(string description)
 	this->_description = description;
 }
 // TODO: множ число
-void Band::SetAlbum(Album* album, int albumCount)
+void Band::SetAlbums(Album* albums, int albumsCount)
 {
 	// TODO: ты не можешь быть уверенным, что массив динамический
-	if (this->_album != nullptr)
+	this->_albums = new Album[albumsCount];
+	for (int i = 0; i < albumsCount; i++)
 	{
-		delete[] this->_album;
+		this->_albums[i] = albums[i];
 	}
-	this->_album = new Album[albumCount];
-	for (int i = 0; i < albumCount; i++)
-	{
-		this->_album[i] = album[i];
-	}
-	this->_albumCount = albumCount;
+	this->_albumsCount = albumsCount;
 }
 
 string Band::GetName()
@@ -49,20 +45,20 @@ string Band::GetDescription()
 // TODO:
 Album* Band::GetAlbum()
 {
-	return this->_album;
+	return this->_albums;
 }
 // TODO:
 int Band::GetAlbumCount()
 {
-	return this->_albumCount;
+	return this->_albumsCount;
 }
 
 Song* Band::FindSong(string name)
 {
 	Song* song = nullptr;
-	for (int i = 0; i < this->_albumCount; i++)
+	for (int i = 0; i < this->_albumsCount; i++)
 	{
-		song = this->_album[i].FindSong(name);
+		song = this->_albums[i].FindSong(name);
 		if (song != nullptr)
 		{
 			return song;
@@ -73,11 +69,11 @@ Song* Band::FindSong(string name)
 
 Album* Band::FindAlbum(string name)
 {
-	for (int i = 0; i < this->_albumCount; i++)
+	for (int i = 0; i < this->_albumsCount; i++)
 	{
-		if (this->_album[i].FindSong(name) != nullptr)
+		if (this->_albums[i].FindSong(name) != nullptr)
 		{
-			return &this->_album[i];
+			return &this->_albums[i];
 		}
 	}
 	return nullptr;
@@ -86,18 +82,18 @@ Album* Band::FindAlbum(string name)
 Song** Band::GetAllSongs(int& songCount)
 {
 	songCount = 0;
-	for (int i = 0; i < this->_albumCount; i++)
+	for (int i = 0; i < this->_albumsCount; i++)
 	{
-		songCount = songCount + this->_album[i].GetSongCounter();
+		songCount = songCount + this->_albums[i].GetSongCounter();
 	}
 	Song** allSongs = new Song*[songCount];
 	int j = 0;
-	for (int i = 0; i < this->_albumCount; i++)
+	for (int i = 0; i < this->_albumsCount; i++)
 	{
 		int k = 0;
-		while (k != this->_album[i].GetSongCounter())
+		while (k != this->_albums[i].GetSongCounter())
 		{
-			allSongs[j] = &this->_album[i].GetSong()[k];
+			allSongs[j] = &this->_albums[i].GetSongs()[k];
 			k++;
 			j++;
 		}
@@ -108,11 +104,11 @@ Song** Band::GetAllSongs(int& songCount)
 Song** Band::GetAllGenreSongs(int& songCount, Genre genre)
 {
 	songCount = 0;
-	for (int i = 0; i < this->_albumCount; i++)
+	for (int i = 0; i < this->_albumsCount; i++)
 	{
-		for (int j = 0; j < this->_album[i].GetSongCounter(); j++)
+		for (int j = 0; j < this->_albums[i].GetSongCounter(); j++)
 		{
-			if (this->_album[i].GetSong()[j].GetGenre() == genre)
+			if (this->_albums[i].GetSongs()[j].GetGenre() == genre)
 			{
 				songCount++;
 			}
@@ -120,14 +116,14 @@ Song** Band::GetAllGenreSongs(int& songCount, Genre genre)
 	}
 	Song** allGenreSongs = new Song * [songCount];
 	int j = 0;
-	for (int i = 0; i < this->_albumCount; i++)
+	for (int i = 0; i < this->_albumsCount; i++)
 	{
 		int k = 0;
-		while (k != this->_album[i].GetSongCounter())
+		while (k != this->_albums[i].GetSongCounter())
 		{
-			if (this->_album[i].GetSong()[k].GetGenre() == genre)
+			if (this->_albums[i].GetSongs()[k].GetGenre() == genre)
 			{
-				allGenreSongs[j] = &this->_album[i].GetSong()[k];
+				allGenreSongs[j] = &this->_albums[i].GetSongs()[k];
 				j++;
 			}
 			k++;

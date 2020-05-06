@@ -70,7 +70,7 @@ void PrintSecondLabMenuText()
 	cout << "|_____________________________________________________________|\n";
 }
 
-void ChooseTaskFirstLab()
+void Lab1()
 {
 	int menuItem;
 	do
@@ -210,7 +210,7 @@ void ChooseTaskFirstLab()
 	} while (menuItem != DEFAULT_EXIT_MENU_ITEM);
 }
 
-void ExecuteSecondLabTasks()
+void Lab2()
 {
 	Lab_2();
 }

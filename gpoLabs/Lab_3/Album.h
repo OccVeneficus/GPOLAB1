@@ -6,21 +6,21 @@ class Album
 private:
 	string _name;
 	int _year;
-	Song* _song;
+	Song* _songs;
 	int _songCount;
 
 public:
-	Album(string name, int year, Song* song, int songCount);
+	Album(string name, int year, Song* songs, int songsCount);
 	Album();
 
 	void SetName(string name);
 	void SetYear(int year);
-	void SetSong(Song* song, int songCounter);
+	void SetSongs(Song* songs, int songsCounter);
 
 	string GetName();
 	// TODO:ошибка в именовании
 	int GetYear();
-	Song* GetSong();
+	Song* GetSongs();
 	int GetSongCounter();
 
 	Song* FindSong(string songName);

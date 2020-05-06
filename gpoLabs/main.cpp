@@ -17,12 +17,12 @@ int main()
 			case 1:
 			{
 				// TODO: сделать одинаковое именование для функций, запускающих лабы
-				ChooseTaskFirstLab();
+				Lab1();
 				break;
 			}
 			case 2:
 			{
-				ExecuteSecondLabTasks();
+				Lab2();
 				break;
 			}
 			case 3:

@@ -19,9 +19,9 @@ Time::Time()
 
 void Time::SetYear(int year)
 {
-	if (year < 0 || year > 2020)
+	if (year < 0 || year > timePtr->tm_year)
 	{
-		throw exception("Year must be in range from 0 to 2020");
+		throw exception("Year must be in range from 0 to currentYear");
 	}
 	this->_year = year;
 }
