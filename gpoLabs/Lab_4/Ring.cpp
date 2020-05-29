@@ -1,6 +1,14 @@
 #include "Ring.h"
 #include <exception>
 
+void Ring::AssertOnPositiveValue(double value)
+{
+	if (value <= 0.0)
+	{
+		throw std::exception(" Radius cant be negative value. ");
+	}
+}
+
 Ring::Ring(double innerRadius, double outerRadius, Point* centre)
 {
 	SetInnerOuterRadius(innerRadius, outerRadius);
@@ -9,10 +17,8 @@ Ring::Ring(double innerRadius, double outerRadius, Point* centre)
 
 void Ring::SetInnerOuterRadius(double innerRadius, double outerRadius)
 {
-	if (innerRadius <= 0.0 || outerRadius <= 0.0)
-	{
-		throw std::exception("Radius cant be negative or 0.0 .");
-	}
+	AssertOnPositiveValue(innerRadius);
+	AssertOnPositiveValue(outerRadius);
 	if (innerRadius >= outerRadius)
 	{
 		throw std::exception("Inner radius cant be bigger than outer and outer less than inner.");

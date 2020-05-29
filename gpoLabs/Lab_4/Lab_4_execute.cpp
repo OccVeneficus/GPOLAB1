@@ -14,7 +14,7 @@ void DemoRing()
 {
 	try 
 	{
-		Ring firstRing(1.4, 1.0, &Point(0.0, 0.0));
+		Ring firstRing(1.4, -1.0, &Point(0.0, 0.0));
 		cout << "First area: " << firstRing.GetArea() << endl;
 	}
 	catch (const std::exception &ex)

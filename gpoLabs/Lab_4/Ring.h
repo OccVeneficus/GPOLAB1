@@ -10,6 +10,8 @@ private:
 	double _outerRadius;
 	Point* _centre;
 
+	void AssertOnPositiveValue(double value);
+
 public:
 	Ring(double innerRadius, double outerRadius, Point* centre);
 
