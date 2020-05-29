@@ -1,5 +1,6 @@
 #pragma once
 #include "../Lab_3/Point.h"
+#include "DoubleValidator.h"
 #define _USE_MATH_DEFINES
 #include <cmath>
 

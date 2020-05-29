@@ -1,5 +1,6 @@
 #include "Rectangle.h"
 #include <exception>
+#include "../Lab_4/DoubleValidator.h"
 
 using namespace std;
 
@@ -18,19 +19,13 @@ Rectangle::Rectangle(double length, double width, Point* centre)
 
 void Rectangle::SetLength(double length)
 {
-	if (length <= 0.0)
-	{
-		throw exception("Length cant be less or equal 0.0");
-	}
+	DoubleValidator::AssertPositiveValue(length);
 	this->_length = length;
 }
 
 void Rectangle::SetWidth(double width)
 {
-	if (width <= 0.0)
-	{
-		throw exception("Width cant be less or equal 0.0");
-	}
+	DoubleValidator::AssertPositiveValue(width);
 	this->_width = width;
 }
 
