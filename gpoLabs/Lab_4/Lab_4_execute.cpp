@@ -8,6 +8,7 @@ using std::endl;
 void Lab4()
 {
 	DemoRing();
+	DemoCollision();
 }
 
 void DemoRing()
@@ -40,5 +41,34 @@ void DemoRing()
 	cout << "Ring counter after delete: " << Ring::GetAllRingsCount() << endl;
 
 
+	system("pause");
+}
+
+void DemoCollision()
+{
+	Rectangle firstRectangle(2, 4, &Point(0.0, 0.0));
+	Rectangle secondRectangle(2, 2, &Point(2.0, 0.0));
+	if (CollisionManager::IsCollision(firstRectangle, secondRectangle))
+	{
+		cout << "Collision!" << endl;
+	}
+	Rectangle thirdRectangle(2, 4, &Point(0.0, 0.0));
+	Rectangle fourthRectangle(2, 2, &Point(100.0, -100.0));
+	if (!CollisionManager::IsCollision(thirdRectangle, fourthRectangle))
+	{
+		cout << "NO Collision!" << endl;
+	}
+	Ring firstRing(2, 4, &Point(0.0, 0.0));
+	Ring secondRing(2, 4, &Point(2.0, 2.0));
+	if (CollisionManager::IsCollision(firstRing, secondRing))
+	{
+		cout << "Collision!" << endl;
+	}
+	Ring thirdRing(2, 4, &Point(0.0, 0.0));
+	Ring fourthRing(2, 4, &Point(2.0, 100.0));
+	if (!CollisionManager::IsCollision(thirdRing, fourthRing))
+	{
+		cout << "NO Collision!" << endl;
+	}
 	system("pause");
 }

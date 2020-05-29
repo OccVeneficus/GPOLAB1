@@ -181,6 +181,7 @@
     <ClCompile Include="Lab_3\Point.cpp" />
     <ClCompile Include="Lab_3\Route.cpp" />
     <ClCompile Include="Lab_3\Genre.cpp" />
+    <ClCompile Include="Lab_4\CollisionManager.cpp" />
     <ClCompile Include="Lab_4\DoubleValidator.cpp" />
     <ClCompile Include="Lab_4\Lab_4_execute.cpp" />
     <ClCompile Include="Lab_4\Ring.cpp" />
@@ -214,6 +215,7 @@
     <ClInclude Include="Lab_3\Point.h" />
     <ClInclude Include="Lab_3\Route.h" />
     <ClInclude Include="Lab_3\Genre.h" />
+    <ClInclude Include="Lab_4\CollisionManager.h" />
     <ClInclude Include="Lab_4\DoubleValidator.h" />
     <ClInclude Include="Lab_4\Lab_4_execute.h" />
     <ClInclude Include="Lab_4\Ring.h" />

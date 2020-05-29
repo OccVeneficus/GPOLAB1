@@ -213,6 +213,9 @@
     <ClCompile Include="Lab_4\DoubleValidator.cpp">
       <Filter>Source Files\Lab_4</Filter>
     </ClCompile>
+    <ClCompile Include="Lab_4\CollisionManager.cpp">
+      <Filter>Source Files\Lab_4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Consts\Consts.h">
@@ -303,6 +306,9 @@
       <Filter>Header Files\Lab_4</Filter>
     </ClInclude>
     <ClInclude Include="Lab_4\DoubleValidator.h">
+      <Filter>Header Files\Lab_4</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_4\CollisionManager.h">
       <Filter>Header Files\Lab_4</Filter>
     </ClInclude>
   </ItemGroup>
