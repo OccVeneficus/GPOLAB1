@@ -114,7 +114,7 @@ bool Time::operator!=(const Time& other)
 
 bool Time::operator>(const Time& other)
 {
-	return !(*this < other);
+	return (!(*this < other) && *this != other);
 }
 
 bool Time::operator>=(const Time& other)
