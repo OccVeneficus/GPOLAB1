@@ -27,7 +27,7 @@ void Ring::SetInnerOuterRadius(double innerRadius, double outerRadius)
 {
 	AssertOnPositiveValue(innerRadius);
 	AssertOnPositiveValue(outerRadius);
-	if (innerRadius >= outerRadius)
+	if (innerRadius > outerRadius)
 	{
 		throw std::exception("Inner radius cant be bigger than outer and outer less than inner.");
 	}
