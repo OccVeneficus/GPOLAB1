@@ -212,3 +212,46 @@ void Lab2()
 {
 	Lab_2();
 }
+
+void GeometricProgrammText()
+{
+	cout << " ______________________________________________________________\n";
+	cout << "|                       GEOMETRIC PROGRAMM                    |\n";
+	cout << "| Choose Demonstration function from list below               |\n";
+	cout << "| 1. Rectangle                                                |\n";
+	cout << "| 2. Ring                                                     |\n";
+	cout << "| 3. Collision                                                |\n";
+	cout << "| 0. Quit program                                             |\n";
+	cout << "|_____________________________________________________________|\n";
+}
+
+void GeometricProgrammMenu(GeometricProgram* geometricProgram)
+{
+	int menuItem;
+	do 
+	{
+		system("pause");
+		system("cls");
+		GeometricProgrammText();
+		GetMenuItem(menuItem, 0, 3);
+		switch (menuItem)
+		{
+			case 1:
+			{
+				geometricProgram->DemoRectangle();
+				break;
+			}
+			case 2:
+			{
+				geometricProgram->DemoRing();
+				break;
+			}
+			case 3:
+			{
+				geometricProgram->DemoCollision();
+				break;
+			}
+		}
+	} 
+	while (menuItem != DEFAULT_EXIT_MENU_ITEM);
+}
