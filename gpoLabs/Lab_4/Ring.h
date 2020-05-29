@@ -1,5 +1,7 @@
 #pragma once
 #include "../Lab_3/Point.h"
+#define _USE_MATH_DEFINES
+#include <cmath>
 
 class Ring
 {
@@ -17,4 +19,6 @@ public:
 	double GetInnerRadius();
 	double GetOuterRadius();
 	Point* GetCentre();
+
+	double GetArea();
 };

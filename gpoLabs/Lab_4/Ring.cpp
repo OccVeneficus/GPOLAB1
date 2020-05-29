@@ -40,3 +40,11 @@ Point* Ring::GetCentre()
 {
 	return this->_centre;
 }
+
+double Ring::GetArea()
+{
+	double innerRingArea = M_PI * pow(this->_innerRadius, 2);
+	double outerRingArea = M_PI * pow(this->_outerRadius, 2);
+	
+	return outerRingArea - innerRingArea;
+}
