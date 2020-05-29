@@ -1,6 +1,8 @@
 #include "Ring.h"
 #include <exception>
 
+int Ring::AllRingsCount = 0;
+
 void Ring::AssertOnPositiveValue(double value)
 {
 	if (value <= 0.0)
@@ -13,6 +15,12 @@ Ring::Ring(double innerRadius, double outerRadius, Point* centre)
 {
 	SetInnerOuterRadius(innerRadius, outerRadius);
 	SetCentre(centre);
+	AllRingsCount++;
+}
+
+Ring::~Ring()
+{
+	AllRingsCount--;
 }
 
 void Ring::SetInnerOuterRadius(double innerRadius, double outerRadius)
@@ -53,4 +61,9 @@ double Ring::GetArea()
 	double outerRingArea = M_PI * pow(this->_outerRadius, 2);
 	
 	return outerRingArea - innerRingArea;
+}
+
+int Ring::GetAllRingsCount()
+{
+	return AllRingsCount;
 }

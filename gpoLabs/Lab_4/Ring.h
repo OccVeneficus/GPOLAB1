@@ -6,6 +6,8 @@
 class Ring
 {
 private:
+	static int AllRingsCount;
+
 	double _innerRadius;
 	double _outerRadius;
 	Point* _centre;
@@ -14,6 +16,7 @@ private:
 
 public:
 	Ring(double innerRadius, double outerRadius, Point* centre);
+	~Ring();
 
 	void SetInnerOuterRadius(double innerRadius, double outerRadius);
 	void SetCentre(Point* centre);
@@ -23,4 +26,6 @@ public:
 	Point* GetCentre();
 
 	double GetArea();
+
+	static int GetAllRingsCount();
 };
