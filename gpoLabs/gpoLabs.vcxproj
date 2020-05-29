@@ -181,6 +181,7 @@
     <ClCompile Include="Lab_3\Point.cpp" />
     <ClCompile Include="Lab_3\Route.cpp" />
     <ClCompile Include="Lab_3\Genre.cpp" />
+    <ClCompile Include="Lab_4\Ring.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="TimeCheck.cpp" />
   </ItemGroup>
@@ -211,6 +212,7 @@
     <ClInclude Include="Lab_3\Point.h" />
     <ClInclude Include="Lab_3\Route.h" />
     <ClInclude Include="Lab_3\Genre.h" />
+    <ClInclude Include="Lab_4\Ring.h" />
     <ClInclude Include="TimeCheck.h" />
   </ItemGroup>
   <ItemGroup>

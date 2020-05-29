@@ -64,6 +64,12 @@
     <Filter Include="Header Files\Common\TimeCheck">
       <UniqueIdentifier>{df3f2971-3c22-4ed2-91b0-aca419aab7aa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Lab_4">
+      <UniqueIdentifier>{dc8df467-553b-4b29-ad59-a97e1c56ab13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lab_4">
+      <UniqueIdentifier>{1ccd0848-23eb-4cd3-8d00-10364c0b9c83}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Common\ConsoleOutput\ConsoleOutput.cpp">
@@ -198,6 +204,9 @@
     <ClCompile Include="TimeCheck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Lab_4\Ring.cpp">
+      <Filter>Source Files\Lab_4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Consts\Consts.h">
@@ -280,6 +289,9 @@
     </ClInclude>
     <ClInclude Include="TimeCheck.h">
       <Filter>Header Files\Common\TimeCheck</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_4\Ring.h">
+      <Filter>Header Files\Lab_4</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
