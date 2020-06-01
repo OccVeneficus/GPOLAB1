@@ -207,9 +207,6 @@
     <ClCompile Include="Lab_4\Ring.cpp">
       <Filter>Source Files\Lab_4</Filter>
     </ClCompile>
-    <ClCompile Include="Lab_4\Lab_4_execute.cpp">
-      <Filter>Source Files\Lab_4</Filter>
-    </ClCompile>
     <ClCompile Include="Lab_4\DoubleValidator.cpp">
       <Filter>Source Files\Lab_4</Filter>
     </ClCompile>
@@ -303,9 +300,6 @@
       <Filter>Header Files\Common\TimeCheck</Filter>
     </ClInclude>
     <ClInclude Include="Lab_4\Ring.h">
-      <Filter>Header Files\Lab_4</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab_4\Lab_4_execute.h">
       <Filter>Header Files\Lab_4</Filter>
     </ClInclude>
     <ClInclude Include="Lab_4\DoubleValidator.h">

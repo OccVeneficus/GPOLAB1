@@ -2,7 +2,6 @@
 #include "Common/InputChecking/IntegerReading.h"
 #include "Common/Consts/Consts.h"
 #include "Lab_3/Lab3_execute.h"
-#include "Lab_4/Lab_4_execute.h"
 #include "Lab_4/GeometricProgram.h"
 
 using namespace std;
@@ -35,7 +34,6 @@ int main()
 			}
 			case 4:
 			{
-				Lab4();
 				GeometricProgrammMenu(&lab4);
 				break;
 			}

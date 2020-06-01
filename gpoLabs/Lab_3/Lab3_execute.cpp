@@ -202,7 +202,7 @@ void DemoRectangleWithPoint()
 	{
 		cout << "X = " << rectangles[i].GetCentre()->GetX() << "; Y = " <<
 			rectangles[i].GetCentre()->GetY() << "; Length = " <<
-			rectangles[i].Getlength() << "; Width = " <<
+			rectangles[i].GetLength() << "; Width = " <<
 			rectangles[i].GetWidth() << endl;
 	}
 	double sumX = 0;

@@ -13,7 +13,7 @@ void Ring::AssertOnPositiveValue(double value)
 
 Ring::Ring(double innerRadius, double outerRadius, Point* centre)
 {
-	SetInnerOuterRadius(innerRadius, outerRadius);
+	SetInOutRadii(innerRadius, outerRadius);
 	SetCentre(centre);
 	AllRingsCount++;
 }
@@ -23,7 +23,7 @@ Ring::~Ring()
 	AllRingsCount--;
 }
 
-void Ring::SetInnerOuterRadius(double innerRadius, double outerRadius)
+void Ring::SetInOutRadii(double innerRadius, double outerRadius)
 {
 	DoubleValidator::AssertPositiveValue(innerRadius);
 	DoubleValidator::AssertPositiveValue(outerRadius);
@@ -59,8 +59,8 @@ double Ring::GetArea()
 {
 	// TODO: для степени 2 лучше перемножать переменные напрямую, чем функция pow
 	// TODO: для малых степеней она работает медленно
-	double innerRingArea = M_PI * pow(this->_innerRadius, 2);
-	double outerRingArea = M_PI * pow(this->_outerRadius, 2);
+	double innerRingArea = M_PI * (this->_innerRadius * this->_innerRadius);
+	double outerRingArea = M_PI * (this->_outerRadius * this->_outerRadius);
 	
 	return outerRingArea - innerRingArea;
 }

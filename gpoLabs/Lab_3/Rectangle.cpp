@@ -34,7 +34,7 @@ void Rectangle::SetCentre(Point* centre)
 	this->_centre = centre;
 }
 
-double Rectangle::Getlength()
+double Rectangle::GetLength()
 {
 	return this->_length;
 }

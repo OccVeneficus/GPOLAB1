@@ -184,7 +184,6 @@
     <ClCompile Include="Lab_4\CollisionManager.cpp" />
     <ClCompile Include="Lab_4\DoubleValidator.cpp" />
     <ClCompile Include="Lab_4\GeometricProgram.cpp" />
-    <ClCompile Include="Lab_4\Lab_4_execute.cpp" />
     <ClCompile Include="Lab_4\Ring.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="TimeCheck.cpp" />
@@ -219,7 +218,6 @@
     <ClInclude Include="Lab_4\CollisionManager.h" />
     <ClInclude Include="Lab_4\DoubleValidator.h" />
     <ClInclude Include="Lab_4\GeometricProgram.h" />
-    <ClInclude Include="Lab_4\Lab_4_execute.h" />
     <ClInclude Include="Lab_4\Ring.h" />
     <ClInclude Include="TimeCheck.h" />
   </ItemGroup>
