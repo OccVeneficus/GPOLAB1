@@ -57,8 +57,6 @@ Point* Ring::GetCentre()
 
 double Ring::GetArea()
 {
-	// TODO: для степени 2 лучше перемножать переменные напрямую, чем функция pow
-	// TODO: для малых степеней она работает медленно
 	double innerRingArea = M_PI * (this->_innerRadius * this->_innerRadius);
 	double outerRingArea = M_PI * (this->_outerRadius * this->_outerRadius);
 	

@@ -2,10 +2,6 @@
 
 bool CollisionManager::IsCollision(Rectangle& first, Rectangle& second)
 {
-	// TODO: Выражение слишком большое - читаемость ужасная. Через месяц ты сам не сможешь проверить правильность формулы
-	// TODO: добавить локальные переменные, в которые сохранить значения из геттеров,
-	// TODO: затем в две булевы переменные сохранить значения каждой формулы слева и справа от логического перемножения
-	// TODO: и только потом вернуть результат логического умножения двух булевых переменных
 	double firstX = first.GetCentre()->GetX();
 	double secondX = second.GetCentre()->GetX();
 	double firstY = first.GetCentre()->GetY();
@@ -21,7 +17,6 @@ bool CollisionManager::IsCollision(Rectangle& first, Rectangle& second)
 
 bool CollisionManager::IsCollision(Ring& first, Ring& second)
 {
-	// TODO: то же самое, см. выше
 	double firstX = first.GetCentre()->GetX();
 	double secondX = second.GetCentre()->GetX();
 	double firstY = first.GetCentre()->GetY();

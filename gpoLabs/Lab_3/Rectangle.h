@@ -15,7 +15,7 @@ public:
 	void SetLength(double length);
 	void SetWidth(double width);
 	void SetCentre(Point* centre);
-	//TODO: каждое новое слово с большой буквы
+	
 	double GetLength();
 	double GetWidth();
 	Point* GetCentre();

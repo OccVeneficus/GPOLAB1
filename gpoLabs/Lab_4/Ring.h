@@ -18,7 +18,7 @@ private:
 public:
 	Ring(double innerRadius, double outerRadius, Point* centre);
 	~Ring();
-	// TODO: сложное именование + радиус в единственном числе. Убрать прилагательные, оставить существительное в мн. числе
+
 	void SetInOutRadii(double innerRadius, double outerRadius);
 	void SetCentre(Point* centre);
 
