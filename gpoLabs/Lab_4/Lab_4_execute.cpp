@@ -1,6 +1,8 @@
+﻿// TODO: зачем дублирование функций с GeometricProgram? Убрать
 #include <iostream>
 #include "Lab_4_execute.h"
 
+// TODO: почему так, а не просто using namespace std;? Если есть какая-то причина, отпишись в вк
 using std::cout;
 using std::cin;
 using std::endl;

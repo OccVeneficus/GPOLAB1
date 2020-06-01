@@ -1,4 +1,4 @@
-#include "Ring.h"
+﻿#include "Ring.h"
 #include <exception>
 
 int Ring::AllRingsCount = 0;
@@ -57,6 +57,8 @@ Point* Ring::GetCentre()
 
 double Ring::GetArea()
 {
+	// TODO: для степени 2 лучше перемножать переменные напрямую, чем функция pow
+	// TODO: для малых степеней она работает медленно
 	double innerRingArea = M_PI * pow(this->_innerRadius, 2);
 	double outerRingArea = M_PI * pow(this->_outerRadius, 2);
 	

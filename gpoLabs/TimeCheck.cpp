@@ -1,5 +1,6 @@
-#include "TimeCheck.h"
+﻿#include "TimeCheck.h"
 
+// TODO: Ура! Ты первый, кто сделал функцию определения текущего года, а не вбил литерал "2020". С начала семестра ждал...
 int GetCurrentYear()
 {
 	{

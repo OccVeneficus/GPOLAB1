@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "../Lab_3/Point.h"
 #include "DoubleValidator.h"
 #define _USE_MATH_DEFINES
@@ -18,7 +18,7 @@ private:
 public:
 	Ring(double innerRadius, double outerRadius, Point* centre);
 	~Ring();
-
+	// TODO: сложное именование + радиус в единственном числе. Убрать прилагательные, оставить существительное в мн. числе
 	void SetInnerOuterRadius(double innerRadius, double outerRadius);
 	void SetCentre(Point* centre);
 
