@@ -234,6 +234,15 @@
     <ClCompile Include="Lab_5\Lab5Programm.cpp">
       <Filter>Source Files\Lab_5</Filter>
     </ClCompile>
+    <ClCompile Include="Lab_5\PaidUser.cpp">
+      <Filter>Source Files\Lab_5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_5\User.cpp">
+      <Filter>Source Files\Lab_5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_5\Post.cpp">
+      <Filter>Source Files\Lab_5</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Consts\Consts.h">
@@ -339,6 +348,15 @@
       <Filter>Header Files\Lab_5</Filter>
     </ClInclude>
     <ClInclude Include="Lab_5\Lab5Programm.h">
+      <Filter>Header Files\Lab_5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_5\PaidUser.h">
+      <Filter>Header Files\Lab_5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_5\User.h">
+      <Filter>Header Files\Lab_5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_5\Post.h">
       <Filter>Header Files\Lab_5</Filter>
     </ClInclude>
   </ItemGroup>

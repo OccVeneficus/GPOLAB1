@@ -18,3 +18,7 @@ void Lab5Programm::DemoInheritance()
 	ShowName(&teacher);
 	cout << endl;
 }
+
+void Lab5Programm::DemoRefactoring()
+{
+}

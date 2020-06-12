@@ -186,9 +186,12 @@
     <ClCompile Include="Lab_4\GeometricProgram.cpp" />
     <ClCompile Include="Lab_4\Ring.cpp" />
     <ClCompile Include="Lab_5\Lab5Programm.cpp" />
+    <ClCompile Include="Lab_5\PaidUser.cpp" />
     <ClCompile Include="Lab_5\Person.cpp" />
+    <ClCompile Include="Lab_5\Post.cpp" />
     <ClCompile Include="Lab_5\Student.cpp" />
     <ClCompile Include="Lab_5\Teacher.cpp" />
+    <ClCompile Include="Lab_5\User.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="TimeCheck.cpp" />
   </ItemGroup>
@@ -224,9 +227,12 @@
     <ClInclude Include="Lab_4\GeometricProgram.h" />
     <ClInclude Include="Lab_4\Ring.h" />
     <ClInclude Include="Lab_5\Lab5Programm.h" />
+    <ClInclude Include="Lab_5\PaidUser.h" />
     <ClInclude Include="Lab_5\Person.h" />
+    <ClInclude Include="Lab_5\Post.h" />
     <ClInclude Include="Lab_5\Student.h" />
     <ClInclude Include="Lab_5\Teacher.h" />
+    <ClInclude Include="Lab_5\User.h" />
     <ClInclude Include="TimeCheck.h" />
   </ItemGroup>
   <ItemGroup>
