@@ -286,7 +286,7 @@ void Lab5ProgrammMenu(Lab5Programm* lab5Programm)
 			}
 			case 2:
 			{
-
+				lab5Programm->DemoRefactoring();
 				break;
 			}
 			case 3:

@@ -14,6 +14,10 @@ public:
 	{
 		SetPosts(posts, postsCount);
 	}
+	PaidUser(int id, string login, string password) : User(id, login, password)
+	{
+		SetPosts(nullptr, 0);
+	}
 
 	void SetPosts(Post* posts, int postsCounter);
 

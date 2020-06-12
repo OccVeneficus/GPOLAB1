@@ -15,5 +15,7 @@ public:
 	void ShowName(Person* person);
 	void DemoInheritance();
 	void DemoRefactoring();
+	User* Login(User** users, int usersCount,
+		string enteredLogin, string enteredPassword);
 };
 

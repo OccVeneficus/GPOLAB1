@@ -1,4 +1,4 @@
-#include "Lab5Programm.h"
+﻿#include "Lab5Programm.h"
 
 void Lab5Programm::ShowName(Person* person)
 {
@@ -21,4 +21,53 @@ void Lab5Programm::DemoInheritance()
 
 void Lab5Programm::DemoRefactoring()
 {
+	User** users = new User * [8]
+	{
+		new User(100000, "morkovka1995", "1995morkovka"),
+		new User(100001, "ilon_mask", "X æ A-12"),
+		new User(100002, "megazver", "password"),
+		new User(100003, "yogurt", "ksTPQzSu"),
+		new PaidUser(200000, "TheKnyazz", "JHPzPGFG"),
+		new PaidUser(200001, "system_exe", "UgfkDGmU"),
+		new PaidUser(200002, "RazorQ", "TBgRnbCP"),
+		new PaidUser(200003, "schdub", "CetyQVID")
+	};
+
+	string login = "megazver";
+	string password = "password";
+	User* loginedUser = Login(users, 8, login, password);
+
+	cout << "Signed in as: " << loginedUser->GetLogin() << endl;
+
+	login = "system_exe";
+	password = "UgfkDGmU";
+	loginedUser = Login(users, 8, login, password);
+
+	cout << "Signed in as: " << loginedUser->GetLogin() << endl;
+
+	for (int i = 0; i < 8; i++)
+	{
+		delete users[i];
+	}
+	delete[] users;
+}
+
+User* Lab5Programm::Login(User** users, int usersCount,
+	string enteredLogin, string enteredPassword)
+{
+	for (int i = 0; i < usersCount; i++)
+	{
+		if (users[i]->GetLogin() == enteredLogin)
+		{
+			if (users[i]->IsCorrectPassword(enteredPassword))
+			{
+				return users[i];
+			}
+			else
+			{
+				throw exception("Uncorrect password");
+			}
+		}
+	}
+	return nullptr;
 }
