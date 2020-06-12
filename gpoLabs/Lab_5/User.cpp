@@ -1,4 +1,5 @@
 #include "User.h"
+#include <exception>
 
 void User::SetId(int id)
 {
@@ -7,6 +8,10 @@ void User::SetId(int id)
 
 void User::SetLogin(string login)
 {
+	if (login.find_first_of("{}<>@#$%^:*") != string::npos)
+	{
+		throw std::exception("Wrong symbols in login");
+	}
 	_login = login;
 }
 

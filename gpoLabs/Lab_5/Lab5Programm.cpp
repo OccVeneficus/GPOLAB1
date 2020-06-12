@@ -45,6 +45,24 @@ void Lab5Programm::DemoRefactoring()
 
 	cout << "Signed in as: " << loginedUser->GetLogin() << endl;
 
+	try
+	{
+		User user1(1, "fd{dw}", "1234");
+	}
+	catch (const std::exception& ex)
+	{
+		cout << "Exception: " << ex.what() << endl;;
+	}
+
+	try
+	{
+		PaidUser user2(1, "fd#w", "1234");
+	}
+	catch (const std::exception& ex)
+	{
+		cout << "Exception: " << ex.what() << endl;
+	}
+
 	for (int i = 0; i < 8; i++)
 	{
 		delete users[i];
