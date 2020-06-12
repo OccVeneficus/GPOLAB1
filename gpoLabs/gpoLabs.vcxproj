@@ -188,7 +188,6 @@
     <ClCompile Include="Lab_5\CertificateDiscount.cpp" />
     <ClCompile Include="Lab_5\DiscountBase.cpp" />
     <ClCompile Include="Lab_5\Lab5.cpp" />
-    <ClCompile Include="Lab_5\Lab5Programm.cpp" />
     <ClCompile Include="Lab_5\PaidUser.cpp" />
     <ClCompile Include="Lab_5\PercentDiscount.cpp" />
     <ClCompile Include="Lab_5\Person.cpp" />
@@ -235,7 +234,6 @@
     <ClInclude Include="Lab_5\CertificateDiscount.h" />
     <ClInclude Include="Lab_5\DiscountBase.h" />
     <ClInclude Include="Lab_5\Lab5.h" />
-    <ClInclude Include="Lab_5\Lab5Programm.h" />
     <ClInclude Include="Lab_5\PaidUser.h" />
     <ClInclude Include="Lab_5\PercentDiscount.h" />
     <ClInclude Include="Lab_5\Person.h" />

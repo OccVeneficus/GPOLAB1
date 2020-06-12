@@ -19,5 +19,6 @@ User* Login(User** users, int usersCount,
 	string enteredLogin, string enteredPassword);
 void DemoInheritance();
 void DemoRefactoring();
-void ShowCheckWithDiscount(DiscountBase* discount, Product*
+void ShowCheckWithDiscount(DiscountBase* discount, Product**
     products, int productsCount);
+void Lab5();

@@ -44,7 +44,7 @@ void DemoRefactoring()
 	User** users = new User * [8]
 	{
 		new User(100000, "morkovka1995", "1995morkovka"),
-		new User(100001, "ilon_mask", "X æ A-12"),
+		new User(100001, "ilon_mask", "X ae A-12"),
 		new User(100002, "megazver", "password"),
 		new User(100003, "yogurt", "ksTPQzSu"),
 		new PaidUser(200000, "TheKnyazz", "JHPzPGFG"),
@@ -90,6 +90,46 @@ void DemoRefactoring()
 	delete[] users;
 }
 
-void ShowCheckWithDiscount(DiscountBase* discount, Product* products, int productsCount)
+void ShowCheckWithDiscount(DiscountBase* discount, Product** products,
+	int productsCount)
 {
+	double totalCost = 0;
+	for (int i = 0; i < productsCount; i++)
+	{
+		cout << endl << products[i]->GetName() << " " << "Old Cost: "
+			<< products[i]->GetCost() << " New Cost: ";
+		double newCost = discount->Calculcate(products[i]);
+		cout << newCost;
+		totalCost = totalCost + newCost;
+	}
+	cout << endl << "Total Cost with discount: " << totalCost;
+}
+
+void Lab5()
+{
+	DemoInheritance();
+	system("pause");
+	DemoRefactoring();
+	system("pause");
+	Product** products = new Product * [4]
+	{
+		new Product(TVSet, "Samsung SmartTV", 29999.99),
+		new Product(Dishwasher, "LG-SupaClean3000", 9999.99),
+		new Product(SSD, "ADATIA", 1400.0),
+		new Product(Microwave, "Leran FMO-2032 W", 4499.9)
+	};
+	PercentDiscount percent(20.0,TVSet);
+	CertificateDiscount certificate(SSD, 1500.0);
+	cout << endl << "Check with 20% discount on TVSet: ";
+	ShowCheckWithDiscount(&percent, products, 4);
+	cout << endl << endl <<"Check with 1500 bonus sertificate for SSD:" << endl;
+	ShowCheckWithDiscount(&certificate, products, 4);
+	cout << endl;
+	cout <<"Amount left on certificate: "<<certificate.GetAmount() << endl;
+	system("pause");
+	for (int i = 0; i < 4; i++)
+	{
+		delete products[i];
+	}
+	delete[] products;
 }

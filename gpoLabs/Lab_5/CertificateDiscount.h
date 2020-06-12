@@ -31,6 +31,7 @@ public:
 				return newCost;
 			}
 		}
+		return product->GetCost();
 	}
 };
 
