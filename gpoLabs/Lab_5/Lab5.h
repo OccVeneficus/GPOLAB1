@@ -14,14 +14,10 @@
 
 using namespace std;
 
-class Lab5Programm
-{
-public:
-	void ShowName(Person* person);
-	void DemoInheritance();
-	void DemoRefactoring();
-	void DemoPolimorph();
-	User* Login(User** users, int usersCount,
-		string enteredLogin, string enteredPassword);
-};
-
+void ShowName(Person* person);
+User* Login(User** users, int usersCount,
+	string enteredLogin, string enteredPassword);
+void DemoInheritance();
+void DemoRefactoring();
+void ShowCheckWithDiscount(DiscountBase* discount, Product*
+    products, int productsCount);
