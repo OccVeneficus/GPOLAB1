@@ -70,6 +70,12 @@
     <Filter Include="Source Files\Lab_4">
       <UniqueIdentifier>{1ccd0848-23eb-4cd3-8d00-10364c0b9c83}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Lab_5">
+      <UniqueIdentifier>{60d181fa-cf03-423f-abf4-a7950fbab872}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lab_5">
+      <UniqueIdentifier>{81048bf2-70fb-4f33-934a-a08609185394}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Common\ConsoleOutput\ConsoleOutput.cpp">
@@ -216,6 +222,9 @@
     <ClCompile Include="Lab_4\GeometricProgram.cpp">
       <Filter>Source Files\Lab_4</Filter>
     </ClCompile>
+    <ClCompile Include="Lab_5\Person.cpp">
+      <Filter>Source Files\Lab_5</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Consts\Consts.h">
@@ -310,6 +319,9 @@
     </ClInclude>
     <ClInclude Include="Lab_4\GeometricProgram.h">
       <Filter>Header Files\Lab_4</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_5\Person.h">
+      <Filter>Header Files\Lab_5</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
