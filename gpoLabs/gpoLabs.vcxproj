@@ -185,6 +185,7 @@
     <ClCompile Include="Lab_4\DoubleValidator.cpp" />
     <ClCompile Include="Lab_4\GeometricProgram.cpp" />
     <ClCompile Include="Lab_4\Ring.cpp" />
+    <ClCompile Include="Lab_5\Lab5Programm.cpp" />
     <ClCompile Include="Lab_5\Person.cpp" />
     <ClCompile Include="Lab_5\Student.cpp" />
     <ClCompile Include="Lab_5\Teacher.cpp" />
@@ -222,6 +223,7 @@
     <ClInclude Include="Lab_4\DoubleValidator.h" />
     <ClInclude Include="Lab_4\GeometricProgram.h" />
     <ClInclude Include="Lab_4\Ring.h" />
+    <ClInclude Include="Lab_5\Lab5Programm.h" />
     <ClInclude Include="Lab_5\Person.h" />
     <ClInclude Include="Lab_5\Student.h" />
     <ClInclude Include="Lab_5\Teacher.h" />

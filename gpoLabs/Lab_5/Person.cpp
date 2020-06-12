@@ -2,6 +2,9 @@
 
 Person::Person(string name, string surname, string patronymic)
 {
+	SetName(name);
+	SetSurname(surname);
+	SetPatronymic(patronymic);
 }
 
 void Person::SetName(string name)

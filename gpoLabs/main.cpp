@@ -3,12 +3,14 @@
 #include "Common/Consts/Consts.h"
 #include "Lab_3/Lab3_execute.h"
 #include "Lab_4/GeometricProgram.h"
+#include "Lab_5/Lab5Programm.h"
 
 using namespace std;
 
 int main()
 {
 	GeometricProgram lab4;
+	Lab5Programm lab5;
 	int menuItem;
 	do
 	{
@@ -39,6 +41,7 @@ int main()
 			}
 			case 5:
 			{
+				Lab5ProgrammMenu(&lab5);
 				break;
 			}
 			case 6:

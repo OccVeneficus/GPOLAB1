@@ -231,6 +231,9 @@
     <ClCompile Include="Lab_5\Teacher.cpp">
       <Filter>Source Files\Lab_5</Filter>
     </ClCompile>
+    <ClCompile Include="Lab_5\Lab5Programm.cpp">
+      <Filter>Source Files\Lab_5</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Consts\Consts.h">
@@ -333,6 +336,9 @@
       <Filter>Header Files\Lab_5</Filter>
     </ClInclude>
     <ClInclude Include="Lab_5\Teacher.h">
+      <Filter>Header Files\Lab_5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab_5\Lab5Programm.h">
       <Filter>Header Files\Lab_5</Filter>
     </ClInclude>
   </ItemGroup>
