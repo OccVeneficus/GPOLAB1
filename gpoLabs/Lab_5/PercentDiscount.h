@@ -11,18 +11,8 @@ public:
 	void SetPercent(double percent);
 	double GetPercent();
 	// TODO: реализацию из заголовочного файла
-	PercentDiscount(double percent, Category category) : DiscountBase(category)
-	{
-		SetPercent(percent);
-	}
+	PercentDiscount(double percent, Category category);
 
-	double Calculcate(Product* product) override
-	{
-		if (product->GetCategory() == this->GetCategory())
-		{
-			return product->GetCost() * ((100.0 - _percent) / 100);
-		}
-		return product->GetCost();
-	}
+	double Calculate(Product* product) override;
 };
 

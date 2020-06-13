@@ -11,7 +11,7 @@ private:
 public:
 	Category GetCategory();
 	// TODO: грамошибка
-	double virtual Calculcate(Product* product) = 0;
+	double virtual Calculate(Product* product) = 0;
 
 protected:
 	DiscountBase(Category category);

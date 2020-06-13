@@ -10,15 +10,8 @@ private:
 
 public:
 	// TODO: реализацию из h-файла
-	PaidUser(int id, string login, string password, Post* posts, int postsCount) :
-		User(id, login, password)
-	{
-		SetPosts(posts, postsCount);
-	}
-	PaidUser(int id, string login, string password) : User(id, login, password)
-	{
-		SetPosts(nullptr, 0);
-	}
+	PaidUser(int id, string login, string password, Post* posts, int postsCount);
+	PaidUser(int id, string login, string password);
 
 	void SetPosts(Post* posts, int postsCounter);
 
