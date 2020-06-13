@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "DiscountBase.h"
 
 class PercentDiscount :	public DiscountBase
@@ -10,7 +10,7 @@ public:
 
 	void SetPercent(double percent);
 	double GetPercent();
-
+	// TODO: реализацию из заголовочного файла
 	PercentDiscount(double percent, Category category) : DiscountBase(category)
 	{
 		SetPercent(percent);

@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "DiscountBase.h"
 
 class CertificateDiscount : public DiscountBase
@@ -15,6 +15,8 @@ public:
 	{
 		SetAmount(amount);
 	}
+	// TODO: грамошибка
+	// TODO: почему реализация в h-файле?
 	double Calculcate(Product* product) override
 	{
 		if (product->GetCategory() == this->GetCategory())

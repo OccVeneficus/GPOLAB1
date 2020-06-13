@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "Category.h"
 #include "Product.h"
 
@@ -10,6 +10,7 @@ private:
 
 public:
 	Category GetCategory();
+	// TODO: грамошибка
 	double virtual Calculcate(Product* product) = 0;
 
 protected:

@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "User.h"
 #include "Post.h"
 
@@ -9,6 +9,7 @@ private:
 	int _postsCount;
 
 public:
+	// TODO: реализацию из h-файла
 	PaidUser(int id, string login, string password, Post* posts, int postsCount) :
 		User(id, login, password)
 	{
