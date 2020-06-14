@@ -11,8 +11,6 @@ public:
 	void SetAmount(double amount);
 	double GetAmount();
 	CertificateDiscount(Category category, double amount);
-	// TODO: грамошибка
-	// TODO: почему реализация в h-файле?
 	double Calculate(Product* product) override;
 };
 

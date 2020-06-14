@@ -10,7 +10,6 @@ public:
 
 	void SetPercent(double percent);
 	double GetPercent();
-	// TODO: реализацию из заголовочного файла
 	PercentDiscount(double percent, Category category);
 
 	double Calculate(Product* product) override;

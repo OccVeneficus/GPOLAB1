@@ -10,7 +10,6 @@ private:
 
 public:
 	Category GetCategory();
-	// TODO: грамошибка
 	double virtual Calculate(Product* product) = 0;
 
 protected:
